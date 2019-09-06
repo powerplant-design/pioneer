@@ -353,12 +353,13 @@ footer {
         margin-bottom: 1rem;
     }
     section.hero {
-        height: 75vh;
+        height: 300px;
+        background-attachment: scroll;
     }
     h2 {
         font-size: 1.4rem;
     }
-    .section--header h3 {
+    .h3 {
         font-size: 1.6rem;
         padding: 2rem 1rem 1rem 1rem;
     }
@@ -368,6 +369,10 @@ footer {
     }
     .hero {
         padding: 2rem;
+    }
+    .service--img-box {
+        max-width: 400px;
+        margin: 0 auto;
     }
     .container--services {
         display: block;
@@ -381,6 +386,11 @@ footer {
     }
     ul {
         text-align: center;
+    }
+    .service--img-plumbing:hover,
+    .service--img-gasfitting:hover,
+    .service--img-drainlaying:hover {
+        box-shadow: none;
     }
     .section--header {
         padding-bottom: 1rem;
