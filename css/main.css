@@ -24,6 +24,17 @@ header {
 header img {
     max-width: 200px;
 }
+a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+a:hover {
+    text-decoration: underline;
+}
+header a {
+    font-size: 1.4rem;
+    padding: 2rem 3rem 0 3rem;
+}
 .logo-box {
     position: absolute;
     display: flex;
@@ -39,17 +50,7 @@ header img {
     display: flex;
     justify-content: space-between;
 }
-a {
-    text-decoration: none;
-    color: #1c1c1c;
-}
-a:hover {
-    text-decoration: underline;
-}
-header a {
-    font-size: 1.4rem;
-    padding: 2rem 3rem 0 3rem;
-}
+
 section.hero {
     width: 100%;
     height: calc(100vh - 175px);
