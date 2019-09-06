@@ -341,7 +341,7 @@ footer {
         padding: 0.4rem 1rem;
     }
     .logo-box {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
     .logo-box,
     .link-box {
@@ -357,7 +357,7 @@ footer {
         background-attachment: scroll;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .h3 {
         font-size: 1.6rem;
