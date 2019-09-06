@@ -243,6 +243,12 @@ footer {
     transform: translateY(46px);
     pointer-events: none;
 }
+.spots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 40%);
+}
 
 /* QUERIES START */
 @media screen and (max-width: 900px) {
