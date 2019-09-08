@@ -58,8 +58,8 @@ header a {
     justify-content: center;
     align-items: center;
     background-color: silver;
-    background-image: url(../img/hero-bg-tub.jpg);
-    background-position: right bottom;
+    background-image: url(../img/pioneer-hero-dsk.jpg);
+    background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
@@ -67,7 +67,6 @@ header a {
 .services,
 .contact {
     position: relative;
-
     width: 100%;
     padding: 0 2rem;
 }
@@ -96,21 +95,19 @@ h2 {
     padding-bottom: 3rem;
 }
 h3 {
-    font-size: 2.6rem;
+    font-size: 2rem;
     padding: 3rem 2rem 1rem 2rem;
 }
 h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 1.6rem 0 1rem 0;
 }
-
 .container--services {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-
 .service {
     text-align: center;
     width: 30%;
@@ -122,6 +119,7 @@ h4 {
 .service--img-gasfitting,
 .service--img-drainlaying {
     border-radius: 100%;
+    border: 1px solid #1c1c1c;
 }
 .service--img-plumbing:hover {
     box-shadow: 0 0 30px #027dc5;
@@ -172,7 +170,7 @@ ul {
     margin-bottom: 1.2rem;
 }
 .contact--icon {
-    max-width: 35px;
+    max-width: 30px;
 }
 .info {
     margin-bottom: 2rem;
@@ -250,6 +248,9 @@ footer {
     transform: translateY(46px);
     pointer-events: none;
 }
+.tukka-mbl {
+    display: none;
+}
 
 /* QUERIES START */
 @media screen and (max-width: 900px) {
@@ -266,10 +267,10 @@ footer {
         font-size: 2.2rem;
     }
     h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     h4 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     header img {
         width: 140px;
@@ -283,6 +284,11 @@ footer {
     }
     .section--header {
         padding-bottom: 2rem;
+    }
+    .services,
+    .contact {
+        min-height: auto;
+        margin: 1rem 0 4rem 0;
     }
     .container--contact {
         flex-direction: column-reverse;
@@ -359,9 +365,12 @@ footer {
         justify-content: space-between;
         margin-bottom: 1rem;
     }
-    section.hero {
+    .hero {
+        background-image: url(../img/pioneer-hero-mbl.jpg);
         height: 300px;
+        background-position: center;
         background-attachment: scroll;
+        padding: 2rem;
     }
     h2 {
         font-size: 1.2rem;
@@ -373,9 +382,6 @@ footer {
     h4 {
         font-size: 1.3rem;
         padding: 1rem 2rem 0.7rem 2rem;
-    }
-    .hero {
-        padding: 2rem;
     }
     .service--img-box {
         max-width: 400px;
@@ -418,7 +424,7 @@ footer {
         text-align: left;
     }
     .contacts {
-        margin-bottom: 2rem;
+        margin-bottom: 1.4rem;
     }
     .contact--single {
         display: block;
@@ -453,5 +459,11 @@ footer {
     .tukka {
         width: 200px;
         transform: translateY(215px);
+    }
+    .tukka-dsk {
+        display: none;
+    }
+    .tukka-mbl {
+        display: block;
     }
 }
