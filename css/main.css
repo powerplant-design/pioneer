@@ -120,15 +120,19 @@ h4 {
 .service--img-drainlaying {
     border-radius: 100%;
     border: 1px solid #1c1c1c;
+    transition: box-shadow 200ms, transform 300ms;
 }
 .service--img-plumbing:hover {
     box-shadow: 0 0 30px #027dc5;
+    transform: scale(1.01);
 }
 .service--img-gasfitting:hover {
     box-shadow: 0 0 30px orange;
+    transform: scale(1.01);
 }
 .service--img-drainlaying:hover {
     box-shadow: 0 0 30px #1c1c1c;
+    transform: scale(1.02);
 }
 .service--icon {
     width: 50px;
