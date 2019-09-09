@@ -371,9 +371,9 @@ footer {
     }
     .hero {
         background-image: url(../img/pioneer-hero-mbl.jpg);
-        height: 300px;
+        height: 380px;
         background-position: center;
-        /* background-attachment: scroll; */
+        background-attachment: scroll;
         padding: 2rem;
     }
     h2 {
