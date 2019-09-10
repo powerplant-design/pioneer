@@ -69,6 +69,9 @@ header a {
     position: relative;
     width: 100%;
     padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .services {
     min-height: 100vh;
@@ -96,7 +99,7 @@ h2 {
 }
 h3 {
     font-size: 2rem;
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
 }
 h4 {
     font-size: 1.4rem;
@@ -124,15 +127,12 @@ h4 {
 }
 .service--img-plumbing:hover {
     box-shadow: 0 0 30px #027dc5;
-    transform: scale(1.01);
 }
 .service--img-gasfitting:hover {
     box-shadow: 0 0 30px orange;
-    transform: scale(1.01);
 }
 .service--img-drainlaying:hover {
     box-shadow: 0 0 30px #1c1c1c;
-    transform: scale(1.02);
 }
 .service--icon {
     width: 50px;
@@ -144,8 +144,8 @@ h4 {
 ul {
     line-height: 1.8;
     text-align: left;
-    padding: 0 1.2rem;
-    font-size: 0.9rem;
+    padding: 0 0.8rem;
+    font-size: 1rem;
 }
 .container--contact {
     max-width: 900px;
@@ -293,6 +293,7 @@ footer {
     .contact {
         min-height: auto;
         margin: 1rem 0 4rem 0;
+        display: block;
     }
     .container--contact {
         flex-direction: column-reverse;
