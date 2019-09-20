@@ -371,7 +371,7 @@ footer {
     }
     .hero {
         background-image: url(../img/pioneer-hero-mbl.jpg);
-        height: 380px;
+        height: 550px;
         background-position: center;
         background-attachment: scroll;
         padding: 2rem;
@@ -404,7 +404,7 @@ footer {
     ul {
         /* text-align: center; */
         font-size: 0.9rem;
-        padding: 0 2.4rem;
+        padding: 0 1.6rem;
     }
     .service--img-plumbing:hover,
     .service--img-gasfitting:hover,
