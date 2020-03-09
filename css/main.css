@@ -308,7 +308,9 @@ footer {
     }
     .info {
         text-align: center;
+        margin: 0 auto;
         margin-bottom: 3rem;
+        max-width: 500px;
     }
     .info--contacts {
         display: flex;
