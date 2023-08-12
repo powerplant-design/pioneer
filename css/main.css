@@ -79,6 +79,16 @@ header a {
 .contact {
     min-height: calc(100vh - 60px);
 }
+
+/* .thanks {
+    width: 100%;
+    height: calc(100vh - 175px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 h1 {
     font-size: 1rem;
 }
