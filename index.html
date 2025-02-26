@@ -26,8 +26,8 @@
         <title>Pioneer PGD</title>
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="preload" href="../css/main.css" as="style">
         <link rel="stylesheet" href="./css/main.css" />
-        <base href="/" />
         <!-- <base href="https://pioneerpgd.co.nz/" /> -->
     </head>
 
@@ -57,11 +57,13 @@
             </div>
             <div class="nav--links">
                 <a href="#services" class="hide-mbl">Services</a>
+                <a href="#specialties" class="hide-mbl">Specialties</a>
                 <a href="#reviews" class="hide-mbl">Reviews</a>
-                <a href="#contact"
-                    ><button class="button--secondary">
-                        Contact <span class="hide-mbl">now</span>
-                    </button></a
+                <a href="./contact" class="hide-dsk"
+                    ><button class="button--primary">Contact now</button></a
+                >
+                <a href="./contact" class="hide-mbl"
+                    ><button class="button--secondary">Contact now</button></a
                 >
             </div>
         </nav>
@@ -75,31 +77,38 @@
                                 Drainlaying, Plumbing and Gasfitting Services
                             </h1>
                             <p>
-                                Owned and operated from Upper Hutt, Wellington
+                                Owned and Operated from Upper Hutt, Wellington
                             </p>
                         </div>
-                        <a href="#contact" class="flow"
-                            ><button class="button--primary">
-                                Contact <span class="hide-mbl">now</span>
-                            </button></a
-                        >
+                        <div class="flex">
+                            <a href="#services"
+                                ><button class="button--secondary hide-mbl">
+                                    Services
+                                </button></a
+                            >
+                            <a href="/contact/"
+                                ><button class="button--primary hide-mbl">
+                                    Contact now
+                                </button></a
+                            >
+                        </div>
                     </div>
                 </div>
                 <div class="hero--image"></div>
             </section>
 
-            <section id="services" class="services">
-                <div class="services--container">
+            <section id="services" class="section bg-dark">
+                <div class="section--container">
                     <div class="section--header">
-                        <h2>Services Offered</h2>
+                        <h2 class="text-white">Pioneer PGD Services</h2>
                     </div>
-                    <div class="services--wrapper">
+                    <div class="section--wrapper">
                         <div class="service">
                             <div class="service--img">
                                 <img
                                     src="./img/services-drainlaying.jpg"
                                     alt="Drainlaying Services"
-                                    class="service--img-drainlaying"
+                                    class="service--img-border"
                                 />
                             </div>
                             <div class="service--text">
@@ -110,7 +119,7 @@
                                         class="service--icon"
                                     />
                                     <div>
-                                        <h3>Drainlaying</h3>
+                                        <h3 class="text-grey">Drainlaying</h3>
                                         <h4>
                                             Domestic and Rural Installation,
                                             Maintenance and Servicing
@@ -119,16 +128,15 @@
                                 </div>
 
                                 <ul>
-                                    <li>Soak Pits—new or renewal</li>
+                                    <li>Soak Pits and Sumps—New or Renewal</li>
                                     <li>Sub Soil Drainage</li>
                                     <li>Water Course Drains</li>
                                     <li>
-                                        Driveway surface water Channel Drains
+                                        Driveway Surface Water Channel Drains
                                     </li>
-                                    <li>Sumps—new or renewal</li>
                                     <li>Drain Clearing</li>
                                     <li>Drain CCTV inspection</li>
-                                    <li>Drain repair and replacement</li>
+                                    <li>Drain Repair and Replacement</li>
                                     <li>New Sewer and Stormwater Drains</li>
                                     <li>New Sewer Pump Chambers</li>
                                     <li>Services Trenching</li>
@@ -147,7 +155,7 @@
                                 <img
                                     src="./img/services-plumbing.jpg"
                                     alt="Plumbing Services"
-                                    class="service--img-plumbing"
+                                    class="service--img-border"
                                 />
                             </div>
                             <div class="service--text">
@@ -158,7 +166,7 @@
                                         class="service--icon"
                                     />
                                     <div>
-                                        <h3>Plumbing</h3>
+                                        <h3 class="text-blue">Plumbing</h3>
                                         <h4>
                                             General Domestic Installation,
                                             Maintenance and Servicing
@@ -168,7 +176,7 @@
                                 <ul>
                                     <li>
                                         New Hot Water Systems, Cylinders, and
-                                        Instantaneous units Supplied and
+                                        Instantaneous Units Supplied and
                                         Installed
                                     </li>
                                     <li>
@@ -198,7 +206,7 @@
                                 <img
                                     src="./img/services-gasfitting.jpg"
                                     alt="Gasfitting Services"
-                                    class="service--img-gasfitting"
+                                    class="service--img-border"
                                 />
                             </div>
                             <div class="service--text">
@@ -209,7 +217,7 @@
                                         class="service--icon"
                                     />
                                     <div>
-                                        <h3>Gasfitting</h3>
+                                        <h3 class="text-orange">Gasfitting</h3>
                                         <h4>New Domestic Installation</h4>
                                     </div>
                                 </div>
@@ -236,181 +244,364 @@
                 </div>
             </section>
 
-            <section id="contact" class="contact">
-                <div class="contact--wrapper">
+            <!-- SPECIALTIES -->
+            <section id="specialties" class="section">
+                <div class="section--container">
                     <div class="section--header">
-                        <h2>Contact</h2>
+                        <h2>Pioneer Specialise In</h2>
                     </div>
-                    <div class="container--contact">
-                        <div class="container--contact-inner">
-                            <form
-                                name="contact"
-                                action="/thanks.html"
-                                method="POST"
-                                data-netlify="true"
-                            >
-                                <div class="form-5050">
-                                    <label class="form-50"
-                                        ><input
-                                            required
-                                            type="text"
-                                            id="name"
-                                            name="Name"
-                                            aria-label="Name"
-                                            placeholder="Name"
-                                    /></label>
-
-                                    <label class="form-50">
-                                        <input
-                                            required
-                                            type="tel"
-                                            id="phone-number"
-                                            name="Phone"
-                                            aria-label="Phone"
-                                            placeholder="Phone"
-                                    /></label>
+                    <div class="section--wrapper">
+                        <div class="service service-reverse">
+                            <div class="service--text flow">
+                                <div class="service--header">
+                                    <img
+                                        src="./img/icon-drainlaying.png"
+                                        alt="Icon Drainlaying"
+                                        class="service--icon"
+                                    />
+                                    <div>
+                                        <h3 class="text-grey text-width-min">
+                                            Soakage Pits and Sub Soil Drainage
+                                        </h3>
+                                    </div>
                                 </div>
-                                <label>
-                                    <input
-                                        required
-                                        type="email"
-                                        id="email"
-                                        name="Email"
-                                        aria-label="Email"
-                                        placeholder="Email"
-                                /></label>
-
-                                <label>
-                                    <input
-                                        type="text"
-                                        id="address"
-                                        name="Address"
-                                        aria-label="Address"
-                                        placeholder="Address"
-                                /></label>
-
-                                <label>
-                                    <textarea
-                                        id="job-enquiry"
-                                        name="job-enquiry"
-                                        aria-label="Job Enquiry"
-                                        placeholder="Job Enquiry"
-                                    ></textarea>
-                                </label>
-
-                                <button type="submit">Send</button>
-                            </form>
-                        </div>
-
-                        <div class="container--contact-inner contacts">
-                            <div class="info">
                                 <p>
-                                    Certifying Plumbers,
-                                    Gasfitters&nbsp;and&nbsp;Drainlayers
+                                    Need effective water management for your
+                                    property? We specialize in soakage pits and
+                                    sub-soil drainage solutions to prevent
+                                    flooding, control groundwater, and protect
+                                    your foundations.
                                 </p>
                                 <p>
-                                    Servicing
-                                    <a
-                                        href="https://www.upperhuttcity.com/Home"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Upper Hutt</a
-                                    >,
-                                    <a
-                                        href="http://www.huttcity.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Lower Hutt</a
-                                    >,
-                                    <a
-                                        href="https://www.huttvalleynz.com/your-valley/petone/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Petone</a
-                                    >,
-                                    <a
-                                        href="https://poriruacity.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Porirua</a
-                                    >,
-                                    <a
-                                        href="https://wellington.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Wellington City</a
-                                    >
-                                    and the greater Wellington region.
+                                    Whether you're dealing with excess surface
+                                    water or poor drainage, we ensure a durable
+                                    and efficient system tailored to your needs.
                                 </p>
-                                <p>Monday&#8212;Friday / 7:30am&#8212;5pm</p>
                             </div>
-                            <div class="info--contacts">
-                                <div class="contact--single">
-                                    <img
-                                        src="./img/icon-phone.svg"
-                                        alt="Phone Icon"
-                                        class="contact--icon"
-                                    />
-                                    <a href="tel:+64-27-301-299"
-                                        >+64 27 301 2999</a
-                                    >
-                                    <p class="call-now">
-                                        &#8592; Click to call now
-                                    </p>
-                                </div>
-                                <div class="contact--single">
-                                    <img
-                                        src="./img/icon-email.svg"
-                                        alt="Email Icon"
-                                        class="contact--icon"
-                                    />
-                                    <a
-                                        href="mailto:office@pioneerpgd.co.nz"
-                                        target="_blank"
-                                    >
-                                        office@pioneerpgd.co.nz</a
-                                    >
-                                </div>
-
-                                <div class="contact--single">
-                                    <img
-                                        src="./img/icon-fb.svg"
-                                        alt="Facebook Icon"
-                                        class="contact--icon"
-                                    />
-                                    <a
-                                        href="https://www.facebook.com/Pioneerpgd/"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        Pioneerpgd</a
-                                    >
-                                </div>
+                            <div class="service--img">
+                                <img
+                                    src="./img/specialise-soak-pits.jpg"
+                                    alt="Soak Pit Installation"
+                                    class="service--img-border service---img-specialise"
+                                />
                             </div>
                         </div>
-                        <!-- <div class="tukka">
-                            <img
-                                src="./img/tukka-dsk.png"
-                                alt="Tukka Employee of the month Desktop"
-                                class="tukka-dsk"
-                            />
-                            <img
-                                src="./img/tukka-mbl.png"
-                                alt="Tukka Employee of the month Mobile"
-                                class="tukka-mbl"
-                            />
-                        </div> -->
+
+                        <div class="service service-reverse">
+                            <div class="service--text flow">
+                                <div class="service--header">
+                                    <img
+                                        src="./img/icon-drainlaying.png"
+                                        alt="Icon Drainlaying"
+                                        class="service--icon"
+                                    />
+                                    <div>
+                                        <h3 class="text-grey text-width-min">
+                                            Stormwater, Sewer Drains, Channel
+                                            Drains and Sumps
+                                        </h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    Ensure your property stays dry and compliant
+                                    with our expert stormwater and sewer drain
+                                    services. We install, repair, and maintain
+                                    drainage systems to prevent blockages and
+                                    water buildup.
+                                </p>
+                                <p>
+                                    Need channel drains or sumps? We provide
+                                    efficient solutions to manage surface water
+                                    and protect your property.
+                                </p>
+                            </div>
+                            <div class="service--img">
+                                <img
+                                    src="./img/specialise-soak-pits.jpg"
+                                    alt="Soak Pit Installation"
+                                    class="service--img-border service---img-specialise"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="service service-reverse">
+                            <div class="service--text flow">
+                                <div class="service--header">
+                                    <img
+                                        src="./img/icon-plumbing.png"
+                                        alt="Icon Plumbing"
+                                        class="service--icon"
+                                    />
+                                    <div>
+                                        <h3 class="text-blue text-width-min">
+                                            Property and Lifestyle Block Water
+                                            Supplies & Leak Detection
+                                        </h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    Reliable water solutions for your property.
+                                    We install and maintain property water
+                                    supplies, ensuring clean and efficient water
+                                    access.
+                                </p>
+                                <p>
+                                    Need a system for your lifestyle block? We
+                                    provide tailored solutions for rural
+                                    properties, from storage tanks to filtration
+                                    systems.
+                                </p>
+                            </div>
+                            <div class="service--img">
+                                <img
+                                    src="./img/specialise-lifestyle-block.jpg"
+                                    alt="Lifestyle Block drainage installation"
+                                    class="service--img-border"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="service service-reverse">
+                            <div class="service--text flow">
+                                <div class="service--header">
+                                    <img
+                                        src="./img/icon-gasfitting.png"
+                                        alt="Icon Gasfitting"
+                                        class="service--icon"
+                                    />
+                                    <div>
+                                        <h3 class="text-orange text-width-min">
+                                            Hot Water Systems & Gas Leak Repairs
+                                        </h3>
+                                    </div>
+                                </div>
+                                <p>
+                                    Reliable hot water solutions and leak
+                                    repairs. We install and service hot water
+                                    systems to keep your home running
+                                    efficiently.
+                                </p>
+                                <p>
+                                    If you suspect a gas leak, we provide prompt
+                                    and professional repairs to ensure safety
+                                    and prevent damage. Get in touch to learn
+                                    more.
+                                </p>
+                            </div>
+                            <div class="service--img">
+                                <img
+                                    src="./img/specialise-testing.jpg"
+                                    alt="Gasfitting Services"
+                                    class="service--img-border"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-        </main>
+
+            <!-- REVIEWS -->
+            <section id="reviews" class="section bg-dark">
+                <div class="section--container">
+                    <div class="section--header">
+                        <h2 class="text-white">Customer Reviews</h2>
+                    </div>
+                    <div class="section--wrapper">
+                        <div class="reviews">
+                            <div class="review">
+                                <div class="stars">
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                </div>
+
+                                <div class="review--text text-width-med">
+                                    <div class="flow">
+                                        <p>
+                                            "I have just had the most awesome
+                                            experience with Pioneer PGD....
+                                        </p>
+                                        <p>
+                                            The job was completed to a very high
+                                            standard to which I am thoroughly
+                                            satisfied with, and I certainly have
+                                            no hesitation in recommending this
+                                            company to anyone who expects
+                                            professionalism, promptness,
+                                            honesty, timeliness, and a pleasure
+                                            to deal with which in my opinion is
+                                            a very rare commodity."
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4>—Mike K.</h4>
+                                        <p>Upper Hutt</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review">
+                                <div class="stars">
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                </div>
+
+                                <div class="review--text text-width-med">
+                                    <div class="flow">
+                                        <p>
+                                            "Excellent service and quality of
+                                            work - have worked with Pioneer
+                                            multiple times and each time they
+                                            have provided well thought through
+                                            solutions for our needs, and have
+                                            completed the work in a high quality
+                                            and timely manner.
+                                        </p>
+                                        <p>Definitely recommend!"</p>
+                                    </div>
+
+                                    <div>
+                                        <h4>—Ash H.</h4>
+                                        <p>Wellington CBD</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review">
+                                <div class="stars">
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./img/star.svg"
+                                        alt="Star"
+                                    />
+                                </div>
+
+                                <div class="review--text text-width-med">
+                                    <div class="flow">
+                                        <p>
+                                            "Aidan provides a good quick service
+                                            and is always fast to respond to my
+                                            queries. He always comes up with the
+                                            best quality solutions.
+                                        </p>
+                                        <p>
+                                            I recommend to everyone requiring a
+                                            great local plumbing, gas fitting
+                                            and drain laying service."
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>—Brydon P.</h4>
+                                        <p>Upper Hutt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section--cta">
+                        <a href="#">
+                            <button class="button--secondary">
+                                +25 Reviews on Google
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section footer--image">
+                <!-- <div class="footer--image"></div> -->
+            </section>
+
         <footer>
-            <p>
-                © Pioneer PGD Ltd.
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-            </p>
+            <div>
+                <p>
+                    © Pioneer PGD Ltd.
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </p>
+            </div>
+            <div>
+                <p>Certifying Plumbing, Gasfitting and Drainlaying</p>
+            </div>
         </footer>
     </body>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+                .register("/sw.js")
+                .then((registration) => {
+                    console.log("Service Worker registered:", registration);
+                })
+                .catch((error) => {
+                    console.log("Service Worker registration failed:", error);
+                });
+        }
+    </script>
 </html>
