@@ -48,7 +48,7 @@ img {
     max-width: 56ch;
 }
 
-.flow > * + * {
+.stack > * + * {
     margin-top: var(--spacing-medium);
 }
 
@@ -132,7 +132,7 @@ li {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--nav-height);
+    scroll-padding-top: calc(var(--nav-height) + var(--spacing-xsmall));
 }
 
 body {
@@ -403,11 +403,13 @@ a button {
 .contact,
 .thanks {
     background-color: var(--color-light);
-    min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+    min-height: calc(
+        100vh - var(--nav-height) - var(--footer-height) - var(--spacing-xsmall)
+    );
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: var(--nav-height);
+    margin-top: calc(var(--nav-height) + var(--spacing-xsmall));
 }
 
 .container--contact {
