@@ -227,6 +227,17 @@ a button {
     box-shadow: 0 0 15px var(--color-orange);
 }
 
+.button--logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.logo-google {
+    width: 25px;
+    height: 25px;
+}
+
 .nav--links {
     display: flex;
     align-items: center;
@@ -241,13 +252,11 @@ a button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-medium);
-    /* padding-inline: var(--spacing-medium); */
     padding-block-start: calc(var(--nav-height) + var(--spacing-medium));
     padding-block-end: var(--spacing-medium);
 }
 
 .hero--inner {
-    /* color: var(--color-light); */
     display: flex;
     align-items: center;
     padding-inline: var(--spacing-large);
@@ -305,7 +314,7 @@ a button {
 }
 
 .section--cta {
-    padding-top: var(--spacing-xlarge);
+    padding-top: var(--spacing-large);
     display: flex;
     justify-content: center;
 }
@@ -327,7 +336,6 @@ a button {
 
 .service--text {
     padding: var(--spacing-medium) var(--spacing-medium);
-    /* padding-block-start: var(--spacing-medium); */
     max-width: 72ch;
 }
 
@@ -390,16 +398,10 @@ a button {
     border-radius: var(--border-radius-medium);
 }
 
-.tukka {
-    position: absolute;
-    width: 380px;
-    right: 0;
-    bottom: 40px;
-    pointer-events: none;
-}
-
 /* CONTACT */
-
+.hidden {
+    display: none;
+}
 .contact,
 .thanks {
     background-color: var(--color-light);
@@ -569,7 +571,6 @@ footer {
 
     .service--img-border {
         border-radius: var(--border-radius-medium);
-        /* border: 1px solid var(--color-primary); */
     }
 
     .section {
@@ -660,10 +661,6 @@ footer {
     form {
         max-width: 450px;
         margin: 0 auto;
-    }
-
-    .tukka {
-        display: none;
     }
 }
 

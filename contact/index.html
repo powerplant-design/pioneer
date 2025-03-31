@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Plumbing, Gasfitting and Drainlaying servicing Upper Hutt, Lower Hutt, Petone and the greater Wellington region, New Zealand"
+            content="Plumbing, Gasfitting and Drainlaying servicing Upper Hutt, Pinehaven, Trentham, Silverstream and the Greater Wellington Region, New Zealand."
         />
         <meta name="theme-color" content="silver" />
         <meta name="robots" content="index,follow" />
@@ -20,10 +20,10 @@
         <meta property="og:url" content="https://www.pioneerpgd.co.nz/" />
         <meta
             property="og:description"
-            content="Plumbing, Gasfitting and Drainlaying servicing the greater Wellington region, New Zealand"
+            content="Plumbing, Gasfitting and Drainlaying servicing Upper Hutt, Pinehaven, Trentham, Silverstream and the Greater Wellington Region, New Zealand."
         />
         <meta property="og:image" content="../img/sharing.jpg" />
-        <title>Pioneer PGD</title>
+        <title>Pioneer PGD Contact</title>
         <link rel="stylesheet" href="../css/base.css" />
         <link rel="stylesheet" href="../css/normalize.css" />
         <link rel="preload" href="../css/main.css" as="style" />
@@ -80,6 +80,7 @@
                                 name="contact"
                                 action="../thanks/"
                                 method="POST"
+                                netlify-honeypot="bot-field"
                                 data-netlify="true"
                             >
                                 <div class="form-5050">
@@ -103,6 +104,15 @@
                                             placeholder="Phone"
                                     /></label>
                                 </div>
+                                <label class="hidden">
+                                    <input
+                                        name="bot-field"
+                                        type="text"
+                                        id="bot-field"
+                                        aria-label="Location"
+                                        placeholder="Location"
+                                    />
+                                </label>
                                 <label>
                                     <input
                                         required
@@ -138,46 +148,20 @@
                         </div>
 
                         <div class="container--contact-inner contacts">
-                            <div class="info">
+                            <div class="info stack">
                                 <p>
-                                    Certifying Plumbers,
-                                    Gasfitters&nbsp;and&nbsp;Drainlayers
-                                </p>
-                                <p>
-                                    Servicing
                                     <a
-                                        href="https://www.upperhuttcity.com/Home"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Upper Hutt</a
-                                    >,
-                                    <a
-                                        href="http://www.huttcity.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Lower Hutt</a
-                                    >,
-                                    <a
-                                        href="https://www.huttvalleynz.com/your-valley/petone/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Petone</a
-                                    >,
-                                    <a
-                                        href="https://poriruacity.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Porirua</a
-                                    >,
-                                    <a
-                                        href="https://wellington.govt.nz/"
-                                        target="blank"
-                                        rel="noopener noreferrer"
-                                        >Wellington City</a
+                                        href="https://maps.app.goo.gl/2xYpwGhxJtKB6sjr8"
+                                        target="_blank"
                                     >
-                                    and the greater Wellington region.
+                                        Certifying Plumbing, Gasfitting and
+                                        Drainlaying,
+                                    </a>
+                                    servicing Upper Hutt, Pinehaven, Trentham,
+                                    Silverstream and the Greater Wellington
+                                    Region.
                                 </p>
-                                <p>Monday&#8212;Friday / 7:30am&#8212;5pm</p>
+                                <p>Monday&#8212;Friday | 9am&#8212;5pm</p>
                             </div>
                             <div class="info--contacts">
                                 <div class="contact--single">
@@ -187,7 +171,7 @@
                                         class="contact--icon"
                                     />
                                     <a href="tel:+64-27-301-299"
-                                        >+64 27 301 2999</a
+                                        >027 301 2999</a
                                     >
                                     <p class="call-now">
                                         &#8592; Click to call now
@@ -222,12 +206,6 @@
                                     >
                                 </div>
                             </div>
-                            <div class="tukka">
-                                <img
-                                    src="../img/tukka-dsk.png"
-                                    alt="Tukka Employee of the month Desktop"
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,16 +225,4 @@
             </div>
         </footer>
     </body>
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker
-                .register("/sw.js")
-                .then((registration) => {
-                    console.log("Service Worker registered:", registration);
-                })
-                .catch((error) => {
-                    console.log("Service Worker registration failed:", error);
-                });
-        }
-    </script>
 </html>
