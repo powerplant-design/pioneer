@@ -56,8 +56,22 @@ img {
     padding-block-start: var(--spacing-medium);
 }
 
+.pad-bottom-medium {
+    padding-block-end: var(--spacing-medium);
+}
+
+.pad-bottom-large {
+    padding-block-end: var(--spacing-large);
+}
+
 .stack > * + * {
     margin-top: var(--spacing-medium);
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .text-white {
@@ -255,6 +269,11 @@ a button {
     gap: var(--spacing-large);
 }
 
+.nav--links_mbl {
+    display: flex;
+    gap: var(--spacing-large);
+}
+
 /* SECTIONS */
 
 .hero {
@@ -294,8 +313,7 @@ a button {
 }
 
 .hero--certified {
-    width: 180px;
-    margin-top: var(--spacing-large);
+    width: 160px;
 }
 
 .thanks {
@@ -558,11 +576,17 @@ footer {
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     h4 {
         font-size: 1.1rem;
+    }
+
+    .center-tablet {
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     nav {
@@ -598,7 +622,7 @@ footer {
     }
 
     .section {
-        padding-top: var(--spacing-large);
+        padding-block: var(--spacing-large);
         padding-bottom: var(--spacing-medium);
         padding-inline: var(--spacing-medium);
     }
@@ -607,7 +631,7 @@ footer {
         padding-bottom: var(--spacing-medium);
     }
     .section--cta {
-        padding-top: var(--spacing-medium);
+        padding-block: var(--spacing-medium);
     }
 
     .section-mbl {
@@ -690,7 +714,20 @@ footer {
 
 @media screen and (max-width: 700px) {
     * {
-        --footer-height: 60px;
+        --footer-height: 100px;
+    }
+
+    .nav--links_mbl {
+        background-color: var(--color-light);
+        position: fixed;
+        gap: unset;
+        bottom: 0;
+        right: var(--spacing-medium);
+        left: var(--spacing-medium);
+        padding: var(--spacing-medium);
+        justify-content: space-around;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
     }
 
     .show-mbl {
@@ -764,8 +801,9 @@ footer {
     }
 
     footer {
-        height: unset;
+        /* height: unset; */
         flex-direction: column;
+        justify-content: flex-start;
         padding: var(--spacing-small) 0 var(--spacing-medium);
     }
 
