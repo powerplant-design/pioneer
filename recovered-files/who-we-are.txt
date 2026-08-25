@@ -1,0 +1,22 @@
+<!-- WHO WE ARE -->
+<section id="about" class="section bg-image">
+    <div class="section--container | stack-large">
+        <div class="about">
+            <div class="about--text | stack">
+                <span class="section-label">Why Pioneer PGD</span>
+                <h2 class="text-balance">Owner-Operated, Upper Hutt Based</h2>
+                <div class="section-content | stack">
+                    <p>Pioneer PGD is owned and operated from Trentham in Upper Hutt, holding certifying plumber, gasfitter and drainlayer licences (PGDB), the highest level issued for all three trades. One call covers everything, every job is built to code, and certificates of compliance come standard.</p>
+                    <p>We hold 45+ five-star Google reviews, quote fixed prices after a site visit, and handle council consents and sign-off for you. No callout surprises, no city-job prioritisation, just local, certified tradespeople.</p>
+                </div>
+                <div class="cta-dual">
+                    <a href="/contact/"><button class="button--primary">Contact us</button></a>
+                    <a href="/about/"><button class="button--secondary">Learn more</button></a>
+                </div>
+            </div>
+            <div class="about--badge">
+                <img src="/img/pioneer-certified.svg" alt="Certified Plumbing, Gasfitting and Drainlaying badges" />
+            </div>
+        </div>
+    </div>
+</section>

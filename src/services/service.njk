@@ -1,0 +1,67 @@
+---
+layout: base.njk
+pagination:
+    data: services
+    size: 1
+    alias: service
+permalink: /services/{{ service.slug }}/
+---
+
+{% set crumbs = [
+    { "name": "Home", "url": "/" },
+    { "name": "Services", "url": "/services/" },
+    { "name": service.name, "url": "/services/" ~ service.slug ~ "/" }
+] %}
+{% set heroTitle = service.name %}
+{% set heroText = service.intro | safe %}
+{% set heroImage = service.image %}
+{% set heroAlt = service.imageAlt %}
+{% include "partials/hero.njk" %}
+
+<section class="section">
+    <div class="section--container">
+        <div class="service">
+            <div class="service--text">
+                <div class="service--header">
+                    <img src="{{ service.icon }}" alt="{{ service.iconAlt }}" class="service--icon" />
+                    <div>
+                        <h3 class="{{ service.colourClass }}">{{ service.name }}</h3>
+                        {% if service.homeH4 %}<h4>{{ service.homeH4 }}</h4>{% endif %}
+                    </div>
+                </div>
+                <ul>
+                    {% for b in service.bullets %}<li>{{ b }}</li>{% endfor %}
+                </ul>
+            </div>
+            {# <div class="service--img">
+                <img src="{{ service.image }}" alt="{{ service.imageAlt }}" class="service--img-border" />
+            </div> #}
+        </div>
+    </div>
+</section>
+
+{% set faqs = service.faqs %}{% include "partials/faq.njk" %}
+
+{% set rel = [] %}
+{% for s in services %}
+{% if s.slug in service.relatedServices %}
+{% set _ = rel.push(s) %}
+{% endif %}
+{% endfor %}
+{% if rel.length %}
+<section class="section">
+    <div class="section--container stack">
+        <h2>Related Services</h2>
+        <div class="hub-grid">
+            {% for s in rel %}
+            {% set card = s %}{% include "partials/service-card.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- REVIEWS -->
+{% include "partials/reviews-section.njk" %}
+
+{% include "partials/who-we-are.njk" %}

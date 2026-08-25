@@ -1,0 +1,101 @@
+---
+layout: base.njk
+title: About Pioneer PGD | Pioneer PGD
+description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the local story, our licences, PGDB registration, and how we work.
+---
+
+<div class="page">
+    {% set crumbs = [{ name: "Home", url: "/" }, { name: "About", url: "/about/" }] %}
+    {% set heroTitle = "About Pioneer PGD" %}
+    {% set heroText = "Pioneer PGD is an Upper Hutt company holding certifying plumber, gasfitter and drainlayer licences, one local team across all three trades." %}
+    {% set heroImage = "/img/services-gasfitting.jpg" %}
+    {% set heroAlt = "About Pioneer PGD, certifying plumber, gasfitter and drainlayer" %}
+    {% include "partials/hero.njk" %}
+
+    <section class="section">
+        <div class="section--container stack-large">
+            <h2>The Local Story</h2>
+            <div class="section-content">
+            <p>
+                Pioneer PGD is owned and operated from Upper Hutt. We live where we
+                work, Pinehaven, Trentham, Silverstream and the surrounding
+                suburbs, and we're here week in, week out. Being genuinely local
+                means faster response, honest advice, and no city-job
+                prioritisation for Hutt Valley customers.
+            </p>
+            <p>
+                The name says it: Plumbing, Gasfitting and Drainlaying. Most homes
+                need all three at some point, and it's far easier to deal with one
+                certified company that covers everything than to juggle three
+                separate tradesmen who don't talk to each other.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section--container stack">
+            <h2>Certifying Licences</h2>
+            <p>
+                Pioneer PGD holds <strong>certifying plumber, certifying gasfitter
+                and certifying drainlayer</strong> licences, the highest level
+                issued by the Plumbers, Gasfitters and Drainlayers Board (PGDB).
+                That means every job is built to the New Zealand Building Code and
+                signed off by us, and new installations come with certificates of
+                compliance.
+            </p>
+            <p>
+                We're also fully registered with the Board, you can verify our
+                licences at any time. It's the difference between a tradesman and
+                a certified professional, and it's non-negotiable for us.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section--container stack">
+            <h2>How We Work</h2>
+            <div class="local-notes stack">
+                <p><strong>Fixed quotes.</strong> You know the price before work starts, no estimates, no surprises.</p>
+                <p><strong>Site visits.</strong> For drainage and soak pit work we visit and check soil and access first; for hot water we can usually quote from a couple of questions and photos.</p>
+                <p><strong>Consent handled for you.</strong> New drainage and plumbing often needs council consent, we prepare it, arrange inspections and manage sign-off.</p>
+                <p><strong>Certified sign-off.</strong> Every job is built to code and certified, with certificates of compliance for new installations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-mbl">
+        <div class="section--container | stack-large">
+            <span class="section-label">Where We Excel</span>
+            <div class="section--header | stack">
+                <h2>Our Specialties</h2>
+                <p class="section-intro">The jobs we get called for most, and the ones we know inside out.</p>
+            </div>
+            <div class="section--wrapper">
+                <div class="card-grid card-grid--2">
+                    {% for s in services %}
+                    {% if s.specialty %}
+                    <a href="/services/{{ s.slug }}/" class="home-card home-card--specialty">
+                        <div class="home-card--img">
+                            <img src="{{ s.specialty.image }}" alt="{{ s.specialty.imageAlt }}" />
+                        </div>
+                        <div class="home-card--body">
+                            <div class="home-card--header">
+                                <img class="home-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                                <h3>{{ s.specialty.heading | safe }}</h3>
+                            </div>
+                        </div>
+                    </a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section--container">
+            {% include "partials/who-we-are.njk" %}
+        </div>
+    </section>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Services | Pioneer PGD
+description: Plumbing, gasfitting and drainlaying services in Upper Hutt and the Hutt Valley, soak pits, blocked drains, CCTV, stormwater, hot water cylinders, lifestyle blocks and gas.
+---
+
+{% set crumbs = [{ name: "Home", url: "/" }, { name: "Services", url: "/services/" }] %}
+{% set heroTitle = "Pioneer PGD Services" %}
+{% set heroText = "Drainlaying, plumbing and gasfitting in Upper Hutt and the Hutt Valley, one local company with certifying licences across all three trades. Every service is fixed-quote and signed off to code." %}
+{% set heroImage = "/img/services-drainlaying.jpg" %}
+{% set heroAlt = "Pioneer PGD services, drainlaying, plumbing and gasfitting" %}
+{% include "partials/hero.njk" %}
+
+{% for s in services %}
+{% if s.type == "trade" %}
+<section class="section">
+    <div class="section--container | stack-large">
+        <div class="hub-trade">
+            <img src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+            <h2>{{ s.name }}</h2>
+        </div>
+        <div class="hub-grid">
+            {% set card = s %}{% include "partials/service-card.njk" %}
+            {% for svc in services %}
+            {% if svc.type == "service" and svc.trade == s.name %}
+            {% set card = svc %}{% include "partials/service-card.njk" %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endfor %}
+
+{% include "partials/why-pioneer.njk" %}

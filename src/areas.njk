@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Areas We Service | Pioneer PGD
+description: Plumbing, gasfitting and drainlaying across Upper Hutt, Lower Hutt and Wellington — local, certified trades serving the whole Hutt Valley.
+---
+
+<div class="page">
+    {% set crumbs = [{ name: "Home", url: "/" }, { name: "Areas", url: "/areas/" }] %}
+    {% set heroTitle = "Areas We Service" %}
+    {% set heroText = "Based in Upper Hutt and working across the whole Hutt Valley and Wellington. Every area page lists the suburbs we cover, the local conditions that matter, and the services available there." %}
+    {% set heroImage = "/img/services-plumbing.jpg" %}
+    {% set heroAlt = "Areas serviced by Pioneer PGD across the Hutt Valley and Wellington" %}
+    {% include "partials/hero.njk" %}
+
+    <section class="section">
+        <div class="section--container">
+            <div class="hub-grid">
+                {% for card in areas %}{% include "partials/area-card.njk" %}{% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section--container">
+            {% include "partials/who-we-are.njk" %}
+        </div>
+    </section>
+</div>

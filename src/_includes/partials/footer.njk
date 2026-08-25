@@ -1,10 +1,50 @@
-<footer{% if page.url != "/" %} style="height: unset;"{% endif %}>
-    <div>
-        <p>
-            &copy; {{ site.legalName }}. {{ currentYear() }}
-        </p>
+<footer>
+    <div class="footer--links">
+        <div>
+            <h4>Services</h4>
+            {% for s in services %}
+            {% if s.type == "trade" %}
+            <a href="/services/{{ s.slug }}/">{{ s.name }}</a>
+            {% endif %}
+            {% endfor %}
+            <a href="/services/">All Services</a>
+        </div>
+        <div>
+            <h4>Specialties</h4>
+            {% for s in services %}
+            {% if s.specialty %}
+            <a href="/services/{{ s.slug }}/">{{ s.specialty.heading | safe }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div>
+            <h4>Areas</h4>
+            {% for a in areas %}
+            <a href="/areas/{{ a.slug }}/">{{ a.name }}</a>
+            {% endfor %}
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="/">Home</a>
+            <a href="/about/">About Pioneer PGD</a>
+            <a href="/#reviews">Customer Reviews</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <a href="{{ site.phoneHref }}">{{ site.phone }}</a>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+            <a href="/contact/">Contact form</a>
+        </div>
     </div>
-    <div>
-        <p>Certifying Plumbing, Gasfitting and Drainlaying</p>
+    <div class="footer--bottom">
+        <div>
+            <p>
+                &copy; {{ site.legalName }}. {{ currentYear() }}
+            </p>
+        </div>
+        <div>
+            <p>Certifying Plumbing, Gasfitting and Drainlaying</p>
+        </div>
     </div>
 </footer>

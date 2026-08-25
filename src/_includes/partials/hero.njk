@@ -1,0 +1,21 @@
+<section class="hero page-hero">
+    <div class="hero--inner">
+        <div class="hero--content | stack-large">
+            <div class="hero--text stack">
+                {% include "partials/breadcrumbs.njk" %}
+                <h1 class="text-balance">{{ heroTitle }}</h1>
+                <p>{{ heroText }}</p>
+            </div>
+            <div class="flex hide-mbl">
+                <a href="/contact/"
+                ><button class="button--primary">
+                    Contact now
+                </button></a
+                >
+            </div>
+        </div>
+    </div>
+    <div class="hero--img-wrap">
+        <img src="{{ heroImage }}" alt="{{ heroAlt }}" class="hero--img" />
+    </div>
+</section>

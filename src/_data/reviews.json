@@ -1,0 +1,108 @@
+{
+    "google": {
+        "count": 57,
+        "rating": "5.0",
+        "url": "https://maps.app.goo.gl/KY2k2oL1HLFBE1S46"
+    },
+    "list": [
+        {
+            "isHomepage": true,
+            "stars": 5,
+            "paragraphs": [
+                "I have just had the most awesome experience with Pioneer PGD....",
+                "The job was completed to a very high standard to which I am thoroughly satisfied with, and I certainly have no hesitation in recommending this company to anyone who expects professionalism, promptness, honesty, timeliness, and a pleasure to deal with which in my opinion is a very rare commodity."
+            ],
+            "author": "Mike K.",
+            "location": "Upper Hutt",
+            "services": ["plumbing", "gasfitting", "drainlaying"],
+            "isLong": false
+        },
+        {
+            "isHomepage": true,
+            "stars": 5,
+            "paragraphs": [
+                "Excellent service and quality of work - have worked with Pioneer multiple times and each time they have provided well thought through solutions for our needs, and have completed the work in a high quality and timely manner.",
+                "Definitely recommend!"
+            ],
+            "author": "Ash H.",
+            "location": "Wellington CBD",
+            "services": ["plumbing", "gasfitting", "drainlaying"],
+            "isLong": false
+        },
+        {
+            "isHomepage": true,
+            "stars": 5,
+            "paragraphs": [
+                "Aidan provides a good quick service and is always fast to respond to my queries. He always comes up with the best quality solutions.",
+                "I recommend to everyone requiring a great local plumbing, gas fitting and drain laying service."
+            ],
+            "author": "Brydon P.",
+            "location": "Upper Hutt",
+            "services": ["plumbing", "gasfitting", "drainlaying"],
+            "isLong": false
+        },
+        {
+            "isHomepage": false,
+            "stars": 5,
+            "paragraphs": [
+                "Excellent service and a professional job done to a high standard.",
+                "Aidan was not only a very good communicator but offered invaluable advice about the many options available to us.",
+                "I would definitely call him back for any more jobs and recommend him to others."
+            ],
+            "author": "Dinesh N.",
+            "location": "Upper Hutt",
+            "services": ["plumbing", "gasfitting", "drainlaying"],
+            "isLong": false
+        },
+        {
+            "isHomepage": false,
+            "stars": 5,
+            "paragraphs": [
+                "Thank you Aidan for a fantastic and awesome job.",
+                "I have concrete patio at the back of my house which collects and pools water between my lawn and patio. I emailed several drainlayers. Aidan was the only one who replied to my email immediately. So I gave him the job. It was the best decision I ever made.",
+                "Not only was it crafted to perfection. It looks beautiful now. Aidan really puts his heart in doing a great job. I could see it in the finished work. He is so dedicated and passionate about his craft. Not only that, he really cares about your dilemma and gives you wonderful advices. Thank you so much for this Aidan. Will definitely call you back for some of the projects and fixes we discussed as soon as I am able to come up with the budget. You won't regret hiring him. Five stars for him."
+            ],
+            "author": "Rodney L.",
+            "location": "Upper Hutt",
+            "services": ["drainlaying"],
+            "isLong": true
+        },
+        {
+            "isHomepage": false,
+            "stars": 5,
+            "paragraphs": [
+                "Excellent service and advice from Aidan. He came and replaced the element in hot water cylinder the same day so I was not left with no hot water for days. Promptly replaced various worn out items.",
+                "Very much appreciated. Thank you Aidan."
+            ],
+            "author": "Della D.",
+            "location": "Upper Hutt",
+            "services": ["plumbing", "gasfitting"],
+            "isLong": false
+        },
+        {
+            "isHomepage": false,
+            "stars": 5,
+            "paragraphs": [
+                "I had tried multiple other plumbers in the Hutt Valley previously without success, Aidan basically came in and had the problem scoped and fixed within a week, and it was a fairly complicated drain laying fix that he approached in the most cost effective manner for us.",
+                "We won’t be using anyone else from now on."
+            ],
+            "author": "Rain S.",
+            "location": "Upper Hutt",
+            "services": ["plumbing"],
+            "isLong": false
+        },
+        {
+            "isHomepage": false,
+            "stars": 5,
+            "paragraphs": [
+                "Aidan had fabricated and installed a plinth for my washing machine this week. Aidan is a terrific problem solver and over the years has come up with many ingenious life-enhancing plumbing solutions for my home.  He is a great communicator, always prompt and professional and tidies up.",
+                "I highly recommend his company."
+            ],
+            "author": "Maureen C.",
+            "location": "Upper Hutt",
+            "services": ["plumbing"],
+            "isLong": false
+        }
+    ]
+}
+

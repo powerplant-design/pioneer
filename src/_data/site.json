@@ -7,11 +7,22 @@
     "phoneHref": "tel:+64273012999",
     "email": "office@pioneerpgd.co.nz",
     "hours": "Monday&#8212;Friday | 9am&#8212;5pm",
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "serviceAreaText": "Servicing Upper Hutt, Pinehaven, Trentham, Silverstream and the Greater Wellington Region.",
     "facebook": "https://www.facebook.com/Pioneerpgd/",
-    "googleReviewsUrl": "https://maps.app.goo.gl/KY2k2oL1HLFBE1S46",
     "googleMapsUrl": "https://maps.app.goo.gl/2xYpwGhxJtKB6sjr8",
-    "googleReviewCount": 45,
-    "googleRating": "5.0",
+    "address": {
+        "addressLocality": "Upper Hutt",
+        "addressRegion": "Wellington",
+        "addressCountry": "NZ"
+    },
+    "geo": {
+        "latitude": -41.1244,
+        "longitude": 175.0714
+    },
+    "sameAs": [
+        "https://www.facebook.com/Pioneerpgd/"
+    ],
     "adsId": "AW-654919024",
     "conversionSendTo": "AW-654919024/NRFeCIiot7waEPCKpbgC"
 }

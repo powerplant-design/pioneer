@@ -1,0 +1,40 @@
+<section id="reviews" class="section bg-light">
+    <div class="section--container | stack-large">
+        <h2>Customer Reviews</h2>
+        <div class="section--wrapper">
+            <div class="reviews">
+                {% for r in reviews.list %}
+                {% if r.isHomepage is defined and r.isHomepage %}
+                <div class="review">
+                    <div class="stars">
+                        {% for i in range(1, r.stars + 1) %}
+                        <img class="star" src="/img/star.svg" alt="Star" />
+                        {% endfor %}
+                    </div>
+
+                    <div class="review--text text-width-med">
+                        <div class="stack">
+                            {% for p in r.paragraphs %}
+                            <p>{{ p | safe }}</p>
+                            {% endfor %}
+                        </div>
+
+                        <div>
+                            <h4>{{ r.author }}</h4>
+                            <p>{{ r.location }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="section--cta" style="text-align: center;">
+            <a href="{{ reviews.google.url }}" target="_blank">
+                <button class="button--secondary button--logo">
+                    <p>+{{ reviews.google.count }} Google Reviews</p> <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" /><p>({{ reviews.google.rating }})</p>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>

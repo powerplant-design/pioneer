@@ -1,0 +1,14 @@
+{% set tradeSlug = card.trade | lower %}
+<a href="/services/{{ card.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+    <div class="hub-card--img">
+        <img src="{{ card.image }}" alt="{{ card.imageAlt }}" />
+    </div>
+    <div class="hub-card--body">
+        <div class="hub-card--header">
+            <img class="hub-card--icon" src="{{ card.icon }}" alt="{{ card.iconAlt }}" />
+            <h3 class="{{ card.colourClass }}">{{ card.name }}</h3>
+        </div>
+        <p>{{ card.intro }}</p>
+        <span class="hub-card--more">Learn more ›</span>
+    </div>
+</a>

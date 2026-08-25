@@ -1,23 +1,26 @@
+{% set pageTitle = title or (service.name and (service.name ~ " | " ~ site.name)) or (area.name and (area.name ~ " | " ~ site.name)) or (site.name ~ " LTD") %}
+{% set pageDesc = description or service.description or area.description %}
 <meta charset="UTF-8" />
 <meta name="generator" content="Powerplant.design" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ description }}" />
+<meta name="description" content="{{ pageDesc }}" />
 <meta name="theme-color" content="silver" />
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
 <meta name="subject" content="Plumbing Gasfitting and Drainlaying" />
 <link rel="apple-touch-icon" href="/img/homescreen.jpg" />
 <link rel="icon" href="/fav.ico" type="image/x-icon" />
-<meta property="og:title" content="{{ ogTitle or site.name + ' LTD' }}" />
+<meta property="og:title" content="{{ ogTitle or pageTitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta
     property="og:description"
-    content="{{ ogDescription or description }}"
+    content="{{ ogDescription or pageDesc }}"
 />
 <meta property="og:image" content="{{ site.url }}/img/sharing.jpg" />
-<title>{{ title }}</title>
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<title>{{ pageTitle }}</title>
 <link rel="stylesheet" href="/css/base.css" />
 <link rel="stylesheet" href="/css/normalize.css" />
 <link rel="preload" href="/css/main.css" as="style" />

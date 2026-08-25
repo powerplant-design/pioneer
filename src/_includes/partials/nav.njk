@@ -17,28 +17,17 @@
         {% endif %}
     </div>
     <div class="nav--links">
-        {% if home %}
         <div class="nav--links_mbl">
-            <a href="#services">Services</a>
-            <a href="#specialties">Specialties</a>
-            <a href="#reviews">Reviews</a>
+            <a href="/services/">Services</a>
+            <a href="/areas/">Areas</a>
+            <a href="/about/">About</a>
+            <a href="/reviews">Reviews</a>
         </div>
-        <a href="/contact/" class="hide-dsk"
-            ><button class="button--primary">Contact now</button></a
-        >
-        <a href="/contact/" class="hide-mbl"
-            ><button class="button--secondary">Contact</button></a
-        >
-        {% else %}
-        <a href="/#services" class="hide-mbl">Services</a>
-        <a href="/#specialties" class="hide-mbl">Specialties</a>
-        <a href="/#reviews" class="hide-mbl">Reviews</a>
         <a href="/contact/" class="hide-dsk{% if disableContact %} disable{% endif %}"
             ><button class="button--primary">Contact now</button></a
         >
         <a href="/contact/" class="hide-mbl{% if disableContact %} disable{% endif %}"
             ><button class="button--secondary">Contact</button></a
         >
-        {% endif %}
     </div>
 </nav>
