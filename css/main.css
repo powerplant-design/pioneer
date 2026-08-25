@@ -1497,9 +1497,14 @@ footer {
         padding: var(--spacing-large) var(--spacing-medium);
     }
 
+    .trust-bar {
+        padding-block: var(--spacing-medium);
+        background: var(--color-light);
+    }
+
     .home-hero {
         height: auto;
-        min-height: calc(100vh - var(--nav-height));
+        /* min-height: calc(100vh - var(--nav-height)); */
     }
 
     .home-hero--inner {
