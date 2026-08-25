@@ -20,7 +20,7 @@ permalink: /areas/{{ area.slug }}/
 
 <section class="section">
     <div class="section--container stack">
-        <h2>{{ area.name }} Local Knowledge</h2>
+        <h2>Local Knowledge for {{ area.name }}</h2>
         <div class="local-notes stack">
             {% for n in area.localNotes %}<p>{{ n | safe }}</p>{% endfor %}
         </div>

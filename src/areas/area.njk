@@ -7,7 +7,7 @@ pagination:
 permalink: /areas/{{ area.slug }}/
 ---
 
-<div class="page">
+<div class="page | stack">
     {% set crumbs = [
         { "name": "Home", "url": "/" },
         { "name": "Areas", "url": "/areas/" },
@@ -21,7 +21,7 @@ permalink: /areas/{{ area.slug }}/
 
     <section class="section">
         <div class="section--container stack">
-            <h2>Local Knowledge — {{ area.name }}</h2>
+            <h2>Local Knowledge for {{ area.name }}</h2>
             <div class="local-notes stack">
                 {% for n in area.localNotes %}<p>{{ n | safe }}</p>{% endfor %}
             </div>
@@ -48,9 +48,5 @@ permalink: /areas/{{ area.slug }}/
 
     {% set faqs = area.faqs %}{% include "partials/faq.njk" %}
 
-    <section class="section">
-        <div class="section--container">
-            {% include "partials/who-we-are.njk" %}
-        </div>
-    </section>
+    {% include "partials/who-we-are.njk" %}
 </div>
