@@ -246,7 +246,7 @@ li {
 .bg-image {
     padding: var(--spacing-xlarge) var(--spacing-medium) !important;
     border: 1px solid black;
-    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pgd-footer.jpg);
+    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pioneer-hero-dsk.jpg);
     background-position: center top;
     color: white;
 }
@@ -257,7 +257,7 @@ li {
 
 .section {
     border-radius: var(--border-radius-medium);
-    padding: var(--spacing-large) var(--spacing-medium) var(--spacing-xlarge);
+    padding: var(--spacing-xlarge) var(--spacing-medium) var(--spacing-xlarge);
 }
 
 .section--container {
@@ -449,6 +449,138 @@ nav {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* ================================================================
+   8B. HOME HERO
+   ================================================================ */
+
+.home-hero {
+    height: calc(100vh - var(--nav-height) - 150px);
+    margin-top: var(--nav-height);
+}
+
+.home-hero--inner {
+    position: relative;
+    height: 100%;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-hero--inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../img/pgd-footer.jpg) 65% center/cover no-repeat;
+}
+
+.home-hero--inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 90% at 50% 62%,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.28) 42%,
+        rgba(0, 0, 0, 0) 72%);
+}
+
+.home-hero--content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+}
+
+.hero-logo {
+    display: block;
+    width: clamp(200px, 30vw, 320px);
+    height: auto;
+    margin: 0 auto var(--spacing-xlarge);
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.85))
+            drop-shadow(0 10px 22px rgba(0, 0, 0, 0.7));
+}
+
+.home-hero h1 {
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8),
+                 0 2px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: var(--spacing-medium);
+}
+
+.hero-sub {
+    font-size: var(--step-0);
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    margin-bottom: var(--spacing-large);
+}
+
+.hero-ctas {
+    display: flex;
+    gap: var(--spacing-medium);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ================================================================
+   8C. TRUST BAR
+   ================================================================ */
+
+.trust-bar {
+    /* background-color: var(--color-light); */
+    border-radius: var(--border-radius-medium);
+    /* border-bottom: 1px solid var(--color-grey-light); */
+}
+
+.trust-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: var(--spacing-small);
+}
+
+.trust-icon {
+    width: 220px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.trust-item h3 {
+    color: var(--color-grey-light);
+    font-size: var(--step--2);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.trust-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.trust-star {
+    width: 24px;
+    height: 24px;
+}
+
+.trust-review-link h3 {
+    transition: color 300ms;
+}
+
+.trust-review-link:hover h3 {
+    color: var(--color-orange);
 }
 
 /* ================================================================
@@ -785,6 +917,8 @@ nav {
 
 .about--badge {
     display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xlarge);
     justify-content: center;
     align-items: center;
 }
@@ -1190,6 +1324,11 @@ footer {
         max-width: 450px;
         margin: 0 auto;
     }
+
+    .trust-items {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-large);
+    }
 }
 
 /* --- Mobile (max-width: 700px) --- */
@@ -1320,5 +1459,22 @@ footer {
 
     .form-50 {
         width: 100%;
+    }
+
+    .hero-logo {
+        width: clamp(160px, 50vw, 240px);
+    }
+
+    .home-hero--content {
+        padding: var(--spacing-large) var(--spacing-medium);
+    }
+
+    .home-hero {
+        height: auto;
+        min-height: calc(100vh - var(--nav-height));
+    }
+
+    .home-hero--inner {
+        min-height: calc(100vh - var(--nav-height));
     }
 }

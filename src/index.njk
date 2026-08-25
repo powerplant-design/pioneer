@@ -5,34 +5,45 @@ description: Plumbing, Gasfitting and Drainlaying servicing Upper Hutt, Pinehave
 ogTitle: Pioneer PGD LTD
 ---
 
-<section class="hero">
-    <div class="hero--inner">
-        <div class="hero--content">
-            <div class="hero--text stack">
-                <h1>
-                    Drainlaying, Plumbing and Gasfitting Services
-                </h1>
-                <p>
-                    Owned and Operated from Upper Hutt, Wellington
-                </p>
+<section class="home-hero">
+    <div class="home-hero--inner">
+        <div class="home-hero--content">
+            <img src="/img/pioneer-logo-white.png" alt="Pioneer PGD logo" class="hero-logo" />
+            <h1>Certified Plumbing, Gasfitting and Drainlaying</h1>
+            <p class="hero-sub">Owned and operated from Upper Hutt and serving Pinehaven, Trentham, Silverstream, Lower and Upper Hutt and the Greater Wellington region.</p>
+            <div class="hero-ctas">
+                <a href="#services"><button class="button--secondary">Services</button></a>
+                <a href="/contact/"><button class="button--primary">Contact now</button></a>
             </div>
-            <div class="flex hide-mbl">
-                <a href="#services"
-                ><button class="button--secondary">
-                    Services
-                </button></a
-                >
-                <a href="/contact/"
-                ><button class="button--primary">
-                    Contact now
-                </button></a
-                >
-            </div>
-            <img src="/img/pioneer-certified.svg" alt="Pioneer Certified Plumbing Gasfitting and Drainlaying" class="hero--certified pad-top-medium" />
         </div>
     </div>
-    <div class="hero--image"></div>
 </section>
+<!-- TRUST BAR -->
+<div class="trust-bar">
+    <div class="trust-items">
+        <div class="trust-item">
+            <h3>Trade Certified</h3>
+            <img src="/img/pioneer-certified.svg" alt="Pioneer PGD certified" class="trust-icon" />
+        </div>
+        <div class="trust-item">
+            <div class="trust-stars">
+                <img src="/img/star.svg" alt="" class="trust-star" />
+                <img src="/img/star.svg" alt="" class="trust-star" />
+                <img src="/img/star.svg" alt="" class="trust-star" />
+                <img src="/img/star.svg" alt="" class="trust-star" />
+                <img src="/img/star.svg" alt="" class="trust-star" />
+            </div>
+            <a href="{{ reviews.google.url }}" target="_blank" rel="noopener" class="trust-review-link">
+                <h3>5 Stars from {{ reviews.google.count }} Google Reviews</h3>
+            </a>
+        </div>
+        <div class="trust-item">
+            <h3>Proudly Supported By</h3>
+            <img src="/img/pgd-zip-hut-valley.png" alt="Certifying body logo" class="trust-icon" />
+        </div>
+    </div>
+</div>
+
 
 <!-- SERVICES -->
 <section id="services" class="section bg-light">
