@@ -23,15 +23,15 @@
    ================================================================ */
 
 * {
-    /* Fluid type scale — https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-    --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
-    --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
-    --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
-    --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
-    --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
-    --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
-    --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
-    --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+    /* Fluid type scale — https://utopia.fyi/type/calculator?c=360,18,1.15,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --step--2: clamp(0.75rem, 0.7439rem + 0.0273vw, 0.7656rem);
+    --step--1: clamp(0.8625rem, 0.8463rem + 0.0714vw, 0.9141rem);
+    --step-0: clamp(1.0313rem, 0.9982rem + 0.1414vw, 1.1426rem);
+    --step-1: clamp(1.2344rem, 1.1686rem + 0.2495vw, 1.4282rem);
+    --step-2: clamp(1.4766rem, 1.3689rem + 0.4075vw, 1.7853rem);
+    --step-3: clamp(1.7719rem, 1.6041rem + 0.627vw, 2.2316rem);
+    --step-4: clamp(2.1263rem, 1.882rem + 0.9281vw, 2.7896rem);
+    --step-5: clamp(2.5516rem, 2.2123rem + 1.347vw, 3.487rem);
 
     --border-radius-medium: 1rem;
     --border-radius-large: 3rem;
@@ -866,6 +866,21 @@ nav {
     padding: var(--spacing-large);
 }
 
+.cert-layout {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xlarge);
+}
+
+.cert-layout--text {
+    flex: 1;
+}
+
+.cert-layout--logo {
+    width: 260px;
+    flex-shrink: 0;
+}
+
 .suburb-chips {
     display: flex;
     flex-wrap: wrap;
@@ -1194,8 +1209,7 @@ footer {
     }
 
     .section {
-        padding-block: var(--spacing-large);
-        padding-bottom: var(--spacing-medium);
+        padding-block: var(--spacing-small);
         padding-inline: var(--spacing-medium);
     }
 
@@ -1203,16 +1217,22 @@ footer {
         padding-inline: var(--spacing-medium);
     }
 
-    .section--header {
-        padding-bottom: var(--spacing-medium);
-    }
 
     .section--cta {
         padding-block: var(--spacing-medium);
     }
 
-    .section-mbl {
+    .section:not(.bg-image) {
         padding-inline: 0;
+        background: transparent !important;
+    }
+
+    .faq {
+        padding-inline: var(--spacing-medium);
+    }
+
+    button {
+        padding: var(--spacing-small) var(--spacing-medium);
     }
 
     .section--wrapper {
@@ -1225,7 +1245,7 @@ footer {
 
     .service {
         grid-template-columns: 1fr;
-        padding: var(--spacing-medium);
+        padding: 0;
     }
 
     .service--img {
@@ -1334,8 +1354,16 @@ footer {
 /* --- Mobile (max-width: 700px) --- */
 @media screen and (max-width: 700px) {
     * {
-        --nav-height: 80px;
+        --nav-height: 65px;
         --footer-height: 100px;
+    }
+
+    h1 {
+        font-size: var(--step-3);
+    }
+
+    h2 {
+        font-size: var(--step-2);
     }
 
     .breadcrumbs {
@@ -1361,7 +1389,7 @@ footer {
         bottom: 0;
         right: var(--spacing-medium);
         left: var(--spacing-medium);
-        padding: var(--spacing-medium);
+        padding: var(--spacing-small) var(--spacing-medium);
         justify-content: space-around;
         box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
         border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
@@ -1475,6 +1503,11 @@ footer {
     }
 
     .home-hero--inner {
-        min-height: calc(100vh - var(--nav-height));
+        min-height: calc(100vh - var(--nav-height) - var(--nav-height));
+    }
+
+    .cert-layout {
+        flex-direction: column;
+        text-align: center;
     }
 }

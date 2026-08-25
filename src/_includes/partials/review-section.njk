@@ -1,12 +1,11 @@
 <section id="reviews" class="section section-mbl bg-light">
-    <div class="section--container | stack-large">
+    <div class="section--container">
         <div class="section--header">
             <h2>Customer Reviews</h2>
         </div>
         <div class="section--wrapper">
             <div class="reviews">
-                {% for r in reviews.list %}
-                {% if r.isHomepage is defined and r.isHomepage %}
+                {% for r in reviews.list | slice(0, 3) %}
                 <div class="review">
                     <div class="stars">
                         {% for i in range(1, r.stars + 1) %}
@@ -27,16 +26,8 @@
                         </div>
                     </div>
                 </div>
-                {% endif %}
                 {% endfor %}
             </div>
-        </div>
-        <div class="section--cta" style="text-align: center;">
-            <a href="{{ reviews.google.url }}" target="_blank">
-                <button class="button--secondary button--logo">
-                    <p>{{ reviews.google.count }} Google Reviews</p> <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" /><p>({{ reviews.google.rating }})</p>
-                </button>
-            </a>
         </div>
     </div>
 </section>

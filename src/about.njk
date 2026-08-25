@@ -8,7 +8,7 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
     {% set crumbs = [{ name: "Home", url: "/" }, { name: "About", url: "/about/" }] %}
     {% set heroTitle = "About Pioneer PGD" %}
     {% set heroText = "Pioneer PGD is an Upper Hutt company holding certifying plumber, gasfitter and drainlayer licences, one local team across all three trades." %}
-    {% set heroImage = "/img/services-gasfitting.jpg" %}
+    {% set heroImage = "/img/pgd-footer.jpg" %}
     {% set heroAlt = "About Pioneer PGD, certifying plumber, gasfitter and drainlayer" %}
     {% include "partials/hero.njk" %}
 
@@ -36,20 +36,25 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
     <section class="section">
         <div class="section--container | stack-large">
             <h2>Certifying Licences</h2>
-            <div class="local-notes stack">
-            <p>
-                Pioneer PGD holds <strong>certifying plumber, certifying gasfitter
-                and certifying drainlayer</strong> licences, the highest level
-                issued by the Plumbers, Gasfitters and Drainlayers Board (PGDB).
-                That means every job is built to the New Zealand Building Code and
-                signed off by us, and new installations come with certificates of
-                compliance.
-            </p>
-            <p>
-                We're also fully registered with the Board, you can verify our
-                licences at any time. It's the difference between a tradesman and
-                a certified professional, and it's non-negotiable for us.
-            </p>
+            <div class="local-notes">
+                <div class="cert-layout">
+                    <div class="cert-layout--text stack">
+                        <p>
+                            Pioneer PGD holds <strong>certifying plumber, certifying gasfitter
+                            and certifying drainlayer</strong> licences, the highest level
+                            issued by the Plumbers, Gasfitters and Drainlayers Board (PGDB).
+                            That means every job is built to the New Zealand Building Code and
+                            signed off by us, and new installations come with certificates of
+                            compliance.
+                        </p>
+                        <p>
+                            We're also fully registered with the Board, you can verify our
+                            licences at any time. It's the difference between a tradesman and
+                            a certified professional, and it's non-negotiable for us.
+                        </p>
+                    </div>
+                    <img src="/img/pioneer-certified.svg" alt="Certified Plumbing, Gasfitting and Drainlaying badges" class="cert-layout--logo" />
+                </div>
             </div>
         </div>
     </section>
@@ -95,9 +100,5 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
         </div>
     </section>
 
-    <section class="section">
-        <div class="section--container">
-            {% include "partials/who-we-are.njk" %}
-        </div>
-    </section>
+    {# {% include "partials/who-we-are.njk" %} #}
 </div>

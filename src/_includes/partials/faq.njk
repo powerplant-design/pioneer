@@ -1,8 +1,8 @@
 {% set faqLd = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [] } %}
 {% for f in faqs %}{% set _ = faqLd.mainEntity.push({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }) %}{% endfor %}
-<section class="section" aria-label="Frequently asked questions">
+<section class="section section-mbl" aria-label="Frequently asked questions">
     <div class="section--container faq | stack-large">
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQs</h2>
         {% for f in faqs %}
         <div class="stack">
             <h3>Q. {{ f.q }}</h3>

@@ -19,9 +19,9 @@ permalink: /areas/{{ area.slug }}/
     {% set heroAlt = area.imageAlt %}
     {% include "partials/hero.njk" %}
 
-    <section class="section">
+    <section class="section section-mbl">
         <div class="section--container stack">
-            <h2>Local Knowledge for {{ area.name }}</h2>
+            <h2 class="text-balance">Local Knowledge for {{ area.name }}</h2>
             <div class="local-notes stack">
                 {% for n in area.localNotes %}<p>{{ n | safe }}</p>{% endfor %}
             </div>

@@ -1,8 +1,8 @@
 [
     {
-        "name": "Soak Pits Upper Hutt",
+        "name": "Soak Pits",
         "shortName": "Soak Pits",
-        "slug": "soak-pits-upper-hutt",
+        "slug": "soak-pits",
         "type": "service",
         "hybrid": true,
         "trade": "Drainlaying",
@@ -11,7 +11,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/specialise-soak-pits.jpg",
         "imageAlt": "Soak Pit Installation",
-        "intro": "Soak pit design, installation and renewal in Upper Hutt — sized to your site and soil, consented with council, and built to keep your section free-draining for decades.",
+        "intro": "Soak pit design, installation and renewal across Upper Hutt, Lower Hutt, Wellington and the Greater Wellington Region. Sized to your site and soil, consented with council, and built to keep your section free-draining for decades.",
         "bullets": [
             "New soak pits and renewals, sized to your site",
             "Subsoil (sub-surface) drainage for wet sections",
@@ -38,7 +38,7 @@
         "faqs": [
             {
                 "q": "How big does a soak pit need to be?",
-                "a": "A soak pit is sized to the area it drains — typically your roof and paved surfaces — and how fast your soil absorbs water. As a rule of thumb, every 10 m² of roof needs around 1 m³ of soakage in free-draining soil, but clay sites need much more. We size every pit to your site and council requirements."
+                "a": "A soak pit is sized to the area it drains, typically your roof and paved surfaces, and how fast your soil absorbs water. As a rule of thumb, every 10 m² of roof needs around 1 m³ of soakage in free-draining soil, but clay sites need much more. We size every pit to your site and council requirements."
             },
             {
                 "q": "Do soak pits work in clay soil?",
@@ -54,7 +54,7 @@
             },
             {
                 "q": "How much does a soak pit cost in Upper Hutt?",
-                "a": "Cost depends on pit size, depth, access for excavation and what your soil is like. Most residential soak pits in Upper Hutt are straightforward excavator jobs, and we quote fixed prices after a site visit — get in touch for a free quote."
+                "a": "Cost depends on pit size, depth, access for excavation and what your soil is like. Most residential soak pits are straightforward excavator jobs, and we quote fixed prices after a site visit. Get in touch for a free quote."
             }
         ],
         "relatedServices": [
@@ -76,7 +76,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/specialise-drainage.jpg",
         "imageAlt": "Stormwater and Sewer Drainage",
-        "intro": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley — new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
+        "intro": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley, new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
         "bullets": [
             "New stormwater and sewer drains",
             "Channel drains and sumps",
@@ -102,7 +102,7 @@
         "faqs": [
             {
                 "q": "What's the difference between stormwater and sewer drains?",
-                "a": "Stormwater drains carry rainwater from roofs, driveways and yards to the stormwater system; sewer drains carry wastewater from your toilets, sinks and laundry to treatment. They're separate systems, and connecting the two is illegal — it overloads treatment plants and causes pollution."
+                "a": "Stormwater drains carry rainwater from roofs, driveways and yards to the stormwater system; sewer drains carry wastewater from your toilets, sinks and laundry to treatment. They're separate systems, and connecting the two is illegal, it overloads treatment plants and causes pollution."
             },
             {
                 "q": "Who is responsible for stormwater drains on my property?",
@@ -114,12 +114,12 @@
             }
         ],
         "relatedServices": [
-            "soak-pits-upper-hutt",
+            "soak-pits",
             "drainlaying",
             "new-build-drainage"
         ],
         "colourClass": "text-grey",
-        "description": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley — new drains, channel drains, sumps and sewer pump chambers, plus repairs."
+        "description": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley, new drains, channel drains, sumps and sewer pump chambers, plus repairs."
     },
     {
         "name": "Lifestyle Block Water & Drainage",
@@ -132,7 +132,7 @@
         "iconAlt": "Icon Plumbing",
         "image": "/img/specialise-lifestyle-block.jpg",
         "imageAlt": "Lifestyle Block drainage installation",
-        "intro": "Property water supplies and drainage for Upper Hutt lifestyle blocks — rain tanks, pumps, field drains, culverts and water supply lines, installed and repaired.",
+        "intro": "Property water supplies and drainage for Upper Hutt lifestyle blocks, rain tanks, pumps, field drains, culverts and water supply lines, installed and repaired.",
         "bullets": [
             "Rainwater tanks, pumps and pressure systems",
             "Property water supply repair and renewal",
@@ -156,24 +156,24 @@
         "faqs": [
             {
                 "q": "What are my lifestyle block water supply options?",
-                "a": "Most lifestyle blocks use rainwater tanks, sometimes topped up by a bore or carted water, with a pump and pressure system to deliver house pressure. We install and repair the full setup — tanks, pumps, pipework, filters and overflow — and can fix leaking supply lines from the street toby."
+                "a": "Most lifestyle blocks use rainwater tanks, sometimes topped up by a bore or carted water, with a pump and pressure system to deliver house pressure. We install and repair the full setup, tanks, pumps, pipework, filters and overflow, and can fix leaking supply lines from the street toby."
             },
             {
                 "q": "Can you install rainwater tanks in Upper Hutt?",
-                "a": "Yes — tank supply, pump and pressure vessel installation, and connecting overflow to a soak pit or drain are all regular work for us. Tanks over certain sizes may need council checking; we advise on that during the site visit."
+                "a": "Yes, tank supply, pump and pressure vessel installation, and connecting overflow to a soak pit or drain are all regular work for us. Tanks over certain sizes may need council checking; we advise on that during the site visit."
             },
             {
-                "q": "My water pump keeps cycling — what's wrong?",
-                "a": "Usually a failed pressure vessel, a leak downstream, or a worn pressure switch. Constant cycling wears the pump out fast. It's a quick diagnosis job — we test the vessel and switch and find any hidden leaks."
+                "q": "My water pump keeps cycling, what's wrong?",
+                "a": "Usually a failed pressure vessel, a leak downstream, or a worn pressure switch. Constant cycling wears the pump out fast. It's a quick diagnosis job, we test the vessel and switch and find any hidden leaks."
             }
         ],
         "relatedServices": [
             "plumbing",
-            "soak-pits-upper-hutt",
+            "soak-pits",
             "stormwater-sewer"
         ],
         "colourClass": "text-blue",
-        "description": "Lifestyle block water supplies and drainage in Upper Hutt — rain tanks, pumps, field drains, culverts and supply line repairs, supplied and installed."
+        "description": "Lifestyle block water supplies and drainage in Upper Hutt, rain tanks, pumps, field drains, culverts and supply line repairs, supplied and installed."
     },
     {
         "name": "Hot Water Cylinders",
@@ -185,7 +185,7 @@
         "iconAlt": "Icon Plumbing",
         "image": "/img/specialise-hot-water-cylander.jpg",
         "imageAlt": "Hot Water Cylinder",
-        "intro": "Hot water cylinders and systems in Upper Hutt and the Hutt Valley — mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
+        "intro": "Hot water cylinders and systems in Upper Hutt and the Hutt Valley, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
         "bullets": [
             "Mains and low pressure cylinders, supplied and installed",
             "Rinnai Infinity continuous flow units",
@@ -209,11 +209,11 @@
         },
         "faqs": [
             {
-                "q": "No hot water — what should I check first?",
-                "a": "Check the power or gas supply is on, and look for a tripped switch or blown fuse at the hot water cylinder. If you have a gas continuous-flow unit, check the batteries in the remote or ignition. If supplies are fine and the water still runs cold, call us — the element, valve or unit itself is likely at fault."
+                "q": "No hot water, what should I check first?",
+                "a": "Check the power or gas supply is on, and look for a tripped switch or blown fuse at the hot water cylinder. If you have a gas continuous-flow unit, check the batteries in the remote or ignition. If supplies are fine and the water still runs cold, call us, the element, valve or unit itself is likely at fault."
             },
             {
-                "q": "Mains pressure or low pressure cylinder — which is better?",
+                "q": "Mains pressure or low pressure cylinder, which is better?",
                 "a": "Mains pressure cylinders give stronger showers and let you use modern tapware; low pressure systems are cheaper in some setups but suffer weak flow. Most replacements today go to mains pressure. We assess your existing pipework and advise which suits your house and budget."
             },
             {
@@ -231,7 +231,7 @@
             "gasfitting"
         ],
         "colourClass": "text-blue",
-        "description": "Hot water cylinders in Upper Hutt and the Hutt Valley — mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired."
+        "description": "Hot water cylinders in Upper Hutt and the Hutt Valley, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired."
     },
     {
         "name": "Drainlaying",
@@ -245,7 +245,7 @@
         "imageAlt": "Drainlaying Services",
         "colourClass": "text-grey",
         "homeH4": "Domestic and Rural Installation, Maintenance and Servicing",
-        "intro": "Domestic and rural drainage installation, maintenance and servicing across Upper Hutt and the Greater Wellington Region — soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs by certifying drainlayers.",
+        "intro": "Domestic and rural drainage installation, maintenance and servicing across Upper Hutt and the Greater Wellington Region, soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs by certifying drainlayers.",
         "bullets": [
             "Soak Pits and Sumps, New or Renewal",
             "Sub Soil Drainage",
@@ -264,7 +264,7 @@
         "faqs": [
             {
                 "q": "What does a drainlayer do?",
-                "a": "A drainlayer installs and maintains the drains that carry stormwater, sewerage and wastewater away from your property — everything from new sewer and stormwater lines to soak pits, subsoil drainage and drain repairs. In New Zealand drainlaying is a licensed trade, so this work must be done by a certified drainlayer."
+                "a": "A drainlayer installs and maintains the drains that carry stormwater, sewerage and wastewater away from your property, everything from new sewer and stormwater lines to soak pits, subsoil drainage and drain repairs. In New Zealand drainlaying is a licensed trade, so this work must be done by a certified drainlayer."
             },
             {
                 "q": "Do I need a certified drainlayer for drainage work?",
@@ -272,18 +272,18 @@
             },
             {
                 "q": "Do you handle council consent for drainage work?",
-                "a": "Yes. Most new drainage work — new sewer lines, stormwater systems, soak pits — needs a building consent from your local council. We prepare the application, deal with council on your behalf, and arrange inspections at the right stages so the job is signed off properly."
+                "a": "Yes. Most new drainage work, new sewer lines, stormwater systems, soak pits, needs a building consent from your local council. We prepare the application, deal with council on your behalf, and arrange inspections at the right stages so the job is signed off properly."
             }
         ],
         "relatedServices": [
-            "soak-pits-upper-hutt",
+            "soak-pits",
             "blocked-drains",
             "cctv-drain-inspection",
             "stormwater-sewer",
             "drain-repairs",
             "new-build-drainage"
         ],
-        "description": "Certifying drainlayers in Upper Hutt — soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs across the Hutt Valley."
+        "description": "Certifying drainlayers in Upper Hutt, soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs across the Hutt Valley."
     },
     {
         "name": "Blocked Drains",
@@ -295,7 +295,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/services-drainlaying.jpg",
         "imageAlt": "Blocked Drain Clearing",
-        "intro": "Blocked drain clearing across Upper Hutt and the Hutt Valley — water jetting, root cutting and CCTV to clear the blockage and find what caused it, so it stays clear.",
+        "intro": "Blocked drain clearing across Upper Hutt and the Hutt Valley, water jetting, root cutting and CCTV to clear the blockage and find what caused it, so it stays clear.",
         "bullets": [
             "Water jetting and rodding",
             "CCTV inspection to find the cause",
@@ -306,11 +306,11 @@
         "faqs": [
             {
                 "q": "How do I know if my drain is blocked?",
-                "a": "The signs are hard to miss: sinks or the shower drain slowly, the toilet gurgles or fills higher than normal, and you may smell sewage outside. If more than one fixture backs up at once, the blockage is usually in the main drain — that's when to call us."
+                "a": "The signs are hard to miss: sinks or the shower drain slowly, the toilet gurgles or fills higher than normal, and you may smell sewage outside. If more than one fixture backs up at once, the blockage is usually in the main drain, that's when to call us."
             },
             {
                 "q": "How do you clear a blocked drain?",
-                "a": "We start by clearing with water jetting or drain rods, then use a CCTV camera inspection to find what caused the blockage — often tree roots, collapsed pipe or fat buildup. Clearing the symptom is quick; finding the cause stops it coming back."
+                "a": "We start by clearing with water jetting or drain rods, then use a CCTV camera inspection to find what caused the blockage, often tree roots, collapsed pipe or fat buildup. Clearing the symptom is quick; finding the cause stops it coming back."
             },
             {
                 "q": "Whose responsibility is a blocked drain?",
@@ -323,7 +323,7 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Blocked drain clearing in Upper Hutt and the Hutt Valley — water jetting, root cutting and CCTV to clear the blockage and stop it coming back."
+        "description": "Blocked drain clearing in Upper Hutt and the Hutt Valley, water jetting, root cutting and CCTV to clear the blockage and stop it coming back."
     },
     {
         "name": "CCTV Drain Inspection",
@@ -335,7 +335,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/services-drainlaying.jpg",
         "imageAlt": "CCTV Drain Inspection",
-        "intro": "CCTV drain camera inspections in Upper Hutt and the Hutt Valley — see inside your drains, find the exact fault and its depth, and get a clear report before any digging starts.",
+        "intro": "CCTV drain camera inspections in Upper Hutt and the Hutt Valley, see inside your drains, find the exact fault and its depth, and get a clear report before any digging starts.",
         "bullets": [
             "Full colour CCTV drain surveys",
             "Located and measured fault reports",
@@ -346,15 +346,15 @@
         "faqs": [
             {
                 "q": "What does a CCTV drain inspection cost?",
-                "a": "A CCTV drain inspection is an hourly-rate job and most residential inspections take under two hours, including a written report of what we find. Exact pricing depends on access and drain length — contact us for a quote."
+                "a": "A CCTV drain inspection is an hourly-rate job and most residential inspections take under two hours, including a written report of what we find. Exact pricing depends on access and drain length, contact us for a quote."
             },
             {
                 "q": "What can a CCTV drain inspection find?",
-                "a": "The camera shows the inside of the pipe in detail: tree root intrusion, cracks and collapsed sections, offset joints, fat buildup, and where a blockage or leak sits — with measured depths so any dig-up is precise."
+                "a": "The camera shows the inside of the pipe in detail: tree root intrusion, cracks and collapsed sections, offset joints, fat buildup, and where a blockage or leak sits, with measured depths so any dig-up is precise."
             },
             {
                 "q": "Should I get drains checked before buying a house?",
-                "a": "Yes — it's cheap insurance. Older Wellington suburbs have clay and earthenware drains that crack and invite tree roots. A pre-purchase drain inspection can reveal five-figure repair issues the building inspection won't see."
+                "a": "Yes, it's cheap insurance. Older Wellington suburbs have clay and earthenware drains that crack and invite tree roots. A pre-purchase drain inspection can reveal five-figure repair issues the building inspection won't see."
             }
         ],
         "relatedServices": [
@@ -363,7 +363,7 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "CCTV drain inspections in Upper Hutt and the Hutt Valley — see inside your drains, find the exact fault and get a clear report before digging starts."
+        "description": "CCTV drain inspections in Upper Hutt and the Hutt Valley, see inside your drains, find the exact fault and get a clear report before digging starts."
     },
     {
         "name": "Drain Repairs",
@@ -375,7 +375,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/services-drainlaying.jpg",
         "imageAlt": "Drain Repair",
-        "intro": "Drain repair and replacement in Upper Hutt and the Hutt Valley — CCTV-located, fixed-quote repairs using relining or renewal, with our own diggers and proper ground reinstatement.",
+        "intro": "Drain repair and replacement in Upper Hutt and the Hutt Valley, CCTV-located, fixed-quote repairs using relining or renewal, with our own diggers and proper ground reinstatement.",
         "bullets": [
             "CCTV-located repairs",
             "Pipe relining where suitable",
@@ -388,12 +388,12 @@
                 "a": "Repeated blockages, slow drains across multiple fixtures, wet patches or subsidence in the yard, and rat or drain-fly problems all point to a broken drain. A CCTV inspection confirms it and shows exactly where and what the fault is."
             },
             {
-                "q": "How are drains repaired — do you have to dig up my yard?",
-                "a": "Not always. Where the pipe has good alignment we can reline some drains with minimal digging. Where pipes have collapsed, excavation and replacement is needed — we have our own diggers and reinstate the ground properly."
+                "q": "How are drains repaired, do you have to dig up my yard?",
+                "a": "Not always. Where the pipe has good alignment we can reline some drains with minimal digging. Where pipes have collapsed, excavation and replacement is needed, we have our own diggers and reinstate the ground properly."
             },
             {
                 "q": "How much does drain repair cost?",
-                "a": "It depends on depth, length, access and whether relining or replacement is right. We CCTV first, then give a fixed quote — so you know the price before work starts."
+                "a": "It depends on depth, length, access and whether relining or replacement is right. We CCTV first, then give a fixed quote, so you know the price before work starts."
             }
         ],
         "relatedServices": [
@@ -402,7 +402,7 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Drain repairs in Upper Hutt and the Hutt Valley — CCTV-located, fixed-quote repairs using relining or renewal, with proper ground reinstatement."
+        "description": "Drain repairs in Upper Hutt and the Hutt Valley, CCTV-located, fixed-quote repairs using relining or renewal, with proper ground reinstatement."
     },
     {
         "name": "New Build Drainage",
@@ -414,7 +414,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/services-drainlaying.jpg",
         "imageAlt": "New Build Drainage",
-        "intro": "Sewer and stormwater drainage for new builds and extensions in Upper Hutt — pre-slab pipework through to final connections, as-builts and council sign-off.",
+        "intro": "Sewer and stormwater drainage for new builds and extensions in Upper Hutt, pre-slab pipework through to final connections, as-builts and council sign-off.",
         "bullets": [
             "Pre-slab pipework",
             "Sewer and stormwater drains to code",
@@ -424,7 +424,7 @@
         "faqs": [
             {
                 "q": "Do you do drainage for new builds?",
-                "a": "Yes — sewer and stormwater drainage for new homes and extensions, from pre-slab pipework through to final connections and as-built sign-off. We work with your builder and arrange council inspections at each stage."
+                "a": "Yes, sewer and stormwater drainage for new homes and extensions, from pre-slab pipework through to final connections and as-built sign-off. We work with your builder and arrange council inspections at each stage."
             },
             {
                 "q": "When should the drainlayer be involved in a new build?",
@@ -432,7 +432,7 @@
             },
             {
                 "q": "Do you handle as-builts and council sign-off?",
-                "a": "Yes — consent inspections, drainage as-built plans and the certifying sign-off that your council needs to close the building consent."
+                "a": "Yes, consent inspections, drainage as-built plans and the certifying sign-off that your council needs to close the building consent."
             }
         ],
         "relatedServices": [
@@ -441,7 +441,7 @@
             "drain-repairs"
         ],
         "colourClass": "text-grey",
-        "description": "Sewer and stormwater drainage for new builds in Upper Hutt — pre-slab pipework to final connections, as-builts and council sign-off."
+        "description": "Sewer and stormwater drainage for new builds in Upper Hutt, pre-slab pipework to final connections, as-builts and council sign-off."
     },
     {
         "name": "Plumbing",
@@ -455,7 +455,7 @@
         "imageAlt": "Plumbing Services",
         "colourClass": "text-blue",
         "homeH4": "General Domestic Installation, Maintenance and Servicing",
-        "intro": "General domestic plumbing installation, maintenance and servicing — hot water systems, bathrooms, tapware, leak detection, spouting and pumps, supplied and installed by a certifying plumber.",
+        "intro": "General domestic plumbing installation, maintenance and servicing, hot water systems, bathrooms, tapware, leak detection, spouting and pumps, supplied and installed by a certifying plumber.",
         "bullets": [
             "New Hot Water Systems, Cylinders, and Instantaneous Units, Supplied and Installed",
             "New Toilets, Vanities, Laundry Tubs, Washing Machines, and Dishwashers, Supplied and Installed",
@@ -471,7 +471,7 @@
         "faqs": [
             {
                 "q": "Are you a certifying plumber?",
-                "a": "Yes — Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. That means we can legally do all restricted plumbing work, sign off jobs, and issue certificates of compliance for new installations."
+                "a": "Yes, Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. That means we can legally do all restricted plumbing work, sign off jobs, and issue certificates of compliance for new installations."
             },
             {
                 "q": "Do you supply and install, or install only?",
@@ -479,7 +479,7 @@
             },
             {
                 "q": "Do you do small plumbing repairs?",
-                "a": "Yes. No job is too small — dripping taps, leaking pipes, toilet repairs, spouting and downpipes, and hot water faults are all regular work for us."
+                "a": "Yes. No job is too small, dripping taps, leaking pipes, toilet repairs, spouting and downpipes, and hot water faults are all regular work for us."
             }
         ],
         "relatedServices": [
@@ -487,7 +487,7 @@
             "lifestyle-block-water",
             "drainlaying"
         ],
-        "description": "Certifying plumber in Upper Hutt — hot water systems, bathrooms, tapware, leak detection and pumps, supplied and installed."
+        "description": "Certifying plumber in Upper Hutt, hot water systems, bathrooms, tapware, leak detection and pumps, supplied and installed."
     },
     {
         "name": "Gasfitting",
@@ -501,7 +501,7 @@
         "imageAlt": "Gasfitting Services",
         "colourClass": "text-orange",
         "homeH4": "New Domestic Installation",
-        "intro": "New domestic gas installation in Upper Hutt and the Hutt Valley — Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, installed and certified by a certifying gasfitter.",
+        "intro": "New domestic gas installation in Upper Hutt and the Hutt Valley, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, installed and certified by a certifying gasfitter.",
         "bullets": [
             "New External Rinnai Infinity Units, Supplied and Installed",
             "New Hobs, Supplied and Installed",
@@ -513,7 +513,7 @@
         "faqs": [
             {
                 "q": "Are you licensed gasfitters?",
-                "a": "Yes. Gasfitting is restricted work in New Zealand and must be done by a licensed gasfitter. Pioneer PGD holds a certifying gasfitting licence — the highest level — so we can install, test and certify gas appliances and pipework, and issue gas certificates of compliance."
+                "a": "Yes. Gasfitting is restricted work in New Zealand and must be done by a licensed gasfitter. Pioneer PGD holds a certifying gasfitting licence, the highest level, so we can install, test and certify gas appliances and pipework, and issue gas certificates of compliance."
             },
             {
                 "q": "Can you convert my appliance to LPG or natural gas?",
@@ -521,7 +521,7 @@
             },
             {
                 "q": "Do you install Rinnai Infinity units?",
-                "a": "Yes — new external Rinnai Infinity (continuous flow) water heaters, supplied and installed, are one of our most common gasfitting jobs. We size the unit to your household, run the new gas pipework if needed, and certify the installation."
+                "a": "Yes, new external Rinnai Infinity (continuous flow) water heaters, supplied and installed, are one of our most common gasfitting jobs. We size the unit to your household, run the new gas pipework if needed, and certify the installation."
             }
         ],
         "relatedServices": [
@@ -529,7 +529,7 @@
             "hot-water-cylinders",
             "plumbing"
         ],
-        "description": "Certifying gasfitter in Upper Hutt — Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed."
+        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed."
     },
     {
         "name": "Gas Leak Detection",
@@ -541,7 +541,7 @@
         "iconAlt": "Icon Gasfitting",
         "image": "/img/specialise-testing.jpg",
         "imageAlt": "Gas Leak Testing",
-        "intro": "Gas leak detection and repair in Upper Hutt and the Hutt Valley — pressure testing, electronic detection and certified repairs for natural gas and LPG systems.",
+        "intro": "Gas leak detection and repair in Upper Hutt and the Hutt Valley, pressure testing, electronic detection and certified repairs for natural gas and LPG systems.",
         "bullets": [
             "Gas leak detection and pressure testing",
             "Appliance and pipework leak repair",
@@ -555,7 +555,7 @@
             },
             {
                 "q": "Who do I call for a gas leak in NZ?",
-                "a": "For a strong smell or suspected major leak, turn off the gas at the meter or bottle and call your gas network provider — or 111 if it's dangerous. For leaks at appliances, BBQ lines or pipework on your property, call a licensed gasfitter: we detect and repair leaks and certify the fix."
+                "a": "For a strong smell or suspected major leak, turn off the gas at the meter or bottle and call your gas network provider, or 111 if it's dangerous. For leaks at appliances, BBQ lines or pipework on your property, call a licensed gasfitter: we detect and repair leaks and certify the fix."
             },
             {
                 "q": "How is a gas leak detected?",
@@ -567,6 +567,6 @@
             "hot-water-cylinders"
         ],
         "colourClass": "text-orange",
-        "description": "Gas leak detection and repair in Upper Hutt and the Hutt Valley — pressure testing, electronic detection and certified repairs for gas and LPG."
+        "description": "Gas leak detection and repair in Upper Hutt and the Hutt Valley, pressure testing, electronic detection and certified repairs for gas and LPG."
     }
 ]
