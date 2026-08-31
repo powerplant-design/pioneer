@@ -66,6 +66,52 @@
         "description": "Soak pit installation and renewal in Upper Hutt, sized to your soil and consented with council. Fixed prices from certifying drainlayers."
     },
     {
+        "name": "Soak Pit Installation Upper Hutt",
+        "shortName": "Soak Pits Upper Hutt",
+        "slug": "soak-pits-upper-hutt",
+        "type": "service",
+        "trade": "Drainlaying",
+        "priority": "P1",
+        "icon": "/img/icon-drainlaying.png",
+        "iconAlt": "Icon Drainlaying",
+        "image": "/img/specialise-soak-pits.jpg",
+        "imageAlt": "Soak Pit Installation Upper Hutt",
+        "intro": "Soak pit installation in Upper Hutt, sized for clay soil, percolation tested and council consented. New soak pits, renewals and stormwater soakage by certifying drainlayers based in Trentham.",
+        "bullets": [
+            "Soak pit design, excavation and installation",
+            "Percolation testing and soil assessment",
+            "Clay soil soakage solutions for Upper Hutt suburbs",
+            "Stormwater soakage pits and overflow connections",
+            "Geotextile-wrapped construction for long life",
+            "Council consent handled for you"
+        ],
+        "faqs": [
+            {
+                "q": "Do soak pits work in Upper Hutt clay soil?",
+                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's hill suburbs like Pinehaven, Birchville and Maoribank, we combine larger soakage areas with subsoil drainage, or connect overflow to the stormwater system. A percolation test shows what your site needs before you spend money."
+            },
+            {
+                "q": "How much does a soak pit cost in Upper Hutt?",
+                "a": "Cost depends on pit size, depth, access for excavation and what your soil is like. Most residential soak pits are straightforward excavator jobs, and we quote fixed prices after a site visit. Get in touch for a free quote."
+            },
+            {
+                "q": "Do I need council consent for a soak pit in Upper Hutt?",
+                "a": "Usually yes. A soak pit is a drainage asset and new drainage work generally requires a building consent, with the design checked against Upper Hutt City Council's requirements. As certifying drainlayers we prepare the consent application and arrange inspections so your pit is legal and signed off."
+            },
+            {
+                "q": "How long does a soak pit last?",
+                "a": "A properly sized and built soak pit should last 25 years or more. The usual cause of failure is sediment or fine clay clogging the soakage surface over time. Keeping sumps cleaned and the pit wrapped in the right geotextile fabric extends its life significantly."
+            }
+        ],
+        "relatedServices": [
+            "soak-pits",
+            "stormwater-sewer",
+            "blocked-drains"
+        ],
+        "colourClass": "text-grey",
+        "description": "Soak pit installation in Upper Hutt, clay soil solutions, percolation tested and council consented by certifying drainlayers."
+    },
+    {
         "name": "Stormwater and Sewer Drainage",
         "shortName": "Stormwater & Sewer",
         "slug": "stormwater-sewer",
@@ -120,6 +166,52 @@
         ],
         "colourClass": "text-grey",
         "description": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley, new drains, channel drains, sumps and sewer pump chambers, plus repairs."
+    },
+    {
+        "name": "Boggy Lawn Drainage",
+        "shortName": "Boggy Lawn Drainage",
+        "slug": "boggy-lawn-drainage",
+        "type": "service",
+        "trade": "Drainlaying",
+        "priority": "P1",
+        "icon": "/img/icon-drainlaying.png",
+        "iconAlt": "Icon Drainlaying",
+        "image": "/img/specialise-drainage.jpg",
+        "imageAlt": "Boggy Lawn Drainage Solutions",
+        "intro": "Boggy lawn and wet section drainage in Upper Hutt and the Hutt Valley, subsoil drainage, channel drains and soak pits to fix waterlogged yards, pooling and surface flooding.",
+        "bullets": [
+            "Subsoil (sub-surface) drainage for wet lawns",
+            "Channel drains for driveways and paths",
+            "Soak pits for surface water soakage",
+            "Drainage design for clay and hill sites",
+            "Excavation and ground reinstatement",
+            "Council consent where required"
+        ],
+        "faqs": [
+            {
+                "q": "Why is my lawn always wet and boggy?",
+                "a": "Common causes are clay soil that doesn't drain, a high water table, poor surface grading, or failed existing drainage. In Upper Hutt's hill suburbs, clay soil is the most common culprit — water sits on top instead of soaking through. We diagnose the cause and design a drainage solution that fixes it."
+            },
+            {
+                "q": "What is subsoil drainage?",
+                "a": "Subsoil drainage is a system of perforated pipes laid below the surface in a gravel bed, wrapped in geotextile fabric. It collects water from the soil above and carries it away to a soak pit or stormwater connection. It's the standard fix for boggy lawns and waterlogged sections."
+            },
+            {
+                "q": "How much does lawn drainage cost?",
+                "a": "It depends on the size of the area, depth required, access for excavation, and where the water needs to go. We quote fixed prices after a site visit — most residential lawn drainage jobs are straightforward excavator work."
+            },
+            {
+                "q": "Can you fix drainage on a hill site?",
+                "a": "Yes, hill sites in Upper Hutt often have clay soil and surface water running downhill across properties. We design drainage that intercepts the water flow, channels it underground, and discharges to a suitable point — soak pit, stormwater system, or daylight outlet."
+            }
+        ],
+        "relatedServices": [
+            "soak-pits",
+            "stormwater-sewer",
+            "drainlaying"
+        ],
+        "colourClass": "text-grey",
+        "description": "Boggy lawn drainage in Upper Hutt, subsoil drainage, channel drains and soak pits to fix waterlogged yards and pooling."
     },
     {
         "name": "Lifestyle Block Water & Drainage",
@@ -232,6 +324,52 @@
         ],
         "colourClass": "text-blue",
         "description": "Hot water cylinders in Upper Hutt and the Hutt Valley, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired."
+    },
+    {
+        "name": "Rinnai Infinity Installation",
+        "shortName": "Rinnai Infinity",
+        "slug": "rinnai-infinity",
+        "type": "service",
+        "trade": "Gasfitting",
+        "priority": "P1",
+        "icon": "/img/icon-gasfitting.png",
+        "iconAlt": "Icon Gasfitting",
+        "image": "/img/pioneer-works-rinnai.jpg",
+        "imageAlt": "Rinnai Infinity Installation Upper Hutt",
+        "intro": "Rinnai Infinity gas hot water installation in Upper Hutt and the Hutt Valley, supplied and installed by a certifying gasfitter. Replace your old cylinder with continuous flow hot water.",
+        "bullets": [
+            "Rinnai Infinity continuous flow units supplied and installed",
+            "Sizing to your household and usage",
+            "Gas pipework and connections",
+            "Removal and disposal of old cylinder",
+            "Gas certificate of compliance issued",
+            "Upgrades from low to mains pressure"
+        ],
+        "faqs": [
+            {
+                "q": "What is a Rinnai Infinity?",
+                "a": "A Rinnai Infinity is a gas-powered continuous flow hot water heater. Unlike a storage cylinder it heats water on demand, so you never run out of hot water. It's compact, wall-mounted, and uses less energy than keeping a large cylinder hot 24/7."
+            },
+            {
+                "q": "How much does a Rinnai Infinity cost to install?",
+                "a": "Cost depends on the model size, whether new gas pipework is needed, and how the old cylinder is removed. We supply and install the complete system and quote a fixed price after assessing your setup."
+            },
+            {
+                "q": "Can I replace my hot water cylinder with a Rinnai Infinity?",
+                "a": "Yes, that's one of our most common jobs. We remove the old cylinder, install the Rinnai unit in its place or on an external wall, run the new gas pipework, and certify the installation. You'll need a gas supply to the property — if you don't have one we can install that too."
+            },
+            {
+                "q": "How long does a Rinnai Infinity last?",
+                "a": "With regular servicing a Rinnai Infinity typically lasts 15–20 years. They have fewer failure points than storage cylinders because there's no anode to corrode and no tank to leak. Annual servicing keeps the warranty valid and the unit efficient."
+            }
+        ],
+        "relatedServices": [
+            "gasfitting",
+            "hot-water-cylinders",
+            "gas-leak-detection"
+        ],
+        "colourClass": "text-orange",
+        "description": "Rinnai Infinity gas hot water installation in Upper Hutt, supplied and installed by a certifying gasfitter. Replace your cylinder with continuous flow."
     },
     {
         "name": "Drainlaying",
@@ -490,6 +628,48 @@
         "description": "Certifying plumber in Upper Hutt, hot water systems, bathrooms, tapware, leak detection and pumps, supplied and installed."
     },
     {
+        "name": "Plumber Upper Hutt",
+        "shortName": "Plumber Upper Hutt",
+        "slug": "plumber-upper-hutt",
+        "type": "service",
+        "trade": "Plumbing",
+        "priority": "P1",
+        "icon": "/img/icon-plumbing.png",
+        "iconAlt": "Icon Plumbing",
+        "image": "/img/services-plumbing.jpg",
+        "imageAlt": "Plumber Upper Hutt",
+        "intro": "Certifying plumber in Upper Hutt, hot water, bathrooms, tapware, leak detection and pumps. Fixed quotes from a locally owned and operated plumbing company in Trentham.",
+        "bullets": [
+            "Hot water cylinder replacement and repair",
+            "Bathroom and kitchen plumbing",
+            "Tapware and fixture installation",
+            "Leak detection and repair",
+            "Spouting and downpipe repairs",
+            "Property water supplies and pumps"
+        ],
+        "faqs": [
+            {
+                "q": "Are you a certifying plumber in Upper Hutt?",
+                "a": "Yes, Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. We're based in Trentham, Upper Hutt, and work across the city and wider Hutt Valley every week."
+            },
+            {
+                "q": "Do you do emergency plumbing in Upper Hutt?",
+                "a": "We don't do after-hours callouts, but we respond quickly during business hours. For burst pipes, hot water failures and urgent leaks, call us and we'll get to you the same day where possible."
+            },
+            {
+                "q": "Do you charge callout fees?",
+                "a": "No callout fees. We quote fixed prices and you know the cost before work starts. For straightforward jobs we can usually quote over the phone or from photos."
+            }
+        ],
+        "relatedServices": [
+            "hot-water-cylinders",
+            "plumbing",
+            "drainlaying"
+        ],
+        "colourClass": "text-blue",
+        "description": "Certifying plumber in Upper Hutt, hot water, bathrooms, tapware, leak detection and pumps. Fixed quotes from Trentham."
+    },
+    {
         "name": "Gasfitting",
         "slug": "gasfitting",
         "type": "trade",
@@ -530,6 +710,48 @@
             "plumbing"
         ],
         "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed."
+    },
+    {
+        "name": "Gasfitter Upper Hutt",
+        "shortName": "Gasfitter Upper Hutt",
+        "slug": "gasfitter-upper-hutt",
+        "type": "service",
+        "trade": "Gasfitting",
+        "priority": "P1",
+        "icon": "/img/icon-gasfitting.png",
+        "iconAlt": "Icon Gasfitting",
+        "image": "/img/services-gasfitting.jpg",
+        "imageAlt": "Gasfitter Upper Hutt",
+        "intro": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations. Installed and certified by a locally owned gasfitting company.",
+        "bullets": [
+            "Rinnai Infinity gas hot water installation",
+            "Gas hob and heater installation",
+            "Gas pipework and property gas supplies",
+            "LPG bottle stations",
+            "Gas leak detection and repair",
+            "Gas certificates of compliance"
+        ],
+        "faqs": [
+            {
+                "q": "Are you licensed gasfitters in Upper Hutt?",
+                "a": "Yes. Pioneer PGD holds a certifying gasfitting licence, the highest level issued in New Zealand. We can install, test and certify gas appliances and pipework, and issue gas certificates of compliance. We're based in Upper Hutt and work across the Hutt Valley."
+            },
+            {
+                "q": "Do you install Rinnai Infinity units in Upper Hutt?",
+                "a": "Yes, new external Rinnai Infinity continuous flow water heaters, supplied and installed, are one of our most common gasfitting jobs. We size the unit to your household, run the new gas pipework if needed, and certify the installation."
+            },
+            {
+                "q": "Can you connect natural gas or LPG?",
+                "a": "We install and convert gas appliances for both natural gas and LPG, including Rinnai Infinity units, hobs and heaters. We also set up LPG bottle stations and property gas supplies."
+            }
+        ],
+        "relatedServices": [
+            "gasfitting",
+            "gas-leak-detection",
+            "hot-water-cylinders"
+        ],
+        "colourClass": "text-orange",
+        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations."
     },
     {
         "name": "Gas Leak Detection",

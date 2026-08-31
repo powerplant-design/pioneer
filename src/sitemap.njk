@@ -12,4 +12,14 @@ eleventyExcludeFromCollections: true
   </url>
 {%- endif %}
 {%- endfor %}
+{%- for s in services %}
+  <url>
+    <loc>{{ site.url }}/services/{{ s.slug }}/</loc>
+  </url>
+{%- endfor %}
+{%- for a in areas %}
+  <url>
+    <loc>{{ site.url }}/areas/{{ a.slug }}/</loc>
+  </url>
+{%- endfor %}
 </urlset>

@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+tags: area
 pagination:
     data: areas
     size: 1
@@ -41,7 +42,25 @@ permalink: /areas/{{ area.slug }}/
         <div class="section--container stack">
             <h2>Services in {{ area.name }}</h2>
             <div class="hub-grid">
-                {% for card in services %}{% include "partials/service-card.njk" %}{% endfor %}
+                {% set areaSlug = area.slug %}
+                {% set areaServices = [] %}
+                {% set otherServices = [] %}
+                {% for s in services %}
+                    {% set isAreaMatch = s.slug.endsWith("-" + areaSlug) %}
+                    {% set isOtherArea = false %}
+                    {% for a in areas %}
+                        {% if a.slug != areaSlug and s.slug.endsWith("-" + a.slug) %}
+                            {% set isOtherArea = true %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if isAreaMatch %}
+                        {% set _ = areaServices.push(s) %}
+                    {% elif not isOtherArea %}
+                        {% set _ = otherServices.push(s) %}
+                    {% endif %}
+                {% endfor %}
+                {% for card in areaServices %}{% include "partials/service-card.njk" %}{% endfor %}
+                {% for card in otherServices %}{% include "partials/service-card.njk" %}{% endfor %}
             </div>
         </div>
     </section>
