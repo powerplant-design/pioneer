@@ -1,0 +1,33 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "{{ service.name }}",
+    "provider": {
+        "@type": "Plumber",
+        "@id": "{{ site.url }}/#organization",
+        "name": "{{ site.name }}"
+    },
+    "description": "{{ service.intro | striptags | truncate(300) }}",
+    "areaServed": [
+        {"@type": "City", "name": "Upper Hutt"},
+        {"@type": "City", "name": "Lower Hutt"},
+        {"@type": "City", "name": "Wellington"}
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{{ service.name }}",
+        "itemListElement": [
+            {% for b in service.bullets %}
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{{ b }}"
+                }
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+}
+</script>

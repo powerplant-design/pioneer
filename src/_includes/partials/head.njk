@@ -1,12 +1,13 @@
 {% set pageTitle = title or (service.name and (service.name ~ " | " ~ site.name)) or (area.name and (area.name ~ " | " ~ site.name)) or (site.name ~ " LTD") %}
 {% set pageDesc = description or service.description or area.description %}
+{% set robots = robots or "index,follow" %}
 <meta charset="UTF-8" />
 <meta name="generator" content="Powerplant.design" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="{{ pageDesc }}" />
 <meta name="theme-color" content="silver" />
-<meta name="robots" content="index,follow" />
+<meta name="robots" content="{{ robots }}" />
 <meta name="googlebot" content="index,follow" />
 <meta name="subject" content="Plumbing Gasfitting and Drainlaying" />
 <link rel="apple-touch-icon" href="/img/homescreen.jpg" />
@@ -19,6 +20,12 @@
     content="{{ ogDescription or pageDesc }}"
 />
 <meta property="og:image" content="{{ site.url }}/img/sharing.jpg" />
+<meta property="og:locale" content="en_NZ" />
+<meta property="og:site_name" content="Pioneer PGD" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ ogTitle or pageTitle }}" />
+<meta name="twitter:description" content="{{ ogDescription or pageDesc }}" />
+<meta name="twitter:image" content="{{ site.url }}/img/sharing.jpg" />
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 <title>{{ pageTitle }}</title>
 <link rel="stylesheet" href="/css/base.css" />
