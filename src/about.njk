@@ -61,7 +61,7 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
                         <p>
                             We're also fully registered with the Board, you can verify our
                             licences at any time. It's the difference between a tradesman and
-                            a certified professional, and it's non-negotiable for us. Search for Aidan Hullet by name on the <a href="https://www2.pgdb.co.nz/public-register" target="_blank" rel="noopener">Public Register</a> to see for yourself.
+                            a certified professional, and it's non-negotiable for us. Search for Aidan Hullett by name on the <a href="https://www2.pgdb.co.nz/public-register" target="_blank" rel="noopener">Public Register</a> to see for yourself.
                         </p>
                     </div>
                     {% image "/src/img/pioneer-certifying-icons.png", "Certified Plumbing, Gasfitting and Drainlaying badges", [200, 400], "400px", "cert-layout--logo" %}
@@ -99,13 +99,14 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
                     {% endif %}
                     <a href="{{ sUrl }}" class="home-card home-card--specialty">
                         <div class="home-card--img">
-                            <img src="{{ s.specialty.image }}" alt="{{ s.specialty.imageAlt }}" />
+                            {% image s.specialty.image, s.specialty.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                         </div>
                         <div class="home-card--body">
                             <div class="home-card--header">
-                                <img class="home-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                                <img class="home-card--icon" src="{{ s.specialty.icon }}" alt="{{ s.specialty.iconAlt }}" />
                                 <h3>{{ s.specialty.heading | safe }}</h3>
                             </div>
+                            <span class="home-card--link">Learn more ›</span>
                         </div>
                     </a>
                     {% endif %}
