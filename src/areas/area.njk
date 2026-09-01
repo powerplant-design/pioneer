@@ -24,7 +24,7 @@ permalink: /areas/{{ area.slug }}/
         <div class="section--container stack">
             <h2 class="text-balance">Local Knowledge for {{ area.name }}</h2>
             <div class="local-notes stack">
-                {% for n in area.localNotes %}<p>{{ n | safe }}</p>{% endfor %}
+                {% for n in area.localNotes %}<p>{{ n | replace("{{reviews.google.count}}", reviews.google.count) | safe }}</p>{% endfor %}
             </div>
         </div>
     </section>
@@ -43,8 +43,6 @@ permalink: /areas/{{ area.slug }}/
             <h2>Services in {{ area.name }}</h2>
             <div class="hub-grid">
                 {% set areaSlug = area.slug %}
-                {% set areaServices = [] %}
-                {% set otherServices = [] %}
                 {% for s in services %}
                     {% set isAreaMatch = s.slug.endsWith("-" + areaSlug) %}
                     {% set isOtherArea = false %}
@@ -54,13 +52,47 @@ permalink: /areas/{{ area.slug }}/
                         {% endif %}
                     {% endfor %}
                     {% if isAreaMatch %}
-                        {% set _ = areaServices.push(s) %}
-                    {% elif not isOtherArea %}
-                        {% set _ = otherServices.push(s) %}
+                    {% set tradeSlug = s.trade | lower %}
+                    <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                        <div class="hub-card--img">
+                            {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                        </div>
+                        <div class="hub-card--body">
+                            <div class="hub-card--header">
+                                <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                                <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                            </div>
+                            <p>{{ s.intro }}</p>
+                            <span class="hub-card--more">Learn more ›</span>
+                        </div>
+                    </a>
                     {% endif %}
                 {% endfor %}
-                {% for card in areaServices %}{% include "partials/service-card.njk" %}{% endfor %}
-                {% for card in otherServices %}{% include "partials/service-card.njk" %}{% endfor %}
+                {% for s in services %}
+                    {% set isAreaMatch = s.slug.endsWith("-" + areaSlug) %}
+                    {% set isOtherArea = false %}
+                    {% for a in areas %}
+                        {% if a.slug != areaSlug and s.slug.endsWith("-" + a.slug) %}
+                            {% set isOtherArea = true %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if not isAreaMatch and not isOtherArea %}
+                    {% set tradeSlug = s.trade | lower %}
+                    <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                        <div class="hub-card--img">
+                            {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                        </div>
+                        <div class="hub-card--body">
+                            <div class="hub-card--header">
+                                <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                                <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                            </div>
+                            <p>{{ s.intro }}</p>
+                            <span class="hub-card--more">Learn more ›</span>
+                        </div>
+                    </a>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>

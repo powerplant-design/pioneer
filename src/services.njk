@@ -1,14 +1,15 @@
 ---
 layout: base.njk
 title: Services | Pioneer PGD
-description: Plumbing, gasfitting and drainlaying services in Upper Hutt and the Hutt Valley, soak pits, blocked drains, CCTV, stormwater, hot water cylinders, lifestyle blocks and gas.
+description: Plumbing, gasfitting and drainlaying services in Upper Hutt, the Hutt Valley and the Greater Wellington Region, soak pits, blocked drains, CCTV, stormwater, hot water cylinders, lifestyle blocks and gas.
 ---
 
 <div class="page | stack">
     {% set crumbs = [{ name: "Home", url: "/" }, { name: "Services", url: "/services/" }] %}
     {% set heroTitle = "Pioneer PGD Services" %}
-    {% set heroText = "Drainlaying, plumbing and gasfitting in Upper Hutt and the Hutt Valley, one local company with certifying licences across all three trades. Every service is fixed-quote and signed off to code." %}
-    {% set heroImage = "/img/services-drainlaying.jpg" %}
+    {% set heroTitleClass = "max-w-28ch" %}
+    {% set heroText = "Drainlaying, plumbing and gasfitting in Upper Hutt, the Hutt Valley and the Greater Wellington Region, one local company with certifying licences across all three trades. Every service is fixed-quote and signed off to code." %}
+    {% set heroImage = "/img/pioneer-who-we-are.jpg" %}
     {% set heroAlt = "Pioneer PGD services, drainlaying, plumbing and gasfitting" %}
     {% include "partials/hero.njk" %}
 
@@ -21,10 +22,36 @@ description: Plumbing, gasfitting and drainlaying services in Upper Hutt and the
                 <h2>{{ s.name }}</h2>
             </div>
             <div class="hub-grid">
-                {% set card = s %}{% include "partials/service-card.njk" %}
+                {% set tradeSlug = s.trade | lower %}
+                <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                    <div class="hub-card--img">
+                        {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="hub-card--body">
+                        <div class="hub-card--header">
+                            <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                            <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                        </div>
+                        <p>{{ s.intro }}</p>
+                        <span class="hub-card--more">Learn more ›</span>
+                    </div>
+                </a>
                 {% for svc in services %}
                 {% if svc.type == "service" and svc.trade == s.name %}
-                {% set card = svc %}{% include "partials/service-card.njk" %}
+                {% set tradeSlug = svc.trade | lower %}
+                <a href="/services/{{ svc.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                    <div class="hub-card--img">
+                        {% image svc.image, svc.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="hub-card--body">
+                        <div class="hub-card--header">
+                            <img class="hub-card--icon" src="{{ svc.icon }}" alt="{{ svc.iconAlt }}" />
+                            <h3 class="{{ svc.colourClass }}">{{ svc.name }}</h3>
+                        </div>
+                        <p>{{ svc.intro }}</p>
+                        <span class="hub-card--more">Learn more ›</span>
+                    </div>
+                </a>
                 {% endif %}
                 {% endfor %}
             </div>

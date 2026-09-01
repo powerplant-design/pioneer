@@ -21,9 +21,10 @@
             "Mangaroa",
             "Whiteman's Valley",
             "Kaitoke",
-            "Akatarawa"
+            "Akatarawa",
+            "Manor Park"
         ],
-        "intro": "Upper Hutt is Pioneer PGD's home turf \u2014 owned and operated from here, working here every week. From soak pits in the clay hill suburbs to hot water cylinders in the central city, we know the housing stock, the soil and what the council expects.",
+        "intro": "Upper Hutt is Pioneer PGD's home turf, owned and operated from here, working here every week. From soak pits in the clay hill suburbs to hot water cylinders in the central city, we know the housing stock, the soil and what the council expects.",
         "localNotes": [
             "Hill suburbs like Pinehaven, Birchville and Maoribank sit on clay. Soak pits and subsoil drainage need careful sizing to work here.",
             "Older areas like Trentham and Silverstream still have original earthenware drains that crack and invite tree roots.",
@@ -35,11 +36,11 @@
             "hot-water-cylinders",
             "lifestyle-block-water"
         ],
-        "description": "Plumber, gasfitter and drainlayer based in Upper Hutt \u2014 soak pits, drains, hot water and gas across Pinehaven, Trentham, Silverstream and the wider valley.",
+        "description": "Plumber, gasfitter and drainlayer based in Upper Hutt, soak pits, drains, hot water and gas across Pinehaven, Trentham, Silverstream and the wider valley.",
         "faqs": [
             {
                 "q": "What suburbs do you service in Upper Hutt?",
-                "a": "All of them \u2014 Upper Hutt Central, Trentham, Silverstream, Pinehaven, Heretaunga, Maoribank, Birchville, Totara Park, Clouston Park, Riverstone Terraces and the hill and lifestyle suburbs of Mangaroa, Brown Owl and Whiteman's Valley. We're based in Upper Hutt and work here every week."
+                "a": "All of them, Upper Hutt Central, Trentham, Silverstream, Pinehaven, Heretaunga, Maoribank, Birchville, Totara Park, Clouston Park, Riverstone Terraces and the hill and lifestyle suburbs of Mangaroa, Brown Owl and Whiteman's Valley. We're based in Upper Hutt and work here every week."
             },
             {
                 "q": "Why does Upper Hutt soil matter for drainage?",
@@ -47,7 +48,7 @@
             },
             {
                 "q": "Do you do a site visit before quoting?",
-                "a": "For drainage and soak pit work, yes \u2014 soil and access matter. For hot water cylinder replacements we can usually quote from a couple of quick questions and photos. Either way, quotes are fixed, not estimates."
+                "a": "For drainage and soak pit work, yes, soil and access matter. For hot water cylinder replacements we can usually quote from a couple of quick questions and photos. Either way, quotes are fixed, not estimates."
             }
         ],
         "image": "/img/specialise-soak-pits.jpg",
@@ -75,33 +76,33 @@
             "Point Howard",
             "Eastbourne"
         ],
-        "intro": "Pioneer PGD covers the whole Hutt Valley, including Lower Hutt's hill suburbs and bays. Whether it's a blocked drain in Naenae, a new hot water cylinder in Petone, or stormwater issues in Wainuiomata \u2014 we're across the hill regularly and quote fixed prices.",
+        "intro": "Pioneer PGD covers the whole Hutt Valley, including Lower Hutt's hill suburbs and bays. Whether it's a blocked drain in Naenae, a new hot water cylinder in Petone, or stormwater issues in Wainuiomata, we're across the hill regularly and quote fixed prices.",
         "localNotes": [
-            "Stokes Valley and Wainuiomata are hill suburbs with heavy clay soil and real proximity headwind for Wellington trades \u2014 but we're based in the Hutt Valley and work these suburbs weekly.",
-            "Petone and the Eastern bays have a mix of century-old villas and new builds \u2014 very different drainage and plumbing needs, both familiar work for us.",
-            "Stormwater flooding events hit the Hutt Valley hard in recent winters \u2014 channel drains, sumps and soakage are in high demand."
+            "Stokes Valley and Wainuiomata are hill suburbs with heavy clay soil and real proximity headwind for Wellington trades, but we're based in the Hutt Valley and work these suburbs weekly.",
+            "Petone and the Eastern bays have a mix of century-old villas and new builds, very different drainage and plumbing needs, both familiar work for us.",
+            "Stormwater flooding events hit the Hutt Valley hard in recent winters, channel drains, sumps and soakage are in high demand."
         ],
         "relatedServices": [
             "blocked-drains",
             "stormwater-sewer",
             "hot-water-cylinders"
         ],
-        "description": "Plumbing, gasfitting and drainlaying across Lower Hutt \u2014 Petone, Naenae, Wainuiomata and Stokes Valley, with fixed quotes from Hutt Valley-based certifying trades.",
+        "description": "Plumbing, gasfitting and drainlaying across Lower Hutt, Petone, Naenae, Wainuiomata and Stokes Valley, with fixed quotes from Hutt Valley-based certifying trades.",
         "faqs": [
             {
                 "q": "Do you travel from Upper Hutt to Lower Hutt?",
-                "a": "Yes, we work across the whole Hutt Valley every week \u2014 Petone, Avalon, Naenae, Stokes Valley, Wainuiomata and the Eastern bays. Being Hutt-based means faster response, with no city-job prioritisation that Wellington businesses often give."
+                "a": "Yes, we work across the whole Hutt Valley every week, Petone, Avalon, Naenae, Stokes Valley, Wainuiomata and the Eastern bays. Being Hutt-based means faster response, with no city-job prioritisation that Wellington businesses often give."
             },
             {
                 "q": "Do you charge callout fees in Lower Hutt?",
-                "a": "No callout fees. We quote fixed prices and you know the cost before work starts \u2014 the same as every job we do across the Hutt Valley."
+                "a": "No callout fees. We quote fixed prices and you know the cost before work starts, the same as every job we do across the Hutt Valley."
             },
             {
                 "q": "Do you work on older houses in Petone and the bays?",
                 "a": "Constantly. Petone's century-old villas and the Eastern bays have original galvanised and earthenware drains that crack and invite tree roots. Drain CCTV, repairs and hot water upgrades are our most common jobs there."
             }
         ],
-        "image": "/img/services-plumbing.jpg",
+        "image": "/img/pioneer-area-lowerhutt.jpg",
         "imageAlt": "Plumbing services in Lower Hutt by Pioneer PGD",
         "type": "plumbing"
     },
@@ -126,33 +127,33 @@
             "Island Bay",
             "Strathmore"
         ],
-        "intro": "We service central and suburban Wellington \u2014 from CBD apartments to hillside homes in Karori and Miramar. Wellington's older housing stock keeps us busy with drain repairs, hot water upgrades and gas installations, and Wellingtonians research before they call \u2014 our reviews and certifications are there for the checking.",
+        "intro": "We service central and suburban Wellington, from CBD apartments to hillside homes in Karori and Miramar. Wellington's older housing stock keeps us busy with drain repairs, hot water upgrades and gas installations, and Wellingtonians research before they call, our reviews and certifications are there for the checking.",
         "localNotes": [
-            "Wellington's pre-1930s housing stock means original galvanised and earthenware services that are now past their life \u2014 renewal, not repair, is often the right call.",
+            "Wellington's pre-1930s housing stock means original galvanised and earthenware services that are now past their life, renewal, not repair, is often the right call.",
             "Hillside suburbs like Karori, Brooklyn and Khandallah have tight sites where access planning matters for any drainage work.",
-            "Wellington customers research trades at NZ's highest rate \u2014 check our 45+ five-star Google reviews and PGDB certifications."
+            "Wellington customers research trades at NZ's highest rate, check our {{reviews.google.count}}+ five-star Google reviews and PGDB certifications."
         ],
         "relatedServices": [
             "drain-repairs",
             "hot-water-cylinders",
             "gasfitting"
         ],
-        "description": "Plumbing, gasfitting and drainlaying in Wellington \u2014 hot water, drain repairs and gas installations across the city's older housing stock, from certifying trades.",
+        "description": "Plumbing, gasfitting and drainlaying in Wellington, hot water, drain repairs and gas installations across the city's older housing stock, from certifying trades.",
         "faqs": [
             {
                 "q": "Do you service Wellington city from Upper Hutt?",
-                "a": "Yes \u2014 central Wellington, Karori, Brooklyn, Ngaio, Johnsonville, Miramar and the South Coast suburbs. Wellington's older housing stock keeps us busy with drain repairs, hot water and gas work."
+                "a": "Yes, central Wellington, Karori, Brooklyn, Ngaio, Johnsonville, Miramar and the South Coast suburbs. Wellington's older housing stock keeps us busy with drain repairs, hot water and gas work."
             },
             {
                 "q": "Are your prices higher in Wellington?",
-                "a": "No \u2014 we quote fixed prices for the job and the quote includes travel to Wellington. You'll see the total before we start."
+                "a": "No, we quote fixed prices for the job and the quote includes travel to Wellington. You'll see the total before we start."
             },
             {
                 "q": "Are you certified for gas work in Wellington?",
-                "a": "Yes \u2014 certifying plumber, gasfitter and drainlayer licences (PGDB). We can install, test and certify gas appliances and pipework, and issue certificates of compliance."
+                "a": "Yes, certifying plumber, gasfitter and drainlayer licences (PGDB). We can install, test and certify gas appliances and pipework, and issue certificates of compliance."
             }
         ],
-        "image": "/img/services-gasfitting.jpg",
+        "image": "/img/pioneer-area-wellington.jpg",
         "imageAlt": "Gasfitting services in Wellington by Pioneer PGD",
         "type": "gasfitting"
     }

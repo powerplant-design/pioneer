@@ -1,10 +1,9 @@
+const path = require("path");
+const eleventyImg = require("@11ty/eleventy-img");
+
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy({ "src/img/pioneer-certifying-icons.png": "img/pioneer-certifying-icons.png" });
-    eleventyConfig.addPassthroughCopy({ "src/img/pioneer-works-rinnai.jpg": "img/pioneer-works-rinnai.jpg" });
-    eleventyConfig.addPassthroughCopy({ "src/img/pioneer-areas.jpg": "img/pioneer-areas.jpg" });
-    eleventyConfig.addPassthroughCopy({ "src/img/pioneer-who-we-are.jpg": "img/pioneer-who-we-are.jpg" });
     eleventyConfig.addPassthroughCopy("fav.ico");
     eleventyConfig.addPassthroughCopy("llms.txt");
     eleventyConfig.addNunjucksGlobal("currentYear", () =>
@@ -16,6 +15,43 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("json", (value) => {
         return JSON.stringify(value);
     });
+    eleventyConfig.addFilter("replace", (str, find, replace) => {
+        return str.split(find).join(replace);
+    });
+
+    async function imageShortcode(src, alt, widths, sizes, classes) {
+        // Resolve path relative to project root
+        let inputPath = src;
+        if (src.startsWith("/src/")) {
+            inputPath = path.join(".", src);
+        } else if (src.startsWith("/img/")) {
+            inputPath = path.join(".", "src", src);
+        } else if (src.startsWith("/")) {
+            inputPath = path.join(".", "src", src);
+        } else if (!src.startsWith("src/") && !src.startsWith("./")) {
+            inputPath = path.join(".", "src", "img", src);
+        }
+
+        let metadata = await eleventyImg.default(inputPath, {
+            widths: widths || [400, 800, 1280],
+            formats: ["webp", "jpeg"],
+            outputDir: "_site/img",
+            urlPath: "/img"
+        });
+        let imageAttributes = {
+            alt,
+            sizes: sizes || "(min-width: 1280px) 1280px, (min-width: 800px) 800px, 400px",
+            loading: "lazy",
+            decoding: "async"
+        };
+        let html = eleventyImg.generateHTML(metadata, imageAttributes);
+        if (classes) {
+            html = html.replace('<picture>', `<picture class="${classes}">`);
+        }
+        return html;
+    }
+
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
     return {
         dir: {

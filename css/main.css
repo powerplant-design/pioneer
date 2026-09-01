@@ -66,6 +66,19 @@ img {
     display: block;
 }
 
+picture {
+    display: block;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.max-w-28ch {
+    max-width: 28ch;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: calc(var(--nav-height) + var(--spacing-xsmall));
@@ -114,7 +127,6 @@ h6 {
 }
 
 h1 {
-    max-width: 28ch;
     font-size: var(--step-4);
     font-weight: 700;
 }
@@ -246,8 +258,8 @@ li {
 .bg-image {
     padding: var(--spacing-xlarge) var(--spacing-medium) !important;
     border: 1px solid black;
-    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pioneer-hero-dsk.jpg);
-    background-position: center top;
+    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pgd-footer.jpg);
+    background-position: left center;
     color: white;
 }
 
@@ -431,6 +443,11 @@ nav {
     width: 160px;
 }
 
+.hero--certified img {
+    width: 100%;
+    height: auto;
+}
+
 .page-hero {
     min-height: calc(99vh - var(--nav-height));
     margin-top: var(--nav-height);
@@ -452,6 +469,12 @@ nav {
     aspect-ratio: 1;
 }
 
+.page-hero .hero--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ================================================================
    8B. HOME HERO
    ================================================================ */
@@ -467,7 +490,7 @@ nav {
     border-radius: var(--border-radius-medium);
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
 }
@@ -476,7 +499,7 @@ nav {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(../img/pgd-footer.jpg) 65% center/cover no-repeat;
+    background: url(../img/pioneer-home-hero.jpg) center center/cover no-repeat;
 }
 
 .home-hero--inner::after {
@@ -485,10 +508,10 @@ nav {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background: radial-gradient(120% 90% at 50% 62%,
-        rgba(0, 0, 0, 0.55) 0%,
-        rgba(0, 0, 0, 0.28) 42%,
-        rgba(0, 0, 0, 0) 72%);
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.3) 30%,
+        rgba(0, 0, 0, 0) 60%);
 }
 
 .home-hero--content {
@@ -505,6 +528,11 @@ nav {
     margin: 0 auto var(--spacing-xlarge);
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.85))
             drop-shadow(0 10px 22px rgba(0, 0, 0, 0.7));
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
 }
 
 .home-hero h1 {
@@ -559,6 +587,12 @@ nav {
     object-fit: contain;
 }
 
+.trust-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .trust-item h3 {
     color: var(--color-grey-light);
     font-size: var(--step--2);
@@ -568,12 +602,47 @@ nav {
 
 .trust-stars {
     display: flex;
-    gap: 4px;
+    gap: var(--spacing-tiny);
+    justify-content: center;
 }
 
 .trust-star {
     width: 24px;
     height: 24px;
+}
+
+/* .button--logo .trust-star {
+    width: 12px;
+    height: 12px;
+} */
+
+.button--logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 4px 8px;
+    padding: var(--spacing-medium) var(--spacing-large)
+}
+
+.button--logo .trust-stars {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.button--logo-text {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.button--logo .logo-google {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    width: var(--spacing-xlarge);
+    height: var(--spacing-xlarge);
 }
 
 .trust-review-link h3 {
@@ -641,6 +710,12 @@ nav {
 .hub-card--img {
     overflow: hidden;
     aspect-ratio: 4 / 3;
+}
+
+.hub-card--img picture {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .hub-card--img img {
@@ -742,6 +817,12 @@ nav {
 .home-card--img {
     overflow: hidden;
     aspect-ratio: 4 / 3;
+}
+
+.home-card--img picture {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .home-card--img img {
@@ -882,6 +963,11 @@ nav {
     flex-shrink: 0;
 }
 
+.cert-layout--logo img {
+    width: 100%;
+    height: auto;
+}
+
 .suburb-chips {
     display: flex;
     flex-wrap: wrap;
@@ -940,6 +1026,15 @@ nav {
 }
 
 .about--badge img {
+    max-width: 280px;
+    width: 100%;
+}
+
+.about--badge-img {
+    max-width: 280px;
+}
+
+.about--badge-img img {
     max-width: 280px;
     width: 100%;
 }
@@ -1398,6 +1493,14 @@ footer {
 
     .show-mbl {
         display: block;
+    }
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .cta-dual {
+        justify-content: center;
     }
 
     .hero {

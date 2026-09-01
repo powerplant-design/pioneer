@@ -5,7 +5,7 @@ description: Read customer reviews for Pioneer PGD plumbing, gasfitting and drai
 ---
 <section id="reviews" class="section  section-mbl bg-light | stack-large pad-top-nav-height">
     <div class="section--container | stack-large">
-        <h2 class="center">Customer Reviews</h2>
+        <h1 class="center">Customer Reviews</h1>
         <div class="section--wrapper">
             <div class="reviews">
                 {% for r in reviews.list %}
@@ -37,7 +37,17 @@ description: Read customer reviews for Pioneer PGD plumbing, gasfitting and drai
     <div class="section--cta" style="text-align: center;">
             <a href="{{ reviews.google.url }}" target="_blank">
                 <button class="button--secondary button--logo">
-                    <p>{{ reviews.google.count }} Google Reviews</p> <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" /><p>({{ reviews.google.rating }})</p>
+                    <div class="trust-stars">
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                    </div>
+                    <div class="button--logo-text">
+                        <p>{{ reviews.google.count }} Google Reviews</p>
+                    </div>
+                    <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" />
                 </button>
             </a>
         </div>

@@ -8,8 +8,7 @@ ogTitle: Pioneer PGD LTD
 <section class="home-hero">
     <div class="home-hero--inner">
         <div class="home-hero--content">
-            <img src="/img/pioneer-logo-white.png" alt="Pioneer PGD logo" class="hero-logo" />
-            <h1>Certified Plumbing, Gasfitting and Drainlaying</h1>
+            <h1 class="max-w-28ch">Certified Plumbing, Gasfitting and Drainlaying</h1>
             <p class="hero-sub">Owned and operated from Upper Hutt and serving Pinehaven, Trentham, Silverstream, Lower Hutt and the Greater Wellington region.</p>
             <div class="hero-ctas">
                 <a href="#services"><button class="button--secondary">Services</button></a>
@@ -23,7 +22,7 @@ ogTitle: Pioneer PGD LTD
     <div class="trust-items">
         <div class="trust-item">
             <h3>Trade Certified</h3>
-            <img src="/img/pioneer-certifying-icons.png" alt="Pioneer PGD certified" class="trust-icon" />
+            {% image "/src/img/pioneer-certifying-icons.png", "Pioneer PGD certified", [200, 400], "400px", "trust-icon" %}
         </div>
         <div class="trust-item">
             <div class="trust-stars">
@@ -39,7 +38,7 @@ ogTitle: Pioneer PGD LTD
         </div>
         <div class="trust-item">
             <h3>Proudly Supported By</h3>
-            <img src="/img/pgd-zip-hut-valley.png" alt="Certifying body logo" class="trust-icon" />
+            {% image "/src/img/pgd-zip-hut-valley.png", "Certifying body logo", [200, 400], "400px", "trust-icon" %}
         </div>
     </div>
 </div>
@@ -59,14 +58,14 @@ ogTitle: Pioneer PGD LTD
                 {% if s.type == "trade" %}
                 <a href="/services/{{ s.slug }}/" class="home-card home-card--{{ s.name | slug }}">
                     <div class="home-card--img">
-                        <img src="{{ s.image }}" alt="{{ s.imageAlt }}" />
+                        {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                     </div>
                     <div class="home-card--body">
                         <div class="home-card--header">
                             <img class="home-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
                             <h3>{{ s.name }}</h3>
                         </div>
-                        <p>{{ s.homeH4 }}</p>
+                        <p>{{ s.homeH2 }}</p>
                         <span class="home-card--link">Learn more ›</span>
                     </div>
                 </a>
@@ -91,7 +90,7 @@ ogTitle: Pioneer PGD LTD
                 {% if s.specialty %}
                 <a href="/services/{{ s.slug }}/" class="home-card home-card--specialty">
                     <div class="home-card--img">
-                        <img src="{{ s.specialty.image }}" alt="{{ s.specialty.imageAlt }}" />
+                        {% image s.specialty.image, s.specialty.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                     </div>
                     <div class="home-card--body">
                         <div class="home-card--header">
@@ -118,7 +117,18 @@ ogTitle: Pioneer PGD LTD
         </div>
         <div class="section--wrapper">
             <div class="hub-grid">
-                {% for card in areas %}{% include "partials/area-card.njk" %}{% endfor %}
+                {% for card in areas %}
+                <a href="/areas/{{ card.slug }}/" class="hub-card hub-card--{{ card.type }}">
+                    <div class="hub-card--img">
+                        {% image card.image, card.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="hub-card--body">
+                        <h3>{{ card.name }}</h3>
+                        <p>{{ card.intro }}</p>
+                        <span class="hub-card--more">View area ›</span>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
         </div>
     </div>

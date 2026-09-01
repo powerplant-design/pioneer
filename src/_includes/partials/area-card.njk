@@ -1,6 +1,6 @@
 <a href="/areas/{{ card.slug }}/" class="hub-card hub-card--{{ card.type }}">
     <div class="hub-card--img">
-        <img src="{{ card.image }}" alt="{{ card.imageAlt }}" />
+        {% image card.image, card.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
     </div>
     <div class="hub-card--body">
         <h3>{{ card.name }}</h3>

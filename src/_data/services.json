@@ -9,7 +9,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/specialise-soak-pits.jpg",
+        "image": "/img/pioneer-soak-pits.jpg",
         "imageAlt": "Soak Pit Installation",
         "intro": "Soak pit design, installation and renewal across Upper Hutt, Lower Hutt, Wellington and the Greater Wellington Region. Sized to your site and soil, consented with council, and built to keep your section free-draining for decades.",
         "bullets": [
@@ -18,7 +18,7 @@
             "Sumps and catchpits",
             "Diversion and connection of downpipes and surface water",
             "Geotextile-wrapped construction for long life",
-            "Council consent handled for you"
+            "Can do certification and consenting"
         ],
         "specialty": {
             "order": 1,
@@ -63,7 +63,8 @@
             "blocked-drains"
         ],
         "colourClass": "text-grey",
-        "description": "Soak pit installation and renewal in Upper Hutt, sized to your soil and consented with council. Fixed prices from certifying drainlayers."
+        "description": "Soak pit installation and renewal in Upper Hutt, sized to your soil and consented with council. Fixed prices from certifying drainlayers.",
+        "homeH2": "Soak Pit Services"
     },
     {
         "name": "Soak Pit Installation Upper Hutt",
@@ -74,16 +75,16 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/specialise-soak-pits.jpg",
+        "image": "/img/pioneer-soak-pits2.jpg",
         "imageAlt": "Soak Pit Installation Upper Hutt",
-        "intro": "Soak pit installation in Upper Hutt, sized for clay soil, percolation tested and council consented. New soak pits, renewals and stormwater soakage by certifying drainlayers based in Trentham.",
+        "intro": "Soak pit installation in Upper Hutt, sized for clay soil, percolation tested and council consented. New soak pits, renewals and stormwater soakage by certifying drainlayers based in Upper Hutt.",
         "bullets": [
             "Soak pit design, excavation and installation",
             "Percolation testing and soil assessment",
             "Clay soil soakage solutions for Upper Hutt suburbs",
             "Stormwater soakage pits and overflow connections",
             "Geotextile-wrapped construction for long life",
-            "Council consent handled for you"
+            "Can do certification and consenting"
         ],
         "faqs": [
             {
@@ -109,7 +110,8 @@
             "blocked-drains"
         ],
         "colourClass": "text-grey",
-        "description": "Soak pit installation in Upper Hutt, clay soil solutions, percolation tested and council consented by certifying drainlayers."
+        "description": "Soak pit installation in Upper Hutt, clay soil solutions, percolation tested and council consented by certifying drainlayers.",
+        "homeH2": "Soak Pit Services Upper Hutt"
     },
     {
         "name": "Stormwater and Sewer Drainage",
@@ -122,7 +124,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/specialise-drainage.jpg",
         "imageAlt": "Stormwater and Sewer Drainage",
-        "intro": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley, new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
+        "intro": "Stormwater and sewer drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
         "bullets": [
             "New stormwater and sewer drains",
             "Channel drains and sumps",
@@ -165,7 +167,8 @@
             "new-build-drainage"
         ],
         "colourClass": "text-grey",
-        "description": "Stormwater and sewer drainage in Upper Hutt and the Hutt Valley, new drains, channel drains, sumps and sewer pump chambers, plus repairs."
+        "description": "Stormwater and sewer drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, new drains, channel drains, sumps and sewer pump chambers, plus repairs.",
+        "homeH2": "Stormwater and Sewer Services"
     },
     {
         "name": "Boggy Lawn Drainage",
@@ -176,21 +179,21 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/specialise-drainage.jpg",
+        "image": "/img/pioneer-subsoil.jpg",
         "imageAlt": "Boggy Lawn Drainage Solutions",
-        "intro": "Boggy lawn and wet section drainage in Upper Hutt and the Hutt Valley, subsoil drainage, channel drains and soak pits to fix waterlogged yards, pooling and surface flooding.",
+        "intro": "Boggy lawn and wet section drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, subsoil drainage, channel drains and soak pits to fix waterlogged yards, pooling and surface flooding.",
         "bullets": [
             "Subsoil (sub-surface) drainage for wet lawns",
             "Channel drains for driveways and paths",
             "Soak pits for surface water soakage",
             "Drainage design for clay and hill sites",
             "Excavation and ground reinstatement",
-            "Council consent where required"
+            "Can do certification and consenting where required"
         ],
         "faqs": [
             {
                 "q": "Why is my lawn always wet and boggy?",
-                "a": "Common causes are clay soil that doesn't drain, a high water table, poor surface grading, or failed existing drainage. In Upper Hutt's hill suburbs, clay soil is the most common culprit — water sits on top instead of soaking through. We diagnose the cause and design a drainage solution that fixes it."
+                "a": "Common causes are clay soil that doesn't drain, a high water table, poor surface grading, or failed existing drainage. In Upper Hutt's hill suburbs, clay soil is the most common culprit, water sits on top instead of soaking through. We diagnose the cause and design a drainage solution that fixes it."
             },
             {
                 "q": "What is subsoil drainage?",
@@ -198,11 +201,11 @@
             },
             {
                 "q": "How much does lawn drainage cost?",
-                "a": "It depends on the size of the area, depth required, access for excavation, and where the water needs to go. We quote fixed prices after a site visit — most residential lawn drainage jobs are straightforward excavator work."
+                "a": "It depends on the size of the area, depth required, access for excavation, and where the water needs to go. We quote fixed prices after a site visit, most residential lawn drainage jobs are straightforward excavator work."
             },
             {
                 "q": "Can you fix drainage on a hill site?",
-                "a": "Yes, hill sites in Upper Hutt often have clay soil and surface water running downhill across properties. We design drainage that intercepts the water flow, channels it underground, and discharges to a suitable point — soak pit, stormwater system, or daylight outlet."
+                "a": "Yes, hill sites in Upper Hutt often have clay soil and surface water running downhill across properties. We design drainage that intercepts the water flow, channels it underground, and discharges to a suitable point, soak pit, stormwater system, or daylight outlet."
             }
         ],
         "relatedServices": [
@@ -211,7 +214,8 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Boggy lawn drainage in Upper Hutt, subsoil drainage, channel drains and soak pits to fix waterlogged yards and pooling."
+        "description": "Boggy lawn drainage in Upper Hutt, subsoil drainage, channel drains and soak pits to fix waterlogged yards and pooling.",
+        "homeH2": "Boggy Lawn Services"
     },
     {
         "name": "Lifestyle Block Water & Drainage",
@@ -222,7 +226,7 @@
         "priority": "P1",
         "icon": "/img/icon-plumbing.png",
         "iconAlt": "Icon Plumbing",
-        "image": "/img/specialise-lifestyle-block.jpg",
+        "image": "/img/pioneer-lifestyle-block.jpg",
         "imageAlt": "Lifestyle Block drainage installation",
         "intro": "Property water supplies and drainage for Upper Hutt lifestyle blocks, rain tanks, pumps, field drains, culverts and water supply lines, installed and repaired.",
         "bullets": [
@@ -265,7 +269,8 @@
             "stormwater-sewer"
         ],
         "colourClass": "text-blue",
-        "description": "Lifestyle block water supplies and drainage in Upper Hutt, rain tanks, pumps, field drains, culverts and supply line repairs, supplied and installed."
+        "description": "Lifestyle block water supplies and drainage in Upper Hutt, rain tanks, pumps, field drains, culverts and supply line repairs, supplied and installed.",
+        "homeH2": "Lifestyle Block Water Services"
     },
     {
         "name": "Hot Water Cylinders",
@@ -277,7 +282,7 @@
         "iconAlt": "Icon Plumbing",
         "image": "/img/specialise-hot-water-cylander.jpg",
         "imageAlt": "Hot Water Cylinder",
-        "intro": "Hot water cylinders and systems in Upper Hutt and the Hutt Valley, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
+        "intro": "Hot water cylinders and systems in Upper Hutt, the Hutt Valley and the Greater Wellington Region, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
         "bullets": [
             "Mains and low pressure cylinders, supplied and installed",
             "Rinnai Infinity continuous flow units",
@@ -323,7 +328,8 @@
             "gasfitting"
         ],
         "colourClass": "text-blue",
-        "description": "Hot water cylinders in Upper Hutt and the Hutt Valley, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired."
+        "description": "Hot water cylinders in Upper Hutt, the Hutt Valley and the Greater Wellington Region, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
+        "homeH2": "Hot Water Cylinder Services"
     },
     {
         "name": "Rinnai Infinity Installation",
@@ -336,7 +342,7 @@
         "iconAlt": "Icon Gasfitting",
         "image": "/img/pioneer-works-rinnai.jpg",
         "imageAlt": "Rinnai Infinity Installation Upper Hutt",
-        "intro": "Rinnai Infinity gas hot water installation in Upper Hutt and the Hutt Valley, supplied and installed by a certifying gasfitter. Replace your old cylinder with continuous flow hot water.",
+        "intro": "Rinnai Infinity gas hot water installation in Upper Hutt, the Hutt Valley and the Greater Wellington Region, supplied and installed by a certifying gasfitter. Replace your old cylinder with continuous flow hot water.",
         "bullets": [
             "Rinnai Infinity continuous flow units supplied and installed",
             "Sizing to your household and usage",
@@ -356,7 +362,7 @@
             },
             {
                 "q": "Can I replace my hot water cylinder with a Rinnai Infinity?",
-                "a": "Yes, that's one of our most common jobs. We remove the old cylinder, install the Rinnai unit in its place or on an external wall, run the new gas pipework, and certify the installation. You'll need a gas supply to the property — if you don't have one we can install that too."
+                "a": "Yes, that's one of our most common jobs. We remove the old cylinder, install the Rinnai unit in its place or on an external wall, run the new gas pipework, and certify the installation. You'll need a gas supply to the property, if you don't have one we can install that too."
             },
             {
                 "q": "How long does a Rinnai Infinity last?",
@@ -369,7 +375,8 @@
             "gas-leak-detection"
         ],
         "colourClass": "text-orange",
-        "description": "Rinnai Infinity gas hot water installation in Upper Hutt, supplied and installed by a certifying gasfitter. Replace your cylinder with continuous flow."
+        "description": "Rinnai Infinity gas hot water installation in Upper Hutt, supplied and installed by a certifying gasfitter. Replace your cylinder with continuous flow.",
+        "homeH2": "Rinnai Installation Services"
     },
     {
         "name": "Drainlaying",
@@ -382,7 +389,6 @@
         "image": "/img/services-drainlaying.jpg",
         "imageAlt": "Drainlaying Services",
         "colourClass": "text-grey",
-        "homeH4": "Domestic and Rural Installation, Maintenance and Servicing",
         "intro": "Domestic and rural drainage installation, maintenance and servicing across Upper Hutt and the Greater Wellington Region, soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs by certifying drainlayers.",
         "bullets": [
             "Soak Pits and Sumps, New or Renewal",
@@ -421,7 +427,8 @@
             "drain-repairs",
             "new-build-drainage"
         ],
-        "description": "Certifying drainlayers in Upper Hutt, soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs across the Hutt Valley."
+        "description": "Certifying drainlayers in Upper Hutt, soak pits, sewer and stormwater drains, subsoil drainage, CCTV inspections and repairs across the Hutt Valley.",
+        "homeH2": "Domestic and Rural Installation, Maintenance and Servicing"
     },
     {
         "name": "Blocked Drains",
@@ -431,7 +438,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/services-drainlaying.jpg",
+        "image": "/img/pioneer-blocked-drains.jpg",
         "imageAlt": "Blocked Drain Clearing",
         "intro": "Blocked drain clearing across Upper Hutt and the Hutt Valley, water jetting, root cutting and CCTV to clear the blockage and find what caused it, so it stays clear.",
         "bullets": [
@@ -461,7 +468,8 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Blocked drain clearing in Upper Hutt and the Hutt Valley, water jetting, root cutting and CCTV to clear the blockage and stop it coming back."
+        "description": "Blocked drain clearing in Upper Hutt, the Hutt Valley and the Greater Wellington Region, water jetting, root cutting and CCTV to clear the blockage and stop it coming back.",
+        "homeH2": "Blocked Drain Services"
     },
     {
         "name": "CCTV Drain Inspection",
@@ -471,9 +479,9 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/services-drainlaying.jpg",
+        "image": "/img/pioneer-cctv.jpg",
         "imageAlt": "CCTV Drain Inspection",
-        "intro": "CCTV drain camera inspections in Upper Hutt and the Hutt Valley, see inside your drains, find the exact fault and its depth, and get a clear report before any digging starts.",
+        "intro": "CCTV drain camera inspections in Upper Hutt, the Hutt Valley and the Greater Wellington Region, see inside your drains, find the exact fault and its depth, and get a clear report before any digging starts.",
         "bullets": [
             "Full colour CCTV drain surveys",
             "Located and measured fault reports",
@@ -501,7 +509,8 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "CCTV drain inspections in Upper Hutt and the Hutt Valley, see inside your drains, find the exact fault and get a clear report before digging starts."
+        "description": "CCTV drain inspections in Upper Hutt, the Hutt Valley and the Greater Wellington Region, see inside your drains, find the exact fault and get a clear report before digging starts.",
+        "homeH2": "CCTV Drain Inspection Services"
     },
     {
         "name": "Drain Repairs",
@@ -511,9 +520,9 @@
         "priority": "P2",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/services-drainlaying.jpg",
+        "image": "/img/pioneer-blocked.jpg",
         "imageAlt": "Drain Repair",
-        "intro": "Drain repair and replacement in Upper Hutt and the Hutt Valley, CCTV-located, fixed-quote repairs using relining or renewal, with our own diggers and proper ground reinstatement.",
+        "intro": "Drain repair and replacement in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs using relining or renewal, with our own diggers and proper ground reinstatement.",
         "bullets": [
             "CCTV-located repairs",
             "Pipe relining where suitable",
@@ -540,7 +549,8 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Drain repairs in Upper Hutt and the Hutt Valley, CCTV-located, fixed-quote repairs using relining or renewal, with proper ground reinstatement."
+        "description": "Drain repairs in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs using relining or renewal, with proper ground reinstatement.",
+        "homeH2": "Drain Repair Services"
     },
     {
         "name": "New Build Drainage",
@@ -550,7 +560,7 @@
         "priority": "P2",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/services-drainlaying.jpg",
+        "image": "/img/pioneer-new-build.jpg",
         "imageAlt": "New Build Drainage",
         "intro": "Sewer and stormwater drainage for new builds and extensions in Upper Hutt, pre-slab pipework through to final connections, as-builts and council sign-off.",
         "bullets": [
@@ -579,7 +589,8 @@
             "drain-repairs"
         ],
         "colourClass": "text-grey",
-        "description": "Sewer and stormwater drainage for new builds in Upper Hutt, pre-slab pipework to final connections, as-builts and council sign-off."
+        "description": "Sewer and stormwater drainage for new builds in Upper Hutt, pre-slab pipework to final connections, as-builts and council sign-off.",
+        "homeH2": "New Build Drainage Services"
     },
     {
         "name": "Plumbing",
@@ -592,8 +603,7 @@
         "image": "/img/services-plumbing.jpg",
         "imageAlt": "Plumbing Services",
         "colourClass": "text-blue",
-        "homeH4": "General Domestic Installation, Maintenance and Servicing",
-        "intro": "General domestic plumbing installation, maintenance and servicing, hot water systems, bathrooms, tapware, leak detection, spouting and pumps, supplied and installed by a certifying plumber.",
+        "intro": "General domestic plumbing installation, maintenance and servicing, hot water systems, kitchen retrofits, tapware, leak detection, spouting and pumps, supplied and installed by a certifying plumber.",
         "bullets": [
             "New Hot Water Systems, Cylinders, and Instantaneous Units, Supplied and Installed",
             "New Toilets, Vanities, Laundry Tubs, Washing Machines, and Dishwashers, Supplied and Installed",
@@ -625,7 +635,8 @@
             "lifestyle-block-water",
             "drainlaying"
         ],
-        "description": "Certifying plumber in Upper Hutt, hot water systems, bathrooms, tapware, leak detection and pumps, supplied and installed."
+        "description": "Certifying plumber in Upper Hutt, hot water systems, kitchen retrofits, tapware, leak detection and pumps, supplied and installed.",
+        "homeH2": "General Domestic Installation, Maintenance and Servicing"
     },
     {
         "name": "Plumber Upper Hutt",
@@ -636,9 +647,9 @@
         "priority": "P1",
         "icon": "/img/icon-plumbing.png",
         "iconAlt": "Icon Plumbing",
-        "image": "/img/services-plumbing.jpg",
+        "image": "/img/pioneer-plumber-upper-hut.jpg",
         "imageAlt": "Plumber Upper Hutt",
-        "intro": "Certifying plumber in Upper Hutt, hot water, bathrooms, tapware, leak detection and pumps. Fixed quotes from a locally owned and operated plumbing company in Trentham.",
+        "intro": "Certifying plumber in Upper Hutt, hot water, kitchen retrofits, tapware, leak detection and pumps. Fixed quotes from a locally owned and operated plumbing company in Upper Hutt.",
         "bullets": [
             "Hot water cylinder replacement and repair",
             "Bathroom and kitchen plumbing",
@@ -650,7 +661,7 @@
         "faqs": [
             {
                 "q": "Are you a certifying plumber in Upper Hutt?",
-                "a": "Yes, Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. We're based in Trentham, Upper Hutt, and work across the city and wider Hutt Valley every week."
+                "a": "Yes, Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. We're based in Upper Hutt, and work across the city and wider Hutt Valley every week."
             },
             {
                 "q": "Do you do emergency plumbing in Upper Hutt?",
@@ -667,7 +678,8 @@
             "drainlaying"
         ],
         "colourClass": "text-blue",
-        "description": "Certifying plumber in Upper Hutt, hot water, bathrooms, tapware, leak detection and pumps. Fixed quotes from Trentham."
+        "description": "Certifying plumber in Upper Hutt, hot water, kitchen retrofits, tapware, leak detection and pumps. Fixed quotes from Upper Hutt.",
+        "homeH2": "Plumbing Services Upper Hutt"
     },
     {
         "name": "Gasfitting",
@@ -677,11 +689,10 @@
         "priority": "P1",
         "icon": "/img/icon-gasfitting.png",
         "iconAlt": "Icon Gasfitting",
-        "image": "/img/services-gasfitting.jpg",
+        "image": "/img/pioneer-gasfitting.jpg",
         "imageAlt": "Gasfitting Services",
         "colourClass": "text-orange",
-        "homeH4": "New Domestic Installation",
-        "intro": "New domestic gas installation in Upper Hutt and the Hutt Valley, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, installed and certified by a certifying gasfitter.",
+        "intro": "New domestic gas installation in Upper Hutt, the Hutt Valley and the Greater Wellington Region, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, installed and certified by a certifying gasfitter.",
         "bullets": [
             "New External Rinnai Infinity Units, Supplied and Installed",
             "New Hobs, Supplied and Installed",
@@ -709,7 +720,8 @@
             "hot-water-cylinders",
             "plumbing"
         ],
-        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed."
+        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed.",
+        "homeH2": "New Domestic Installation"
     },
     {
         "name": "Gasfitter Upper Hutt",
@@ -720,7 +732,7 @@
         "priority": "P1",
         "icon": "/img/icon-gasfitting.png",
         "iconAlt": "Icon Gasfitting",
-        "image": "/img/services-gasfitting.jpg",
+        "image": "/img/specialise-testing.jpg",
         "imageAlt": "Gasfitter Upper Hutt",
         "intro": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations. Installed and certified by a locally owned gasfitting company.",
         "bullets": [
@@ -751,7 +763,8 @@
             "hot-water-cylinders"
         ],
         "colourClass": "text-orange",
-        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations."
+        "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations.",
+        "homeH2": "Gasfitting Services Upper Hutt"
     },
     {
         "name": "Gas Leak Detection",
@@ -761,9 +774,9 @@
         "priority": "P1",
         "icon": "/img/icon-gasfitting.png",
         "iconAlt": "Icon Gasfitting",
-        "image": "/img/specialise-testing.jpg",
+        "image": "/img/pioneer-hero-dsk.jpg",
         "imageAlt": "Gas Leak Testing",
-        "intro": "Gas leak detection and repair in Upper Hutt and the Hutt Valley, pressure testing, electronic detection and certified repairs for natural gas and LPG systems.",
+        "intro": "Gas leak detection and repair in Upper Hutt, the Hutt Valley and the Greater Wellington Region, pressure testing, electronic detection and certified repairs for natural gas and LPG systems.",
         "bullets": [
             "Gas leak detection and pressure testing",
             "Appliance and pipework leak repair",
@@ -789,6 +802,7 @@
             "hot-water-cylinders"
         ],
         "colourClass": "text-orange",
-        "description": "Gas leak detection and repair in Upper Hutt and the Hutt Valley, pressure testing, electronic detection and certified repairs for gas and LPG."
+        "description": "Gas leak detection and repair in Upper Hutt, the Hutt Valley and the Greater Wellington Region, pressure testing, electronic detection and certified repairs for gas and LPG.",
+        "homeH2": "Gas Leak Detection Services"
     }
 ]

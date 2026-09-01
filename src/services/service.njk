@@ -27,37 +27,48 @@ permalink: /services/{{ service.slug }}/
             <div class="service--text">
                 <div class="service--header">
                     <img src="{{ service.icon }}" alt="{{ service.iconAlt }}" class="service--icon" />
-                    <div>
-                        <h3 class="{{ service.colourClass }}">{{ service.name }}</h3>
-                        {% if service.homeH4 %}<h4>{{ service.homeH4 }}</h4>{% endif %}
-                    </div>
+                    {% if service.homeH2 %}<div><h2>{{ service.homeH2 }}</h2></div>{% endif %}
                 </div>
                 <ul>
                     {% for b in service.bullets %}<li>{{ b }}</li>{% endfor %}
                 </ul>
             </div>
-            {# <div class="service--img">
-                <img src="{{ service.image }}" alt="{{ service.imageAlt }}" class="service--img-border" />
-            </div> #}
         </div>
     </div>
 </section>
 
 {% set faqs = service.faqs %}{% include "partials/faq.njk" %}
 
-{% set rel = [] %}
+{% set hasRelated = false %}
 {% for s in services %}
-{% if s.slug in service.relatedServices %}
-{% set _ = rel.push(s) %}
-{% endif %}
+{% for r in service.relatedServices %}
+{% if s.slug == r %}{% set hasRelated = true %}{% endif %}
 {% endfor %}
-{% if rel.length %}
+{% endfor %}
+{% if hasRelated %}
 <section class="section section-mbl">
     <div class="section--container stack">
         <h2>Related Services</h2>
         <div class="hub-grid">
-            {% for s in rel %}
-            {% set card = s %}{% include "partials/service-card.njk" %}
+            {% for s in services %}
+            {% for r in service.relatedServices %}
+            {% if s.slug == r %}
+            {% set tradeSlug = s.trade | lower %}
+            <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                <div class="hub-card--img">
+                    {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                </div>
+                <div class="hub-card--body">
+                    <div class="hub-card--header">
+                        <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                        <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                    </div>
+                    <p>{{ s.intro }}</p>
+                    <span class="hub-card--more">Learn more ›</span>
+                </div>
+            </a>
+            {% endif %}
+            {% endfor %}
             {% endfor %}
         </div>
     </div>

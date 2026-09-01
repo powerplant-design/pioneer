@@ -34,7 +34,17 @@
         <div class="section--cta" style="text-align: center;">
             <a href="{{ reviews.google.url }}" target="_blank">
                 <button class="button--secondary button--logo">
-                    <p>{{ reviews.google.count }} Google Reviews</p> <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" /><p>({{ reviews.google.rating }})</p>
+                    <div class="trust-stars">
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                        <img src="/img/star.svg" alt="" class="trust-star" />
+                    </div>
+                    <div class="button--logo-text">
+                        <p>{{ reviews.google.count }} Google Reviews</p>
+                    </div>
+                    <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" />
                 </button>
             </a>
         </div>

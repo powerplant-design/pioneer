@@ -3,7 +3,7 @@
         <div class="hero--content | stack-large">
             <div class="hero--text stack">
                 {% include "partials/breadcrumbs.njk" %}
-                <h1 class="text-balance">{{ heroTitle }}</h1>
+                <h1 class="text-balance {{ heroTitleClass }}">{{ heroTitle }}</h1>
                 <p>{{ heroText }}</p>
             </div>
             <div class="flex hide-mbl">
@@ -16,6 +16,6 @@
         </div>
     </div>
     <div class="hero--img-wrap">
-        <img src="{{ heroImage }}" alt="{{ heroAlt }}" class="hero--img" />
+        {% image heroImage, heroAlt, [600, 1280, 1920], "(min-width: 1280px) 1280px, (min-width: 600px) 600px, 100vw", "hero--img" %}
     </div>
 </section>

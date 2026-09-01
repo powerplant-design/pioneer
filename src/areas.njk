@@ -15,7 +15,18 @@ description: Plumbing, gasfitting and drainlaying across Upper Hutt, Lower Hutt 
     <section class="section">
         <div class="section--container">
             <div class="hub-grid">
-                {% for card in areas %}{% include "partials/area-card.njk" %}{% endfor %}
+                {% for card in areas %}
+                <a href="/areas/{{ card.slug }}/" class="hub-card hub-card--{{ card.type }}">
+                    <div class="hub-card--img">
+                        {% image card.image, card.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="hub-card--body">
+                        <h2>{{ card.name }}</h2>
+                        <p>{{ card.intro }}</p>
+                        <span class="hub-card--more">View area ›</span>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
         </div>
     </section>
