@@ -8,10 +8,22 @@ description: Plumbing, gasfitting and drainlaying services in Upper Hutt, the Hu
     {% set crumbs = [{ name: "Home", url: "/" }, { name: "Services", url: "/services/" }] %}
     {% set heroTitle = "Pioneer PGD Services" %}
     {% set heroTitleClass = "max-w-28ch" %}
-    {% set heroText = "Drainlaying, plumbing and gasfitting in Upper Hutt, the Hutt Valley and the Greater Wellington Region, one local company with certifying licences across all three trades. Every service is fixed-quote and signed off to code." %}
+    {% set heroText = "Plumbing maintenance, stormwater drainage, gasfitting, advice and truck and digger work throughout Upper Hutt, the Hutt Valley and Greater Wellington." %}
     {% set heroImage = "/img/pioneer-who-we-are.jpg" %}
     {% set heroAlt = "Pioneer PGD services, drainlaying, plumbing and gasfitting" %}
     {% include "partials/hero.njk" %}
+
+    <section class="section">
+        <div class="section--container stack">
+            <h2>Pioneer PGD Specialises In</h2>
+            <div class="local-notes stack">
+                <p>Keeping homes and properties running properly, from everyday plumbing maintenance and repairs through to stormwater drainage, soak pits, drainage solutions and the installation of Rinnai Infinity continuous-flow hot water systems.</p>
+                <p>We also provide practical advice to help you understand the best solution for your property, whether you are planning new work, dealing with an existing problem or need guidance before getting started.</p>
+                <p>Our services also include general plumbing, drainlaying and gasfitting, along with truck and digger work for drainage, excavation, site preparation and other property projects. Every job is tailored to the property and the problem at hand.</p>
+                <p>With Certifying Plumber, Gasfitter and Drainlayer licences, you can deal with one local company across all three trades. Our work is completed to code, clearly quoted upfront and properly signed off.</p>
+            </div>
+        </div>
+    </section>
 
     {% for s in services %}
     {% if s.type == "trade" %}

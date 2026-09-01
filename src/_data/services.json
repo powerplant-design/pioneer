@@ -122,7 +122,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/pioneer-new-drainage.jpg",
+        "image": "/img/pioneer-stormwater-sewer-drainage.jpg",
         "imageAlt": "Stormwater and Sewer Drainage",
         "intro": "Stormwater and sewer drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
         "bullets": [
@@ -134,13 +134,13 @@
         ],
         "specialty": {
             "order": 2,
-            "heading": "Stormwater or Sewer Drainage",
+            "heading": "Stormwater and Sewer Drainage",
             "paragraphs": [
                 "Ensure your section is free draining with our expert stormwater drainage services.",
                 "We install, repair, and maintain drainage systems, including channel drains and sumps, to prevent surface water buildup and manage stormwater effectively.",
                 "We also handle domestic sewerage, from repair and maintenance of exisiting systems, through to installing new pre-slab drains and pipework."
             ],
-            "image": "/img/specialise-drainage.jpg",
+            "image": "/img/pioneer-stormwater-sewer-drainage.jpg",
             "imageAlt": "Stormwater and Sewer Drainage",
             "imgClass": "service--img-border service---img-specialise",
             "icon": "/img/icon-drainlaying.png",
@@ -237,7 +237,7 @@
         ],
         "specialty": {
             "order": 3,
-            "heading": "Lifestyle Block Solutions, Property Water Supplies and Drainage",
+            "heading": "Lifestyle Block & Property Water Supplies and Drainage",
             "paragraphs": [
                 "Need your lifestyle block field drains cleared out or a piped culvert drain crossing installed? Struggling to hold on to that precious rainwater? Or is your main water supply pipework leaking?",
                 "We install and repair property water supplies and drainage, fixing or renewing pipework, tanks or pumps. Providing tailored solutions for rural and urban properties, be it the water piped in from the councils toby at the street or your rural rain water tanks and overflow."
@@ -787,7 +787,7 @@
         "priority": "P1",
         "icon": "/img/icon-gasfitting.png",
         "iconAlt": "Icon Gasfitting",
-        "image": "/img/pioneer-hero-dsk.jpg",
+        "image": "/img/pioneer-gas-leak-detection.jpg",
         "imageAlt": "Gas Leak Testing",
         "intro": "Gas leak detection and repair in Upper Hutt, the Hutt Valley and the Greater Wellington Region, pressure testing, electronic detection and certified repairs for natural gas and LPG systems.",
         "bullets": [
@@ -894,5 +894,48 @@
         ],
         "colourClass": "text-blue",
         "description": "Toilet installation and repair in Upper Hutt, new toilets, second toilet installation and leaking toilet replacement."
+    },
+    {
+        "name": "Auger Drilling",
+        "shortName": "Auger Drilling",
+        "slug": "auger-drilling",
+        "type": "service",
+        "trade": "Drainlaying",
+        "priority": "P1",
+        "icon": "/img/icon-drainlaying.png",
+        "iconAlt": "Icon Drainlaying",
+        "image": "/img/pioneer-auger-drilling.jpg",
+        "imageAlt": "Auger Drilling Services",
+        "intro": "Auger drilling services in Upper Hutt, the Hutt Valley and the Greater Wellington Region, post holes, pile holes, bore holes and ground samples using our digger-mounted auger drill bits.",
+        "bullets": [
+            "Post holes for fencing",
+            "Pile holes for buildings and decks",
+            "Bore holes for soil investigation",
+            "Ground samples for site assessment",
+            "Range of auger drill bit sizes",
+            "Quick and efficient drilling with digger-mounted auger"
+        ],
+        "homeH2": "Auger Drilling Services",
+        "faqs": [
+            {
+                "q": "What is an auger attachment used for?",
+                "a": "The auger attachment goes on our digger, it is a drive motor that we have a range of auger drill bits for. We can drill holes for fence posts, building or deck piles, just let us know where, how big and how deep."
+            },
+            {
+                "q": "How deep can you drill with the auger?",
+                "a": "We have a range of auger drill bits that can drill to various depths depending on the diameter required. Common depths for fence posts are around 1 metre, while pile holes for buildings can go deeper. Let us know your requirements and we can advise on the best approach."
+            },
+            {
+                "q": "Can you drill in clay or rocky ground?",
+                "a": "Yes, our digger-mounted auger can handle most ground conditions including clay and moderately rocky ground. For very hard rock we may need to discuss alternative approaches, but for most residential and commercial drilling jobs the auger is ideal."
+            }
+        ],
+        "relatedServices": [
+            "drainlaying",
+            "new-build-drainage",
+            "stormwater-sewer"
+        ],
+        "colourClass": "text-grey",
+        "description": "Auger drilling in Upper Hutt, post holes, pile holes, bore holes and ground samples using digger-mounted auger drill bits."
     }
 ]

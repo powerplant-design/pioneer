@@ -258,7 +258,7 @@ li {
 .bg-image {
     padding: var(--spacing-xlarge) var(--spacing-medium) !important;
     border: 1px solid black;
-    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pgd-footer.jpg);
+    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pioneer-hero-dsk.jpg);
     background-position: left center;
     color: white;
 }
@@ -872,6 +872,7 @@ nav {
     color: var(--color-orange);
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: auto;
     font-size: var(--step--2);
 }
 
@@ -921,12 +922,20 @@ nav {
     gap: var(--spacing-medium);
 }
 
+.service--list {
+    list-style-type: "— ";
+}
+
+.service--list li {
+    margin-inline-start: 2ch;
+}
+
 /* ================================================================
    11. HUB PAGES
    ================================================================ */
 
 .hub-trade {
-    margin-block: var(--spacing-xlarge) var(--spacing-medium);
+    margin-block-end: var(--spacing-large);
     display: flex;
     align-items: center;
     gap: var(--spacing-medium);
@@ -967,6 +976,12 @@ nav {
     height: auto;
 }
 
+.cert-layout--text a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
 .suburb-chips {
     display: flex;
     flex-wrap: wrap;
@@ -997,6 +1012,11 @@ nav {
 
 .faq h3:first-of-type {
     margin-top: 0;
+}
+
+.faq--item:not(:last-child) {
+    padding-block-end: var(--spacing-large);
+    border-bottom: 2px dotted var(--color-grey-light);
 }
 
 /* ================================================================

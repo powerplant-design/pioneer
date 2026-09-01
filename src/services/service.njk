@@ -29,7 +29,7 @@ permalink: /services/{{ service.slug }}/
                     <img src="{{ service.icon }}" alt="{{ service.iconAlt }}" class="service--icon" />
                     {% if service.homeH2 %}<div><h2>{{ service.homeH2 }}</h2></div>{% endif %}
                 </div>
-                <ul>
+                <ul class="service--list">
                     {% for b in service.bullets %}<li>{{ b }}</li>{% endfor %}
                 </ul>
             </div>

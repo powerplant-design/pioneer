@@ -13,5 +13,23 @@
         </main>
 
         {% include "partials/footer.njk" %}
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navContact = document.querySelector('.nav-contact');
+                if (navContact) {
+                    const btn = navContact.querySelector('button');
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 100) {
+                            btn.classList.remove('button--secondary');
+                            btn.classList.add('button--primary');
+                        } else {
+                            btn.classList.remove('button--primary');
+                            btn.classList.add('button--secondary');
+                        }
+                    });
+                }
+            });
+        </script>
     </body>
 </html>

@@ -4,7 +4,7 @@
     <div class="section--container faq | stack-large">
         <h2>Frequently Asked Questions</h2>
         {% for f in faqs %}
-        <div class="stack-large">
+        <div class="faq--item | stack">
             <h3>Q. {{ f.q }}</h3>
             <p>A. {{ f.a | safe }}</p>
         </div>
