@@ -179,7 +179,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/pioneer-subsoil-drainage.png",
+        "image": "/img/pioneer-subsoil-drainage.jpg",
         "imageAlt": "Boggy Lawn Drainage Solutions",
         "intro": "Boggy lawn and wet section drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, subsoil drainage, channel drains and soak pits to fix waterlogged yards, pooling and surface flooding.",
         "bullets": [
@@ -816,5 +816,82 @@
         "colourClass": "text-orange",
         "description": "Gas leak detection and repair in Upper Hutt, the Hutt Valley and the Greater Wellington Region, pressure testing, electronic detection and certified repairs for gas and LPG.",
         "homeH2": "Gas Leak Detection Services"
+    },
+    {
+        "name": "Stormwater Retention",
+        "shortName": "Stormwater Retention",
+        "slug": "stormwater-retention",
+        "type": "service",
+        "trade": "Plumbing",
+        "priority": "P1",
+        "icon": "/img/icon-plumbing.png",
+        "iconAlt": "Icon Plumbing",
+        "image": "/img/pioneer-stormwater-retention.jpg",
+        "imageAlt": "Stormwater Retention Systems",
+        "intro": "Stormwater retention and rainwater harvesting systems in Upper Hutt, the Hutt Valley and the Greater Wellington Region, tanks, pumps, pump chambers and emergency backup water supply.",
+        "bullets": [
+            "Rainwater harvesting and storage",
+            "Stormwater retention tanks",
+            "Pumps and pump chambers, below or above ground",
+            "Emergency backup water supply",
+            "Garden watering from tank water",
+            "Spa and pool filling from tank water"
+        ],
+        "homeH2": "Stormwater Retention Services",
+        "faqs": [
+            {
+                "q": "How can I save on using water from the towns supply?",
+                "a": "Install a stormwater retention tank, capture the rain water from your roof and by adding a pump and hose tap to the tank, use it to water the garden, fill the spa, or as a back up emergency water supply."
+            },
+            {
+                "q": "Where and how big is a retention tank?",
+                "a": "Sizes vary, but 3000l of storage volume is common, the tank can be above ground or below."
+            }
+        ],
+        "relatedServices": [
+            "lifestyle-block-water",
+            "plumbing",
+            "stormwater-sewer"
+        ],
+        "colourClass": "text-blue",
+        "description": "Stormwater retention and rainwater harvesting in Upper Hutt, tanks, pumps, pump chambers and emergency backup water supply."
+    },
+    {
+        "name": "Toilets",
+        "shortName": "Toilets",
+        "slug": "toilets",
+        "type": "service",
+        "trade": "Plumbing",
+        "priority": "P1",
+        "icon": "/img/icon-plumbing.png",
+        "iconAlt": "Icon Plumbing",
+        "image": "/img/pioneer-new-toilet.jpg",
+        "imageAlt": "Toilet Installation and Repair",
+        "intro": "Toilet installation and repair in Upper Hutt, the Hutt Valley and the Greater Wellington Region, new toilets, second toilet installation and leaking toilet replacement.",
+        "bullets": [
+            "Add a second toilet",
+            "Replace your old leaking toilet",
+            "New toilet supply and installation",
+            "Toilet repairs and maintenance",
+            "Consent handling for new toilet installations"
+        ],
+        "homeH2": "Toilet Services",
+        "faqs": [
+            {
+                "q": "How long will my toilet be out of action?",
+                "a": "With planning usually only a single day."
+            },
+            {
+                "q": "I want a second toilet, does this need consent?",
+                "a": "Yes it does, however we can attend site and make sure it is possible first."
+            }
+        ],
+        "relatedServices": [
+            "plumbing",
+            "hot-water-cylinders",
+            "lifestyle-block-water"
+        ],
+        "colourClass": "text-blue",
+        "description": "Toilet installation and repair in Upper Hutt, new toilets, second toilet installation and leaking toilet replacement."
     }
 ]
