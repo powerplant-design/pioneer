@@ -408,7 +408,8 @@
             "Topsoil, Mulch, Bark, Driveway Metal Delivery and Spreading",
             "Drain Repair and Replacement",
             "Drain CCTV Inspection",
-            "Drain Clearing"
+            "Drain Clearing",
+            "New drains for additional dwellings"
         ],
         "faqs": [
             {
@@ -526,7 +527,7 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/pioneer-blocked.jpg",
         "imageAlt": "Drain Repair",
-        "intro": "Drain repair and replacement in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs using relining or renewal, with our own diggers and proper ground reinstatement.",
+        "intro": "Drain repair and replacement in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs and renewal, using the appropriate plant, tools and machinery reinstating the finished ground level, as we found it.",
         "bullets": [
             "CCTV-located repairs",
             "Pipe relining where suitable",
@@ -553,7 +554,7 @@
             "drainlaying"
         ],
         "colourClass": "text-grey",
-        "description": "Drain repairs in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs using relining or renewal, with proper ground reinstatement.",
+        "description": "Drain repair and replacement in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs and renewal.",
         "homeH2": "Drain Repair Services"
     },
     {
@@ -697,7 +698,7 @@
         "priority": "P1",
         "icon": "/img/icon-gasfitting.png",
         "iconAlt": "Icon Gasfitting",
-        "image": "/img/pioneer-gasfitting.jpg",
+        "image": "/img/services-gasfitting.jpg",
         "imageAlt": "Gasfitting Services",
         "colourClass": "text-orange",
         "intro": "New domestic gas installation in Upper Hutt, the Hutt Valley and the Greater Wellington Region, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, installed and certified by a certifying gasfitter.",
