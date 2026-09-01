@@ -92,7 +92,12 @@ description: Certifying plumber, gasfitter and drainlayer in Upper Hutt, the loc
                 <div class="card-grid card-grid--2">
                     {% for s in services %}
                     {% if s.specialty %}
-                    <a href="/services/{{ s.slug }}/" class="home-card home-card--specialty">
+                    {% if s.type == "trade" %}
+                        {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+                    {% else %}
+                        {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                    {% endif %}
+                    <a href="{{ sUrl }}" class="home-card home-card--specialty">
                         <div class="home-card--img">
                             <img src="{{ s.specialty.image }}" alt="{{ s.specialty.imageAlt }}" />
                         </div>

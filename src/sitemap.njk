@@ -14,7 +14,11 @@ eleventyExcludeFromCollections: true
 {%- endfor %}
 {%- for s in services %}
   <url>
+    {% if s.type == "trade" %}
     <loc>{{ site.url }}/services/{{ s.slug }}/</loc>
+    {% else %}
+    <loc>{{ site.url }}/services/{{ s.trade | lower }}/{{ s.slug }}/</loc>
+    {% endif %}
   </url>
 {%- endfor %}
 {%- for a in areas %}

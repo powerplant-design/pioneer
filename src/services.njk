@@ -25,33 +25,44 @@ description: Plumbing, gasfitting and drainlaying services in Upper Hutt, the Hu
         </div>
     </section>
 
+    <section class="section section-mbl">
+        <div class="section--container">
+            <div class="card-grid card-grid--3">
+                {% for s in services %}
+                {% if s.type == "trade" %}
+                <a href="/services/{{ s.slug }}/" class="home-card home-card--{{ s.name | slug }}">
+                    <div class="home-card--img">
+                        {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="home-card--body">
+                        <div class="home-card--header">
+                            <img class="home-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                            <h3>{{ s.name }}</h3>
+                        </div>
+                        <p>{{ s.homeH2 }}</p>
+                        <span class="home-card--link">Learn more ›</span>
+                    </div>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
     {% for s in services %}
     {% if s.type == "trade" %}
     <section class="section">
         <div class="section--container">
             <div class="hub-trade">
                 <img src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
-                <h2>{{ s.name }}</h2>
+                <h2>{{ s.name }} Services</h2>
             </div>
             <div class="hub-grid">
-                {% set tradeSlug = s.trade | lower %}
-                <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
-                    <div class="hub-card--img">
-                        {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
-                    </div>
-                    <div class="hub-card--body">
-                        <div class="hub-card--header">
-                            <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
-                            <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
-                        </div>
-                        <p>{{ s.intro }}</p>
-                        <span class="hub-card--more">Learn more ›</span>
-                    </div>
-                </a>
                 {% for svc in services %}
                 {% if svc.type == "service" and svc.trade == s.name %}
                 {% set tradeSlug = svc.trade | lower %}
-                <a href="/services/{{ svc.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                {% set svcUrl = "/services/" ~ svc.trade | lower ~ "/" ~ svc.slug ~ "/" %}
+                <a href="{{ svcUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
                     <div class="hub-card--img">
                         {% image svc.image, svc.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                     </div>

@@ -5,14 +5,26 @@ pagination:
     data: services
     size: 1
     alias: service
-permalink: /services/{{ service.slug }}/
+eleventyComputed:
+    permalink: "/services/{% if service.type == 'trade' %}{{ service.slug }}{% else %}{{ service.trade | lower }}/{{ service.slug }}{% endif %}/"
 ---
 
-{% set crumbs = [
-    { "name": "Home", "url": "/" },
-    { "name": "Services", "url": "/services/" },
-    { "name": service.name, "url": "/services/" ~ service.slug ~ "/" }
-] %}
+{% if service.type == "trade" %}
+    {% set serviceUrl = "/services/" ~ service.slug ~ "/" %}
+    {% set crumbs = [
+        { "name": "Home", "url": "/" },
+        { "name": "Services", "url": "/services/" },
+        { "name": service.name, "url": serviceUrl }
+    ] %}
+{% else %}
+    {% set serviceUrl = "/services/" ~ service.trade | lower ~ "/" ~ service.slug ~ "/" %}
+    {% set crumbs = [
+        { "name": "Home", "url": "/" },
+        { "name": "Services", "url": "/services/" },
+        { "name": service.trade, "url": "/services/" ~ service.trade | lower ~ "/" },
+        { "name": service.name, "url": serviceUrl }
+    ] %}
+{% endif %}
 {% set heroTitle = service.name %}
 {% set heroText = service.intro | safe %}
 {% set heroImage = service.image %}
@@ -37,38 +49,81 @@ permalink: /services/{{ service.slug }}/
     </div>
 </section>
 
+{% set hasRelated = false %}
+{% if service.type == "trade" %}
+    {% for s in services %}
+        {% if s.type == "service" and s.trade == service.name %}
+            {% set hasRelated = true %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% for s in services %}
+        {% for r in service.relatedServices %}
+            {% if s.slug == r %}{% set hasRelated = true %}{% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% if service.type == "trade" and hasRelated %}
+<section class="section section-mbl">
+    <div class="section--container stack">
+        <h2>Services</h2>
+        <div class="hub-grid">
+            {% for s in services %}
+                {% if s.type == "service" and s.trade == service.name %}
+                {% set tradeSlug = s.trade | lower %}
+                {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                <a href="{{ sUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
+                    <div class="hub-card--img">
+                        {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                    </div>
+                    <div class="hub-card--body">
+                        <div class="hub-card--header">
+                            <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                            <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                        </div>
+                        <p>{{ s.intro }}</p>
+                        <span class="hub-card--more">Learn more ›</span>
+                    </div>
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 {% set faqs = service.faqs %}{% include "partials/faq.njk" %}
 
-{% set hasRelated = false %}
-{% for s in services %}
-{% for r in service.relatedServices %}
-{% if s.slug == r %}{% set hasRelated = true %}{% endif %}
-{% endfor %}
-{% endfor %}
-{% if hasRelated %}
+{% if service.type != "trade" and hasRelated %}
 <section class="section section-mbl">
     <div class="section--container stack">
         <h2>Related Services</h2>
         <div class="hub-grid">
             {% for s in services %}
-            {% for r in service.relatedServices %}
-            {% if s.slug == r %}
-            {% set tradeSlug = s.trade | lower %}
-            <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
-                <div class="hub-card--img">
-                    {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
-                </div>
-                <div class="hub-card--body">
-                    <div class="hub-card--header">
-                        <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
-                        <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
-                    </div>
-                    <p>{{ s.intro }}</p>
-                    <span class="hub-card--more">Learn more ›</span>
-                </div>
-            </a>
-            {% endif %}
-            {% endfor %}
+                {% for r in service.relatedServices %}
+                    {% if s.slug == r %}
+                    {% set tradeSlug = s.trade | lower %}
+                    {% if s.type == "trade" %}
+                        {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+                    {% else %}
+                        {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                    {% endif %}
+                    <a href="{{ sUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
+                        <div class="hub-card--img">
+                            {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
+                        </div>
+                        <div class="hub-card--body">
+                            <div class="hub-card--header">
+                                <img class="hub-card--icon" src="{{ s.icon }}" alt="{{ s.iconAlt }}" />
+                                <h3 class="{{ s.colourClass }}">{{ s.name }}</h3>
+                            </div>
+                            <p>{{ s.intro }}</p>
+                            <span class="hub-card--more">Learn more ›</span>
+                        </div>
+                    </a>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
         </div>
     </div>

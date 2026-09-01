@@ -13,7 +13,12 @@
             <h4>Specialties</h4>
             {% for s in services %}
             {% if s.specialty %}
-            <a href="/services/{{ s.slug }}/">{{ s.specialty.heading | safe }}</a>
+            {% if s.type == "trade" %}
+                {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+            {% else %}
+                {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+            {% endif %}
+            <a href="{{ sUrl }}">{{ s.specialty.heading | safe }}</a>
             {% endif %}
             {% endfor %}
         </div>

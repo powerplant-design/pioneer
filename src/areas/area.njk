@@ -53,7 +53,12 @@ permalink: /areas/{{ area.slug }}/
                     {% endfor %}
                     {% if isAreaMatch %}
                     {% set tradeSlug = s.trade | lower %}
-                    <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                    {% if s.type == "trade" %}
+                        {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+                    {% else %}
+                        {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                    {% endif %}
+                    <a href="{{ sUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
                         <div class="hub-card--img">
                             {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                         </div>
@@ -78,7 +83,12 @@ permalink: /areas/{{ area.slug }}/
                     {% endfor %}
                     {% if not isAreaMatch and not isOtherArea %}
                     {% set tradeSlug = s.trade | lower %}
-                    <a href="/services/{{ s.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+                    {% if s.type == "trade" %}
+                        {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+                    {% else %}
+                        {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                    {% endif %}
+                    <a href="{{ sUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
                         <div class="hub-card--img">
                             {% image s.image, s.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                         </div>

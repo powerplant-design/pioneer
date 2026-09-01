@@ -1,5 +1,10 @@
 {% set tradeSlug = card.trade | lower %}
-<a href="/services/{{ card.slug }}/" class="hub-card hub-card--{{ tradeSlug }}">
+{% if card.type == "trade" %}
+    {% set cardUrl = "/services/" ~ card.slug ~ "/" %}
+{% else %}
+    {% set cardUrl = "/services/" ~ card.trade | lower ~ "/" ~ card.slug ~ "/" %}
+{% endif %}
+<a href="{{ cardUrl }}" class="hub-card hub-card--{{ tradeSlug }}">
     <div class="hub-card--img">
         {% image card.image, card.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
     </div>

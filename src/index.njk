@@ -88,7 +88,12 @@ ogTitle: Pioneer PGD LTD
             <div class="card-grid card-grid--2">
                 {% for s in services %}
                 {% if s.specialty %}
-                <a href="/services/{{ s.slug }}/" class="home-card home-card--specialty">
+                {% if s.type == "trade" %}
+                    {% set sUrl = "/services/" ~ s.slug ~ "/" %}
+                {% else %}
+                    {% set sUrl = "/services/" ~ s.trade | lower ~ "/" ~ s.slug ~ "/" %}
+                {% endif %}
+                <a href="{{ sUrl }}" class="home-card home-card--specialty">
                     <div class="home-card--img">
                         {% image s.specialty.image, s.specialty.imageAlt, [400, 800], "(min-width: 800px) 800px, 400px" %}
                     </div>
