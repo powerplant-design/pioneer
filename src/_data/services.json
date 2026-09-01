@@ -15,9 +15,9 @@
         "bullets": [
             "New soak pits and renewals, sized to your site",
             "Subsoil (sub-surface) drainage for wet sections",
-            "Sumps and catchpits",
             "Diversion and connection of downpipes and surface water",
             "Geotextile-wrapped construction for long life",
+            "Sumps and catchpits",
             "Can do certification and consenting"
         ],
         "specialty": {
@@ -38,11 +38,11 @@
         "faqs": [
             {
                 "q": "How big does a soak pit need to be?",
-                "a": "A soak pit is sized to the area it drains, typically your roof and paved surfaces, and how fast your soil absorbs water. As a rule of thumb, every 10 m² of roof needs around 1 m³ of soakage in free-draining soil, but clay sites need much more. We size every pit to your site and council requirements."
+                "a": "A soak pit is sized to the area it drains, typically your roof and paved surfaces, and how fast your soil absorbs water. We size every pit to your site and council requirements."
             },
             {
                 "q": "Do soak pits work in clay soil?",
-                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's clay areas we combine larger soakage areas with subsoil drainage, or connect overflow to the stormwater system. A percolation test shows what your site needs before you spend money."
+                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's clay areas we combine larger soakage areas with subsoil drainage. A soil soakage test shows what your site needs so that we can tailor your soluton."
             },
             {
                 "q": "Does a soak pit need council consent in NZ?",
@@ -77,10 +77,10 @@
         "iconAlt": "Icon Drainlaying",
         "image": "/img/pioneer-soak-pits2.jpg",
         "imageAlt": "Soak Pit Installation Upper Hutt",
-        "intro": "Soak pit installation in Upper Hutt, sized for clay soil, percolation tested and council consented. New soak pits, renewals and stormwater soakage by certifying drainlayers based in Upper Hutt.",
+        "intro": "Soak pit installation in Upper Hutt, sized for clay soil, soil soakage tested and consented. New soak pits, renewals and stormwater soakage by certifying drainlayers based in Upper Hutt.",
         "bullets": [
             "Soak pit design, excavation and installation",
-            "Percolation testing and soil assessment",
+            "Soial soakage testing and soil assessment",
             "Clay soil soakage solutions for Upper Hutt suburbs",
             "Stormwater soakage pits and overflow connections",
             "Geotextile-wrapped construction for long life",
@@ -89,7 +89,7 @@
         "faqs": [
             {
                 "q": "Do soak pits work in Upper Hutt clay soil?",
-                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's hill suburbs like Pinehaven, Birchville and Maoribank, we combine larger soakage areas with subsoil drainage, or connect overflow to the stormwater system. A percolation test shows what your site needs before you spend money."
+                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's hill suburbs like Pinehaven, Birchville and Maoribank, we combine larger soakage areas with subsoil drainage. A soil soakage test shows what your site needs before you spend money."
             },
             {
                 "q": "How much does a soak pit cost in Upper Hutt?",
@@ -110,7 +110,7 @@
             "blocked-drains"
         ],
         "colourClass": "text-grey",
-        "description": "Soak pit installation in Upper Hutt, clay soil solutions, percolation tested and council consented by certifying drainlayers.",
+        "description": "Soak pit installation in Upper Hutt, clay soil solutions, soil soakage tested and council consented by certifying drainlayers.",
         "homeH2": "Soak Pit Services Upper Hutt"
     },
     {
@@ -122,7 +122,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/specialise-drainage.jpg",
+        "image": "/img/pioneer-new-drainage.jpg",
         "imageAlt": "Stormwater and Sewer Drainage",
         "intro": "Stormwater and sewer drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, new drains, channel drains, sumps and sewer pump chambers, plus repair and renewal of existing systems.",
         "bullets": [
@@ -154,7 +154,7 @@
             },
             {
                 "q": "Who is responsible for stormwater drains on my property?",
-                "a": "You are, up to where your drain connects to the council system (usually at the boundary). From that point the council owns and maintains it. We can CCTV your drains to pinpoint exactly where your responsibility ends."
+                "a": "You are, up to where your drain connects to the council system (usually at the boundary, unless you use a soakpit soakage system). From that point the council owns and maintains it. We can CCTV your drains to pinpoint exactly where your responsibility ends."
             },
             {
                 "q": "Do I need consent to add new stormwater drains?",
@@ -179,7 +179,7 @@
         "priority": "P1",
         "icon": "/img/icon-drainlaying.png",
         "iconAlt": "Icon Drainlaying",
-        "image": "/img/pioneer-subsoil.jpg",
+        "image": "/img/pioneer-subsoil-drainage.png",
         "imageAlt": "Boggy Lawn Drainage Solutions",
         "intro": "Boggy lawn and wet section drainage in Upper Hutt, the Hutt Valley and the Greater Wellington Region, subsoil drainage, channel drains and soak pits to fix waterlogged yards, pooling and surface flooding.",
         "bullets": [
@@ -252,11 +252,11 @@
         "faqs": [
             {
                 "q": "What are my lifestyle block water supply options?",
-                "a": "Most lifestyle blocks use rainwater tanks, sometimes topped up by a bore or carted water, with a pump and pressure system to deliver house pressure. We install and repair the full setup, tanks, pumps, pipework, filters and overflow, and can fix leaking supply lines from the street toby."
+                "a": "Most lifestyle blocks use rainwater tanks, sometimes topped up by a natural water source or carted water, with a pump and pressure system to deliver house pressure. We install and repair the full setup, tanks, pumps, pipework, filters and overflow, and can fix leaking supply lines or fittings."
             },
             {
                 "q": "Can you install rainwater tanks in Upper Hutt?",
-                "a": "Yes, tank supply, pump and pressure vessel installation, and connecting overflow to a soak pit or drain are all regular work for us. Tanks over certain sizes may need council checking; we advise on that during the site visit."
+                "a": "Yes, tank supply, pump and pressure vessel installation, and connecting overflow to a soak pit or drain are all regular work for us."
             },
             {
                 "q": "My water pump keeps cycling, what's wrong?",
@@ -349,7 +349,8 @@
             "Gas pipework and connections",
             "Removal and disposal of old cylinder",
             "Gas certificate of compliance issued",
-            "Upgrades from low to mains pressure"
+            "Upgrades from low to mains pressure",
+            "Arranging other subtrades e.g. the electricians electrical wiring"
         ],
         "faqs": [
             {
@@ -367,6 +368,10 @@
             {
                 "q": "How long does a Rinnai Infinity last?",
                 "a": "With regular servicing a Rinnai Infinity typically lasts 15–20 years. They have fewer failure points than storage cylinders because there's no anode to corrode and no tank to leak. Annual servicing keeps the warranty valid and the unit efficient."
+            },
+            {
+                "q": "Can you organise other subtrades for installs?",
+                "a": "Yes, we are happy to arrange an electrician to complete the install."
             }
         ],
         "relatedServices": [
@@ -486,8 +491,7 @@
             "Full colour CCTV drain surveys",
             "Located and measured fault reports",
             "Pre-purchase drain checks",
-            "Post-repair verification",
-            "Council and insurance reporting"
+            "Post-repair verification"
         ],
         "faqs": [
             {
@@ -622,12 +626,16 @@
                 "a": "Yes, Pioneer PGD holds a certifying plumber licence, the highest level issued by the Plumbers, Gasfitters and Drainlayers Board. That means we can legally do all restricted plumbing work, sign off jobs, and issue certificates of compliance for new installations."
             },
             {
-                "q": "Do you supply and install, or install only?",
-                "a": "Both. We can supply and install new hot water cylinders, toilets, vanities, tapware and appliances, or install items you've purchased. Supplied-and-installed packages come with our workmanship guarantee plus the manufacturer's warranty."
+                "q": "Who supplies the gear you install?",
+                "a": "We supply and install new hot water cylinders, toilets, vanities, tapware and appliances. Supplied-and-installed packages come with our workmanship guarantee plus the manufacturer's warranty."
             },
             {
                 "q": "Do you do small plumbing repairs?",
-                "a": "Yes. No job is too small, dripping taps, leaking pipes, toilet repairs, spouting and downpipes, and hot water faults are all regular work for us."
+                "a": "Yes. No job is too small, we pride ourselves on problem solving and quality solutions. Dripping taps, leaking pipes, toilet repairs, spouting and downpipes, and hot water faults are all regular work for us."
+            },
+            {
+                "q": "My gutters overflow in heavy rain, what can I do?",
+                "a": "Adding in downpipes, checking existing pipe sizing, that gutters have gravity fall and are free of debris. Also replacing damaged sections of spouting."
             }
         ],
         "relatedServices": [
@@ -708,17 +716,21 @@
             },
             {
                 "q": "Can you convert my appliance to LPG or natural gas?",
-                "a": "Yes, we install and convert gas appliances for both natural gas and LPG, including Rinnai Infinity units, hobs and heaters. We also set up LPG bottle stations and property gas supplies."
+                "a": "Yes, we install both natural gas and LPG, including Rinnai Infinity units, hobs and heaters. We also set up LPG bottle stations and property gas supplies."
             },
             {
                 "q": "Do you install Rinnai Infinity units?",
                 "a": "Yes, new external Rinnai Infinity (continuous flow) water heaters, supplied and installed, are one of our most common gasfitting jobs. We size the unit to your household, run the new gas pipework if needed, and certify the installation."
+            },
+            {
+                "q": "Why is my gas bill so high?",
+                "a": "You may have an undiscovered gas leak and is worth looking into."
             }
         ],
         "relatedServices": [
             "gas-leak-detection",
             "hot-water-cylinders",
-            "plumbing"
+            "rinnai-infinity"
         ],
         "description": "Certifying gasfitter in Upper Hutt, Rinnai Infinity units, hobs, heaters, gas pipework and LPG bottle stations, supplied and installed.",
         "homeH2": "New Domestic Installation"
@@ -790,7 +802,7 @@
             },
             {
                 "q": "Who do I call for a gas leak in NZ?",
-                "a": "For a strong smell or suspected major leak, turn off the gas at the meter or bottle and call your gas network provider, or 111 if it's dangerous. For leaks at appliances, BBQ lines or pipework on your property, call a licensed gasfitter: we detect and repair leaks and certify the fix."
+                "a": "For a strong smell or suspected major leak, turn off the gas at the meter or bottle and call your gas network provider, or 111 if it's dangerous. For leaks at appliances or pipework on your property, call a licensed gasfitter: we detect and repair leaks and certify the fix."
             },
             {
                 "q": "How is a gas leak detected?",
