@@ -34,8 +34,6 @@
     --step-4: clamp(2.1263rem, 1.882rem + 0.9281vw, 2.7896rem);
     --step-5: clamp(2.5516rem, 2.2123rem + 1.347vw, 3.487rem);
 
-    .logo-mobile { display: none; }
-
     --border-radius-medium: 1rem;
     --border-radius-large: 3rem;
 
@@ -59,6 +57,8 @@
     --nav-height: 95px;
     --footer-height: 40px;
 }
+
+.logo-mobile { display: none; }
 
 /* ================================================================
    3. RESET & BASE
@@ -488,8 +488,8 @@ nav {
    ================================================================ */
 
 .home-hero {
-    height: calc(100vh - var(--nav-height) - 150px);
-    margin-top: var(--nav-height);
+    height: calc(100vh - var(--nav-height) - 155px);
+    margin-top: calc(var(--nav-height) + 5px);
 }
 
 .home-hero--inner {
@@ -1486,8 +1486,12 @@ footer {
 /* --- Mobile (max-width: 700px) --- */
 @media screen and (max-width: 700px) {
     * {
-        --nav-height: 95px;
+        --nav-height: 65px;
         --footer-height: 100px;
+    }
+
+    body:has(.breadcrumbs) * {
+        --nav-height: 95px;
     }
 
     h1 {

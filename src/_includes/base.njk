@@ -34,6 +34,8 @@
                 if (!breadcrumbs) return;
                 const nav = document.querySelector('nav');
                 const heroText = document.querySelector('.hero--text');
+                const homeLink = breadcrumbs.querySelector('a[href="/"]');
+                const firstSep = homeLink ? homeLink.nextElementSibling : null;
                 const MOBILE = 700;
                 let currentlyInNav = false;
 
@@ -43,15 +45,15 @@
                         nav.appendChild(breadcrumbs);
                         breadcrumbs.classList.add('hide-dsk');
                         breadcrumbs.classList.remove('hide-mbl');
-                        const homeLink = breadcrumbs.querySelector('a[href="/"]');
-                        const firstSep = homeLink ? homeLink.nextElementSibling : null;
-                        if (homeLink) homeLink.remove();
-                        if (firstSep) firstSep.remove();
+                        if (homeLink) homeLink.hidden = true;
+                        if (firstSep) firstSep.hidden = true;
                         currentlyInNav = true;
                     } else if (!inMobile && currentlyInNav) {
                         heroText.insertBefore(breadcrumbs, heroText.firstChild);
                         breadcrumbs.classList.remove('hide-dsk');
                         breadcrumbs.classList.add('hide-mbl');
+                        if (homeLink) homeLink.hidden = false;
+                        if (firstSep) firstSep.hidden = false;
                         currentlyInNav = false;
                     }
                 }
