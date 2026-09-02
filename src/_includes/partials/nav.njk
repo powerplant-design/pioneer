@@ -5,17 +5,28 @@
         {% if home %}
         <a href="#top"
             ><img
+                class="logo-desktop hide-mbl"
                 src="/img/pioneer-logo.png"
+                alt="Pioneer Plumbing Gasfitting and Drainlaying services in the greater Wellington region."
+        /><img
+                class="logo-mobile hide-dsk"
+                src="/img/pioneer-logo-mbl.png"
                 alt="Pioneer Plumbing Gasfitting and Drainlaying services in the greater Wellington region."
         /></a>
         {% else %}
         <a href="/"
             ><img
+                class="logo-desktop hide-mbl"
                 src="/img/pioneer-logo.png"
+                alt="Pioneer Plumbing Gasfitting and Drainlaying services in the greater Wellington region."
+        /><img
+                class="logo-mobile hide-dsk"
+                src="/img/pioneer-logo-mbl.png"
                 alt="Pioneer Plumbing Gasfitting and Drainlaying services in the greater Wellington region."
         /></a>
         {% endif %}
     </div>
+    
     <div class="nav--links">
         <div class="nav--links_mbl">
             <a href="/services/">Services</a>
@@ -24,10 +35,10 @@
             <a href="/reviews">Reviews</a>
         </div>
         <a href="/contact/" class="hide-dsk{% if disableContact %} disable{% endif %}"
-            ><button class="button--primary">Contact</button></a
+            ><button class="button--primary">Contact Now</button></a
         >
         <a href="/contact/" class="hide-mbl nav-contact{% if disableContact %} disable{% endif %}"
-            ><button class="button--secondary">Contact</button></a
+            ><button class="button--secondary">Contact Now</button></a
         >
     </div>
 </nav>

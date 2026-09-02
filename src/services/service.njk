@@ -31,7 +31,11 @@ eleventyComputed:
 {% set heroAlt = service.imageAlt %}
 {% include "partials/hero.njk" %}
 
+{% if service.type == "trade" %}
+{% include "partials/schema-trade.njk" %}
+{% else %}
 {% include "partials/schema-service.njk" %}
+{% endif %}
 
 <section class="section section-mbl">
     <div class="section--container">

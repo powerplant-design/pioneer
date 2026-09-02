@@ -63,6 +63,6 @@
         "reviewCount": {{ reviews.google.count }},
         "bestRating": 5
     },
-    "sameAs": {{ site.sameAs | json }}
+    "sameAs": {{ site.sameAs | json | safe }}
 }
 </script>

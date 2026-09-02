@@ -42,7 +42,7 @@
             },
             {
                 "q": "Do soak pits work in clay soil?",
-                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's clay areas we combine larger soakage areas with subsoil drainage. A soil soakage test shows what your site needs so that we can tailor your soluton."
+                "a": "They can, but clay absorbs water very slowly, so a standard pit often isn't enough. In Upper Hutt's clay areas we combine larger soakage areas with subsoil drainage. A soil soakage test shows what your site needs so that we can tailor your solution."
             },
             {
                 "q": "Does a soak pit need council consent in NZ?",
@@ -530,22 +530,23 @@
         "intro": "Drain repair and replacement in Upper Hutt, the Hutt Valley and the Greater Wellington Region, CCTV-located, fixed-quote repairs and renewal, using the appropriate plant, tools and machinery reinstating the finished ground level, as we found it.",
         "bullets": [
             "CCTV-located repairs",
-            "Pipe relining where suitable",
             "Excavation and renewal",
-            "Root cutting and root barriers"
+            "Root cutting and root barriers",
+            "Annual drain clearing and flushing",
+            "Regular maintenance"
         ],
         "faqs": [
             {
                 "q": "How do I know if my drain needs repair?",
-                "a": "Repeated blockages, slow drains across multiple fixtures, wet patches or subsidence in the yard, and rat or drain-fly problems all point to a broken drain. A CCTV inspection confirms it and shows exactly where and what the fault is."
+                "a": "Repeated blockages, slow drains across multiple fixtures, wet patches or subsidence in the yard, and rat or drain-fly problems all point to a broken drain. A CCTV inspection confirms and shows exactly where and what the fault is."
             },
             {
                 "q": "How are drains repaired, do you have to dig up my yard?",
-                "a": "Not always. Where the pipe has good alignment we can reline some drains with minimal digging. Where pipes have collapsed, excavation and replacement is needed, we have our own diggers and reinstate the ground properly."
+                "a": "Not always. Where the pipe has a simpler blockage we can often clear the block without digging. Where pipes have collapsed, excavation and replacement is needed, we have our own diggers and reinstate the ground properly."
             },
             {
                 "q": "How much does drain repair cost?",
-                "a": "It depends on depth, length, access and whether relining or replacement is right. We CCTV first, then give a fixed quote, so you know the price before work starts."
+                "a": "It depends on depth, length, access and whether replacement is required. We CCTV first, then give a fixed quote, so you know the price before work starts."
             }
         ],
         "relatedServices": [
@@ -656,7 +657,7 @@
         "priority": "P1",
         "icon": "/img/icon-plumbing.png",
         "iconAlt": "Icon Plumbing",
-        "image": "/img/pioneer-plumber-upper-hut.jpg",
+        "image": "/img/pioneer-plumber-upper-hutt.jpg",
         "imageAlt": "Plumber Upper Hutt",
         "intro": "Certifying plumber in Upper Hutt, hot water, kitchen retrofits, tapware, leak detection and pumps. Fixed quotes from a locally owned and operated plumbing company in Upper Hutt.",
         "bullets": [

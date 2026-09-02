@@ -88,21 +88,18 @@ ogTitle: Contact Pioneer PGD
 
             <div class="container--contact-inner contacts">
                 <div class="info stack">
-                    <div class="center-tablet">
+                    <div class="center-tablet hide-mbl">
                         {% image "/src/img/pioneer-certifying-icons.png", "Pioneer Certified Plumbing Gasfitting and Drainlaying", [200, 400], "400px", "hero--certified" %}
 
                     </div>
-                    <p>
+                    <p class=hide-mbl>
                         <a
                             href="{{ site.googleMapsUrl }}"
                             target="_blank"
                         >
                             Certifying Plumbing, Gasfitting and
                             Drainlaying.
-                        </a>
-                    </p>
-                    <p>
-                        {{ site.serviceAreaText }}
+                        </a> {{ site.serviceAreaText }}
                     </p>
                     <p>Monday&#8212;Friday | 9am&#8212;5pm</p>
                 </div>

@@ -1,8 +1,8 @@
 {% set crumbLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [] } %}
 {% for c in crumbs %}{% set _ = crumbLd.itemListElement.push({ "@type": "ListItem", "position": loop.index, "name": c.name, "item": site.url ~ c.url }) %}{% endfor %}
-<div class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<div class="breadcrumbs hide-mbl" role="navigation" aria-label="Breadcrumb">
     {% for c in crumbs %}
-    {% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span> / </span>{% else %}<span>{{ c.name }}</span>{% endif %}
+    {% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span> · </span>{% else %}<span>{{ c.name }}</span>{% endif %}
     {% endfor %}
 </div>
 <script type="application/ld+json">{{ crumbLd | dump | safe }}</script>
