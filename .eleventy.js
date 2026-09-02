@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("fav.ico");
     eleventyConfig.addPassthroughCopy("llms.txt");
+    eleventyConfig.addPassthroughCopy("src/img/icon-ig.svg");
     eleventyConfig.addNunjucksGlobal("currentYear", () =>
         new Date().getFullYear()
     );
