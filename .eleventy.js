@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
         return str.split(find).join(replace);
     });
 
-    async function imageShortcode(src, alt, widths, sizes, classes) {
+    async function imageShortcode(src, alt, widths, sizes, classes, eager) {
         // Resolve path relative to project root
         let inputPath = src;
         if (src.startsWith("/src/")) {
@@ -42,9 +42,10 @@ module.exports = function (eleventyConfig) {
         let imageAttributes = {
             alt,
             sizes: sizes || "(min-width: 1280px) 1280px, (min-width: 800px) 800px, 400px",
-            loading: "lazy",
+            loading: eager ? "eager" : "lazy",
             decoding: "async"
         };
+        if (eager) imageAttributes.fetchpriority = "high";
         let html = eleventyImg.generateHTML(metadata, imageAttributes);
         if (classes) {
             html = html.replace('<picture>', `<picture class="${classes}">`);

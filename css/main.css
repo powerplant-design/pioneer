@@ -42,8 +42,9 @@
     --color-primary: #1c1c1c;
     --color-orange: #f86e1c;
     --color-orange-dark: #dc5609;
+    --color-orange-deep: #b8430e;
     --color-blue: #007ec6;
-    --color-grey: #6d6e72;
+    --color-grey: #65666e;
     --color-grey-light: #93949b;
 
     --spacing-tiny: 0.15rem;
@@ -104,9 +105,12 @@ a {
     -webkit-user-drag: none;
 }
 
-button,
-a[class*="button--"] {
+button {
     all: unset;
+}
+
+button,
+body :where(a[class*="button--"]) {
     font-size: var(--step--1);
     padding: var(--spacing-medium) var(--spacing-large);
     border: 1px solid var(--color-orange);
@@ -116,7 +120,8 @@ a[class*="button--"] {
     display: inline-block;
 }
 
-a button {
+a button,
+a[class*="button--"] {
     text-transform: uppercase;
 }
 
@@ -239,7 +244,7 @@ li {
 }
 
 .text-orange {
-    color: var(--color-orange);
+    color: var(--color-orange-deep);
 }
 
 .text-blue {
@@ -263,9 +268,35 @@ li {
 .bg-image {
     padding: var(--spacing-xlarge) var(--spacing-medium) !important;
     border: 1px solid black;
-    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8)), url(../img/pioneer-hero-dsk.jpg);
-    background-position: left center;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image--img {
+    position: absolute;
+    inset: 0;
+}
+
+.bg-image--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    display: block;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 2 / 0.8));
+}
+
+.bg-image .section--container {
+    position: relative;
+    z-index: 2;
 }
 
 /* ================================================================
@@ -300,7 +331,7 @@ li {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-orange);
+    color: var(--color-orange-deep);
     margin-bottom: var(--spacing-medium);
 }
 
@@ -334,13 +365,13 @@ nav {
         text-transform: uppercase;
     }
 
-    a:not(:has(button)) {
+    a:not([class*="button--"]) {
         padding-bottom: var(--spacing-tiny);
         border-bottom: 2px solid transparent;
         transition: border 300ms;
     }
 
-    a:hover:not(:has(button)) {
+    a:hover:not([class*="button--"]) {
         border-bottom-color: var(--color-primary);
     }
 }
@@ -369,7 +400,7 @@ nav {
 
 .button--primary {
     color: var(--color-light);
-    background-color: var(--color-orange);
+    background-color: var(--color-orange-deep);
 }
 
 .button--primary:hover {
@@ -503,11 +534,16 @@ nav {
     text-align: center;
 }
 
-.home-hero--inner::before {
-    content: "";
+.home-hero--img {
     position: absolute;
     inset: 0;
-    background: url(../img/pioneer-home-hero.jpg) center center/cover no-repeat;
+}
+
+.home-hero--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .home-hero--inner::after {
@@ -601,11 +637,14 @@ nav {
     object-fit: contain;
 }
 
-.trust-item h3 {
+.trust-item .trust-label {
     color: var(--color-grey);
+    font-family: "Questrial", sans-serif;
     font-size: var(--step--2);
     font-weight: 700;
     letter-spacing: 0.04em;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .trust-stars {
@@ -653,12 +692,12 @@ nav {
     height: var(--spacing-xlarge);
 }
 
-.trust-review-link h3 {
+.trust-review-link .trust-label {
     transition: color 300ms;
 }
 
-.trust-review-link:hover h3 {
-    color: var(--color-orange);
+.trust-review-link:hover .trust-label {
+    color: var(--color-orange-deep);
 }
 
 /* ================================================================
@@ -771,7 +810,7 @@ nav {
 }
 
 .hub-card--more {
-    color: var(--color-orange);
+    color: var(--color-orange-deep);
     font-weight: 700;
     text-transform: uppercase;
     font-size: var(--step--2);
@@ -878,7 +917,7 @@ nav {
 }
 
 .home-card--link {
-    color: var(--color-orange);
+    color: var(--color-orange-deep);
     font-weight: 700;
     text-transform: uppercase;
     margin-top: auto;
@@ -1095,6 +1134,13 @@ nav {
     justify-content: space-between;
 }
 
+.review--author {
+    font-family: "Questrial", sans-serif;
+    font-size: var(--step-1);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .stars {
     display: flex;
     gap: var(--spacing-tiny);
@@ -1240,9 +1286,12 @@ footer {
     text-align: left;
 }
 
-.footer--links h4 {
+.footer--links .footer--heading {
+    font-family: "Questrial", sans-serif;
     text-transform: uppercase;
     font-size: var(--step--1);
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: var(--spacing-small);
 }
 
@@ -1363,7 +1412,8 @@ footer {
         padding-inline: var(--spacing-medium);
     }
 
-    button {
+    button,
+    a[class*="button--"] {
         padding: var(--spacing-small) var(--spacing-medium);
     }
 
@@ -1577,7 +1627,7 @@ footer {
     }
 
     nav .breadcrumbs span {
-        color: var(--color-grey-light);
+        color: var(--color-grey);
     }
 
     .cta-dual {
@@ -1598,6 +1648,10 @@ footer {
         gap: var(--spacing-medium) !important;
     }
 
+    .footer--links a {
+        padding-block: var(--spacing-small);
+    }
+
     .footer--bottom {
         flex-direction: column;
         text-align: center;
@@ -1610,7 +1664,7 @@ footer {
     }
 
     .call-now {
-        color: var(--color-orange);
+        color: var(--color-orange-deep);
         display: inline-block;
         font-size: var(--step--2);
     }

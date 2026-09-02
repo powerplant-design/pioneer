@@ -7,12 +7,13 @@ ogTitle: Pioneer PGD LTD
 
 <section class="home-hero">
     <div class="home-hero--inner">
+        {% image "/src/img/pioneer-home-hero.jpg", "", [400, 800, 1280, 1920], "100vw", "home-hero--img", true %}
         <div class="home-hero--content">
             <h1 class="max-w-28ch">Certified Plumbing, Gasfitting and Drainlaying Services</h1>
             <p class="hero-sub text-balance">Owned and operated from Silverstream and serving Upper Hutt, Lower Hutt and the Greater Wellington region</p>
             <div class="hero-ctas">
-                <a href="#services"><button class="button--secondary">Services</button></a>
-                <a href="/contact/"><button class="button--primary">Contact now</button></a>
+                <a href="#services" class="button--secondary">Services</a>
+                <a href="/contact/" class="button--primary">Contact now</a>
             </div>
         </div>
     </div>
@@ -21,7 +22,7 @@ ogTitle: Pioneer PGD LTD
 <div class="trust-bar">
     <div class="trust-items">
         <div class="trust-item">
-            <h3>Trade Certified</h3>
+            <p class="trust-label">Trade Certified</p>
             {% image "/src/img/pioneer-certifying-icons.png", "Pioneer PGD certified", [200, 400], "400px", "trust-icon" %}
         </div>
         <div class="trust-item">
@@ -33,11 +34,11 @@ ogTitle: Pioneer PGD LTD
                 <img src="/img/star.svg" alt="" class="trust-star" />
             </div>
             <a href="{{ reviews.google.url }}" target="_blank" rel="noopener" class="trust-review-link">
-                <h3>5 Stars from {{ reviews.google.count }} Google Reviews</h3>
+                <p class="trust-label">5 Stars from {{ reviews.google.count }} Google Reviews</p>
             </a>
         </div>
         <div class="trust-item">
-            <h3>Proudly Supported By</h3>
+            <p class="trust-label">Proudly Supported By</p>
             {% image "/src/img/pgd-zip-hut-valley.png", "Certifying body logo", [200, 400], "400px", "trust-icon" %}
         </div>
     </div>

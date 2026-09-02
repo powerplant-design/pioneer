@@ -34,11 +34,7 @@
             <a href="/about/">About</a>
             <a href="/reviews">Reviews</a>
         </div>
-        <a href="/contact/" class="hide-dsk{% if disableContact %} disable{% endif %}"
-            ><button class="button--primary">Contact Now</button></a
-        >
-        <a href="/contact/" class="hide-mbl nav-contact{% if disableContact %} disable{% endif %}"
-            ><button class="button--secondary">Contact Now</button></a
-        >
+        <a href="/contact/" class="hide-dsk button--primary{% if disableContact %} disable{% endif %}">Contact Now</a>
+        <a href="/contact/" class="hide-mbl nav-contact button--secondary{% if disableContact %} disable{% endif %}">Contact Now</a>
     </div>
 </nav>

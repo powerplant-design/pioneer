@@ -1,7 +1,7 @@
 <footer>
     <div class="footer--links">
         <div>
-            <h4>Services</h4>
+            <p class="footer--heading">Services</p>
             {% for s in services %}
             {% if s.type == "trade" %}
             <a href="/services/{{ s.slug }}/">{{ s.name }}</a>
@@ -10,7 +10,7 @@
             <a href="/services/">All Services</a>
         </div>
         <div>
-            <h4>Specialties</h4>
+            <p class="footer--heading">Specialties</p>
             {% for s in services %}
             {% if s.specialty %}
             {% if s.type == "trade" %}
@@ -23,19 +23,19 @@
             {% endfor %}
         </div>
         <div>
-            <h4>Areas</h4>
+            <p class="footer--heading">Areas</p>
             {% for a in areas %}
             <a href="/areas/{{ a.slug }}/">{{ a.name }}</a>
             {% endfor %}
         </div>
         <div>
-            <h4>Company</h4>
+            <p class="footer--heading">Company</p>
             <a href="/">Home</a>
             <a href="/about/">About Pioneer PGD</a>
             <a href="/reviews/">Customer Reviews</a>
         </div>
         <div>
-            <h4>Contact</h4>
+            <p class="footer--heading">Contact</p>
             <a href="{{ site.phoneHref }}">{{ site.phone }}</a>
             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
             <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>

@@ -25,7 +25,7 @@ description: Read customer reviews for Pioneer PGD plumbing, gasfitting and drai
                         </div>
 
                         <div>
-                            <h4>{{ r.author }}</h4>
+                            <p class="review--author">{{ r.author }}</p>
                             <p>{{ r.location }}</p>
                         </div>
                     </div>
@@ -35,8 +35,7 @@ description: Read customer reviews for Pioneer PGD plumbing, gasfitting and drai
         </div>
     </div>
     <div class="section--cta" style="text-align: center;">
-            <a href="{{ reviews.google.url }}" target="_blank">
-                <button class="button--secondary button--logo">
+            <a href="{{ reviews.google.url }}" target="_blank" class="button--secondary button--logo">
                     <div class="trust-stars">
                         <img src="/img/star.svg" alt="" class="trust-star" />
                         <img src="/img/star.svg" alt="" class="trust-star" />
@@ -48,7 +47,6 @@ description: Read customer reviews for Pioneer PGD plumbing, gasfitting and drai
                         <p>{{ reviews.google.count }} Google Reviews</p>
                     </div>
                     <img class="logo-google" src="/img/logo-google-color.svg" alt="Google Logo" />
-                </button>
             </a>
         </div>
 </section>
