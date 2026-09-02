@@ -35,7 +35,12 @@ module.exports = function (eleventyConfig) {
 
         let metadata = await eleventyImg.default(inputPath, {
             widths: widths || [400, 800, 1280],
-            formats: ["webp", "jpeg"],
+            formats: ["avif", "webp", "jpeg"],
+            sharpOptions: {
+                avif: { quality: 55 },
+                webp: { quality: 70 },
+                jpeg: { quality: 70 }
+            },
             outputDir: "_site/img",
             urlPath: "/img"
         });
