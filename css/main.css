@@ -401,6 +401,7 @@ nav {
 .button--primary {
     color: var(--color-light);
     background-color: var(--color-orange-deep);
+    border-color: var(--color-orange-deep);
 }
 
 .button--primary:hover {
@@ -658,18 +659,13 @@ nav {
     height: 24px;
 }
 
-/* .button--logo .trust-star {
-    width: 12px;
-    height: 12px;
-} */
-
 .button--logo {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     align-items: center;
     gap: 4px 8px;
-    padding: var(--spacing-medium) var(--spacing-large)
+    padding: var(--spacing-medium) var(--spacing-large) !important;
 }
 
 .button--logo .trust-stars {
