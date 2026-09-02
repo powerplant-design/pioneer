@@ -28,11 +28,11 @@
 <meta name="twitter:image" content="{{ site.url }}/img/sharing.jpg" />
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 <title>{{ pageTitle }}</title>
-<link rel="preload" href="/css/fonts/lexend-deca-latin-400.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/css/fonts/questrial-latin-400.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="/css/base.css" />
-<link rel="stylesheet" href="/css/normalize.css" />
-<link rel="preload" href="/css/main.css" as="style" />
+<link rel="preload" href="/css/fonts/lexend-deca-latin-400.woff2" as="font" type="font/woff2" crossorigin fetchpriority="low" />
+<link rel="preload" href="/css/fonts/questrial-latin-400.woff2" as="font" type="font/woff2" crossorigin fetchpriority="low" />
+{% if page.url == "/" %}
+{% heroPreloadLink %}
+{% endif %}
 <link rel="stylesheet" href="/css/main.css" />
 
 {% include "partials/analytics.njk" %}

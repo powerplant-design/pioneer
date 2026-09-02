@@ -20,6 +20,8 @@ module.exports = function (eleventyConfig) {
         return str.split(find).join(replace);
     });
 
+    const heroPreloadStore = { srcset: null };
+
     async function imageShortcode(src, alt, widths, sizes, classes, eager) {
         // Resolve path relative to project root
         let inputPath = src;
@@ -55,10 +57,19 @@ module.exports = function (eleventyConfig) {
         if (classes) {
             html = html.replace('<picture>', `<picture class="${classes}">`);
         }
+        if (classes === "home-hero--img") {
+            const avif = Object.values(metadata).flat().filter(f => f.format === "avif");
+            heroPreloadStore.srcset = avif.map(f => `${f.url} ${f.width}w`).join(", ");
+        }
         return html;
     }
 
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+    eleventyConfig.addNunjucksShortcode("heroPreloadLink", () => {
+        if (!heroPreloadStore.srcset) return "";
+        return `<link rel="preload" as="image" imagesrcset="${heroPreloadStore.srcset}" imagesizes="100vw" fetchpriority="high" />`;
+    });
 
     return {
         dir: {
