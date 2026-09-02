@@ -1,6 +1,16 @@
 [build]
-  command = "npx @11ty/eleventy"
-  publish = "_site"
+    command = "npx @11ty/eleventy"
+    publish = "_site"
+
+[[headers]]
+    for = "/css/fonts/*"
+    [headers.values]
+        Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+    for = "/img/*"
+    [headers.values]
+        Cache-Control = "public, max-age=31536000, immutable"
 
 [build.environment]
   NODE_VERSION = "22"
