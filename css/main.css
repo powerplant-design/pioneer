@@ -836,6 +836,10 @@ li {
     margin-bottom: var(--spacing-medium);
 }
 
+.section-label--light {
+    color: var(--color-grey-light);
+}
+
 .section-intro {
     color: var(--color-grey);
     font-size: var(--step-0);
@@ -849,6 +853,7 @@ li {
 nav {
     z-index: 666;
     background-color: #fff;
+    filter: b;
     position: fixed;
     top: 0;
     left: 0;
@@ -1778,7 +1783,7 @@ footer {
 
 .footer--links {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2.25fr 1fr 1fr 1fr;
     gap: var(--spacing-xlarge);
     text-align: left;
 }
@@ -1795,7 +1800,7 @@ footer {
 .footer--links a {
     display: block;
     color: var(--color-grey);
-    font-size: var(--step--2);
+    font-size: var(--step--1);
     text-decoration: none;
     padding-block: var(--spacing-small);
 }
@@ -1887,8 +1892,7 @@ footer {
     }
 
     .section {
-        padding-block: var(--spacing-small);
-        padding-inline: var(--spacing-medium);
+        padding-block: var(--spacing-large);
     }
 
     .section.bg-dark {
@@ -2024,6 +2028,11 @@ footer {
         margin: 0 auto;
     }
 
+    form input,
+    form textarea {
+        background-color: var(--color-light);
+    }
+
     .trust-items {
         grid-template-columns: 1fr;
         gap: var(--spacing-large);
@@ -2079,7 +2088,7 @@ footer {
     }
 
     .nav--links_mbl {
-        background-color: rgb(255 255 255 / 0.5);
+        background-color: rgb(255 255 255 / 0.7);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* For Safari support */
         position: fixed;
@@ -2091,6 +2100,12 @@ footer {
         justify-content: space-around;
         box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 0.5rem 0.5rem 0 0;
+        transition: transform 300ms ease-in-out;
+        transform: translateY(100%);
+    }
+
+    .nav--links_mbl.is-visible {
+        transform: translateY(0);
     }
 
     .show-mbl {

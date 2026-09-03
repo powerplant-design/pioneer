@@ -1,5 +1,6 @@
 {% set home = page.url == "/" %}
 {% set disableContact = page.url == "/contact/" or page.url == "/thanks/" %}
+{% set isContact = page.url == "/contact/" or page.url == "/" %}
 <nav>
     <div class="logo-container">
         {% if home %}
@@ -42,3 +43,31 @@
         <a href="/contact/" class="hide-mbl nav-contact button--secondary{% if disableContact %} disable{% endif %}">Contact Now</a>
     </div>
 </nav>
+<script>
+(function() {
+    const nav = document.querySelector('.nav--links_mbl');
+    if (!nav) return;
+    const mq = window.matchMedia('(max-width: 700px)');
+    let lastY = window.scrollY;
+    let ticking = false;
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                const y = window.scrollY;
+                if (mq.matches) {
+                    if (y <= 10 || (y < lastY && y > 10)) {
+                        nav.classList.add('is-visible');
+                    } else {
+                        nav.classList.remove('is-visible');
+                    }
+                }
+                lastY = y;
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+    if (mq.matches && window.scrollY <= 10 && !{{ isContact | dump }}) nav.classList.add('is-visible');
+    window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script>

@@ -158,7 +158,7 @@
             },
             {
                 "q": "Do I need consent to add new stormwater drains?",
-                "a": "Yes, new or altered drainage work needs a building consent in almost every case. As certifying drainlayers we handle the consent application, build to code, and arrange council inspections for sign-off."
+                "a": "Yes, new or altered drainage work needs a building consent in almost every case. As certifying drainlayers we can handle the consent application, build to code, and arrange council inspections for sign-off."
             }
         ],
         "relatedServices": [
@@ -280,7 +280,7 @@
         "priority": "P1",
         "icon": "/img/icon-plumbing.png",
         "iconAlt": "Icon Plumbing",
-        "image": "/img/specialise-hot-water-cylander.jpg",
+        "image": "/img/specialise-hot-water-cylinder.jpg",
         "imageAlt": "Hot Water Cylinder",
         "intro": "Hot water cylinders and systems in Upper Hutt, the Hutt Valley and the Greater Wellington Region, mains and low pressure cylinders and Rinnai Infinity units, supplied, installed and repaired.",
         "bullets": [
@@ -307,7 +307,7 @@
         "faqs": [
             {
                 "q": "No hot water, what should I check first?",
-                "a": "Check the power or gas supply is on, and look for a tripped switch or blown fuse at the hot water cylinder. If you have a gas continuous-flow unit, check the batteries in the remote or ignition. If supplies are fine and the water still runs cold, call us, the element, valve or unit itself is likely at fault."
+                "a": "Check the power or gas supply is on, and look for a tripped switch or blown fuse at the hot water cylinder. If supplies are fine and the water still runs cold, call us, the element, valve or unit itself is likely at fault."
             },
             {
                 "q": "Mains pressure or low pressure cylinder, which is better?",
@@ -418,7 +418,7 @@
             },
             {
                 "q": "Do I need a certified drainlayer for drainage work?",
-                "a": "Yes. Drainlaying is restricted work under the Plumbers, Gasfitters and Drainlayers Act 2006. Any new or altered sewer, stormwater or drainage work needs a certified drainlayer and, in most cases, a building consent. Pioneer PGD holds certifying drainlayer licences and we handle the consent paperwork for you."
+                "a": "Yes. Drainlaying is restricted work under the Plumbers, Gasfitters and Drainlayers Act 2006. Any new or altered sewer, stormwater or drainage work needs a certified drainlayer and, in most cases, a building consent. Pioneer PGD holds certifying drainlayer licences and we can handle the consent paperwork for you."
             },
             {
                 "q": "Do you handle council consent for drainage work?",
@@ -637,7 +637,7 @@
             },
             {
                 "q": "My gutters overflow in heavy rain, what can I do?",
-                "a": "Adding in downpipes, checking existing pipe sizing, that gutters have gravity fall and are free of debris. Also replacing damaged sections of spouting."
+                "a": "We check downpipe sizing, make sure gutters have gravity fall and are clear of debris, and replace any damaged sections of spouting."
             }
         ],
         "relatedServices": [
@@ -675,11 +675,11 @@
             },
             {
                 "q": "Do you do emergency plumbing in Upper Hutt?",
-                "a": "We don't do after-hours callouts, but we respond quickly during business hours. For burst pipes, hot water failures and urgent leaks, call us and we'll get to you the same day where possible."
+                "a": "We don't advertise that we do, however if you are a regular client of Pioneer, or are in a bad situation, we usually can make it happen."
             },
             {
                 "q": "Do you charge callout fees?",
-                "a": "No callout fees. We quote fixed prices and you know the cost before work starts. For straightforward jobs we can usually quote over the phone or from photos."
+                "a": "If you request us to attend site and require our services, as standard you will incur a flat competitive, Service Callout fee. The fee covers vehicle, travel and the first half hour onsite. Cost of any materials used on top. After we have assessed, diagnosed or isolated the issue, normal practice is to pause, and either verbally quote before moving forward, or provide an official written quote if the job required is substantial.\n\nWe don't charge for problem solving or planning based site meetings to obtain quoting for works that are being scheduled in."
             }
         ],
         "relatedServices": [
@@ -726,7 +726,7 @@
             },
             {
                 "q": "Why is my gas bill so high?",
-                "a": "You may have an undiscovered gas leak and is worth looking into."
+                "a": "You may have an undiscovered gas leak and it is worth looking into."
             }
         ],
         "relatedServices": [
@@ -842,8 +842,8 @@
         "homeH2": "Stormwater Retention Services",
         "faqs": [
             {
-                "q": "How can I save on using water from the towns supply?",
-                "a": "Install a stormwater retention tank, capture the rain water from your roof and by adding a pump and hose tap to the tank, use it to water the garden, fill the spa, or as a back up emergency water supply."
+                "q": "How can I save on using water from the town's supply?",
+                "a": "Install a stormwater retention tank, capture the rainwater from your roof and by adding a pump and hose tap to the tank, use it to water the garden, fill the spa, or as a backup emergency water supply."
             },
             {
                 "q": "Where and how big is a retention tank?",
